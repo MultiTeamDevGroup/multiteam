@@ -1,0 +1,213 @@
+body{
+	margin: 80px;
+	padding: 0;
+}
+
+#button_home{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-200%,-50%);
+	width: 120px;
+	height: 42px;
+	background: #028400;
+	border: 4px solid #005400;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	font-family: Adobe Gothic Std B;
+	text-decoration: none;
+	transition: .3s ease;
+}
+
+#button_home:hover{
+	background: #005400;
+	text-shadow: 0 0 10px #ffff;
+	box-shadow: 0 0 15px #005400;
+	
+}
+
+#button_trains{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-98%,-50%);
+	width: 120px;
+	height: 42px;
+	background: #028400;
+	border: 4px solid #005400;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	font-family: Adobe Gothic Std B;
+	text-decoration: none;
+	transition: .3s ease;
+}
+
+#button_trains:hover{
+	background: #005400;
+	text-shadow: 0 0 10px #ffff;
+	box-shadow: 0 0 15px #005400;
+}
+
+#button_items{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(5%,-50%);
+	width: 120px;
+	height: 42px;
+	background: #028400;
+	border: 4px solid #005400;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	font-family: Adobe Gothic Std B;
+	text-decoration: none;
+	transition: .3s ease;
+}
+
+#button_items:hover{
+	background: #005400;
+	text-shadow: 0 0 10px #ffff;
+	box-shadow: 0 0 15px #005400;
+}
+
+#button_other{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(106%,-50%);
+	width: 120px;
+	height: 42px;
+	background: #028400;
+	border: 4px solid #005400;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	font-family: Adobe Gothic Std B;
+	text-decoration: none;
+	transition: .3s ease;
+}
+
+#button_other:hover{
+	background: #005400;
+	text-shadow: 0 0 10px #ffff;
+	box-shadow: 0 0 15px #005400;
+}
+
+#button_retextures{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-173%,55%);
+	width: 140px;
+	height: 42px;
+	background: #028400;
+	border: 4px solid #005400;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	font-family: Adobe Gothic Std B;
+	text-decoration: none;
+	transition: .3s ease;
+}
+
+#button_retextures:hover{
+	background: #005400;
+	text-shadow: 0 0 10px #ffff;
+	box-shadow: 0 0 15px #005400;
+}
+
+#button_credits{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-97%,55%);
+	width: 100px;
+	height: 42px;
+	background: #028400;
+	border: 4px solid #005400;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	font-family: Adobe Gothic Std B;
+	text-decoration: none;
+	transition: .3s ease;
+}
+
+#button_credits:hover{
+	background: #005400;
+	text-shadow: 0 0 10px #ffff;
+	box-shadow: 0 0 15px #005400;
+}
+
+#button_download{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(2.5%,55%);
+	width: 250px;
+	height: 42px;
+	background: #028400;
+	border: 4px solid #005400;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	font-family: Adobe Gothic Std B;
+	text-decoration: none;
+	transition: .3s ease;
+}
+
+#button_download:hover{
+	background: #005400;
+	text-shadow: 0 0 10px #ffff;
+	box-shadow: 0 0 15px #005400;
+}
+
+.main_logo{
+	position: absolute;
+	top: 35%;
+	left: 46%;
+	width: 250px;
+	height: 220px;
+	transform: translate(-39%,-100%);
+	transition: .5s ease;
+	opacity: 1;
+}
+
+.main_logo_hover{
+	position: absolute;
+	top: 35%;
+	left: 46%;
+	width: 250px;
+	height: 220px;
+	transform: translate(-39%,-100%);
+	transition: .5s ease;
+	opacity: 0;
+}
+
+.main_logo_hover:hover{
+	opacity: 1;
+}
+
+.main_logo:hover{
+	opacity: 0;
+}
+
+#mainpage_text{
+	color: #fff;
+	position: relative;
+	top: 300px;
+}
+
+#importanat_link{
+	color: #fff;
+	text-decoration: none;
+	transition: .3s ease;
+}
+#importanat_link:hover{
+	text-shadow: 0 0 20px #ffff;
+	box-shadow: 0 0 40px #ffff;
+	background: #57a356;
+}

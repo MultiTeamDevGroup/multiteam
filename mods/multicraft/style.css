@@ -1,0 +1,178 @@
+body{
+	margin: 80px;
+	padding: 0;
+}
+
+#button_home{
+	position: absolute;
+	top: 24%;
+	left: 50%;
+	transform: translate(-200%,-50%);
+	width: 120px;
+	height: 42px;
+	background: #2d2d2d;
+	border: 4px solid #0042ad;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	font-family: Adobe Gothic Std B;
+	text-decoration: none;
+}
+
+#button_home:hover{
+	background: #2d2d2d;
+	text-shadow: 0 0 5px #ffff;
+	box-shadow: 0 0 10px #0042ad;
+	
+}
+
+#button_blocks{
+	position: absolute;
+	top: 24%;
+	left: 50%;
+	transform: translate(-98%,-50%);
+	width: 120px;
+	height: 42px;
+	background: #2d2d2d;
+	border: 4px solid #0042ad;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	font-family: Adobe Gothic Std B;
+	text-decoration: none;
+}
+
+#button_blocks:hover{
+	background: #2d2d2d;
+	text-shadow: 0 0 5px #ffff;
+	box-shadow: 0 0 10px #0042ad;
+}
+
+#button_items{
+	position: absolute;
+	top: 24%;
+	left: 50%;
+	transform: translate(5%,-50%);
+	width: 120px;
+	height: 42px;
+	background: #2d2d2d;
+	border: 4px solid #0042ad;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	font-family: Adobe Gothic Std B;
+	text-decoration: none;
+}
+
+#button_items:hover{
+	background: #2d2d2d;
+	text-shadow: 0 0 5px #ffff;
+	box-shadow: 0 0 10px #0042ad;
+}
+
+#button_other{
+	position: absolute;
+	top: 24%;
+	left: 50%;
+	transform: translate(106%,-50%);
+	width: 120px;
+	height: 42px;
+	background: #2d2d2d;
+	border: 4px solid #0042ad;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	font-family: Adobe Gothic Std B;
+	text-decoration: none;
+}
+
+#button_other:hover{
+	background: #2d2d2d;
+	text-shadow: 0 0 5px #ffff;
+	box-shadow: 0 0 10px #0042ad; 
+}
+
+#button_retextures{
+	position: absolute;
+	top: 24%;
+	left: 50%;
+	transform: translate(-173%,55%);
+	width: 140px;
+	height: 42px;
+	background: #2d2d2d;
+	border: 4px solid #0042ad;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	font-family: Adobe Gothic Std B;
+	text-decoration: none;
+}
+
+#button_retextures:hover{
+	background: #2d2d2d;
+	text-shadow: 0 0 5px #ffff;
+	box-shadow: 0 0 10px #0042ad; 
+}
+
+#button_credits{
+	position: absolute;
+	top: 24%;
+	left: 50%;
+	transform: translate(-97%,55%);
+	width: 100px;
+	height: 42px;
+	background: #2d2d2d;
+	border: 4px solid #0042ad;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	font-family: Adobe Gothic Std B;
+	text-decoration: none;
+}
+
+#button_credits:hover{
+	background: #2d2d2d;
+	text-shadow: 0 0 5px #ffff;
+	box-shadow: 0 0 10px #0042ad; 
+}
+
+#button_download{
+	position: absolute;
+	top: 24%;
+	left: 50%;
+	transform: translate(2.5%,55%);
+	width: 250px;
+	height: 42px;
+	background: #2d2d2d;
+	border: 4px solid #0042ad;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	font-family: Adobe Gothic Std B;
+	text-decoration: none;
+}
+
+#button_download:hover{
+	background: #2d2d2d;
+	text-shadow: 0 0 5px #ffff;
+	box-shadow: 0 0 10px #0042ad; 
+}
+
+#main_logo{
+	position: absolute;
+	top: 24%;
+	left: 50%;
+	transform: translate(-49%,-140%);
+}
+
+#main_page_text{
+	color: #fff;
+}
+
+#importanat_link{
+	color: #fff;
+	text-decoration: none;
+}
+#importanat_link:hover{
+	text-shadow: 0 0 30px #ffff;
+}
