@@ -237,7 +237,7 @@ body{
 
 #mainpage_text{
 	color: #fff;
-	position: relative;
+	position: absolute;
 	top: 60%;
 }
 
