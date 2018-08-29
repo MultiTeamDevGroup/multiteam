@@ -73,8 +73,8 @@ BANNER CLASSES
 .banner-wrapper{width:1020px; margin:0 auto; overflow:hidden; margin-bottom:14px;}
 .bannerlef{width:10px; float:left;}
 .bannerright{width:10px; float:right;}
-.banner-container{width:1000px; float:left;}
-.banner{width:960px; height:370px; background:url(../images/intro_img.png) no-repeat; margin:0 auto;}
+.banner-container{width:1040px; float:left;}
+.banner{width:980px; height:370px; background:url(../images/intro_img.png) no-repeat; margin:0 auto;}
 .banner-shadow{width:960px; margin:0 auto;}
 .banner-content{width:560px; margin:0 auto; padding-top:70px;}
 .banner-content h1{font-family:"Trebuchet MS"; font-size:49px; color:#ffffff; text-align:center;}
@@ -91,7 +91,7 @@ GENERAL CLASSES
 .button-link{ }
 .button-link a{font-family: "Trebuchet MS"; text-transform:uppercase; font-size:13px; text-align:center; color:#ffffff; background:#96577a; width:90px; height:30px; line-height:30px; display:block;}
 .button-link a:hover{color:#000000; background:#838d9d;}
-.container{width:100%; overflow:hidden; background:#2c3847; padding-bottom:40px;}
+.container{color: #2d2d2d ;width:100%; overflow:hidden; padding-bottom:40px;}
 /*-------------------------------------------------
 LAYOUT CLASSS
 -------------------------------------------------*/
