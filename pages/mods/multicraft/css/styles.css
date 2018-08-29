@@ -11,7 +11,7 @@ ul li { list-style:none; outline:none;}
 img { border:none; }
 img { border:none;}
 h1{font-family:"Trebuchet MS"; color:#fff; font-size:22px; font-weight:normal; text-transform:uppercase;}
-h2{font-family: 'Open Sans', sans-serif; font-size:15px; color:#96577a; font-weight:normal;}
+h2{font-family: font-family: 'Open Sans', sans-serif; font-size:15px; color:#96577a;}
 
 /*-------------------------------------------------
 CSS TWEAKS
@@ -220,7 +220,7 @@ FOOTER CLASSS
 }
 
 .menu_header{
-	margin-left: 13%;
+	margin-left: 30%;
 }
 
 #changes_button{
@@ -234,13 +234,14 @@ FOOTER CLASSS
 	height: 20px ;
 }
 
-#b_selected{width: 120px; height: 42px; background: #2d2d2d; border: 8px solid #0042ad; font-size:17px; color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;background: #0042ad;text-shadow: 0 0 5px #ffff;box-shadow: 0 0 10px #0042ad;transition: .3s ease;}
+.b_selected{width: 120px; height: 42px; background: #0042ad; border: 8px solid #0042ad; font-size:17px; color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;}
 
 #b_home{width: 120px; height: 42px; background: #2d2d2d; border: 8px solid #2d2d2d;font-size:17px;color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;transition: .3s ease;}
 #b_changes{width: 120px; height: 42px; background: #2d2d2d; border: 8px solid #2d2d2d;font-size:17px;color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;transition: .3s ease;}
 #b_blocks{width: 120px; height: 42px; background: #2d2d2d; border: 8px solid #2d2d2d;font-size:17px;color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;transition: .3s ease;}
 #b_items{width: 120px; height: 42px; background: #2d2d2d; border: 8px solid #2d2d2d;font-size:17px;color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;transition: .3s ease;}
 #b_other{width: 120px; height: 42px; background: #2d2d2d; border: 8px solid #2d2d2d;font-size:17px;color: #fff; text-align: center;font-family:"Trebuchet MS"; text-decoration: none;transition: .3s ease;}
+#b_download{}
 
 #b_home:hover{width: 120px; height: 42px; background: #2d2d2d; border: 8px solid #0042ad; font-size:17px; color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;background: #0042ad;text-shadow: 0 0 5px #ffff;box-shadow: 0 0 10px #0042ad;transition: .3s ease;}
 #b_changes:hover{width: 120px; height: 42px; background: #2d2d2d; border: 8px solid #0042ad; font-size:17px; color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;background: #0042ad;text-shadow: 0 0 5px #ffff;box-shadow: 0 0 10px #0042ad;transition: .3s ease;}
