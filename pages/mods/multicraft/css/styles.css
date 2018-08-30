@@ -234,7 +234,7 @@ FOOTER CLASSS
 	height: 20px ;
 }
 
-.b_selected{width: 120px; height: 42px; background: #0042ad; border: 8px solid #0042ad; font-size:17px; color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;}
+#b_selected{width: 120px; height: 42px; background: #2d2d2d; border: 8px solid #0042ad; font-size:17px; color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;background: #0042ad;text-shadow: 0 0 5px #ffff;box-shadow: 0 0 10px #0042ad;transition: .3s ease;}
 
 #b_home{width: 120px; height: 42px; background: #2d2d2d; border: 8px solid #2d2d2d;font-size:17px;color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;transition: .3s ease;}
 #b_changes{width: 120px; height: 42px; background: #2d2d2d; border: 8px solid #2d2d2d;font-size:17px;color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;transition: .3s ease;}
