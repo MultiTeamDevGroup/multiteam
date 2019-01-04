@@ -2953,11 +2953,11 @@ h6 {
   padding: 120px 0 80px; }
 
 .pricing_item {
-  background: -webkit-linear-gradient(to right, #231a60 0%, #3c338d 51%, #231a60 100%);
-  background: -moz-linear-gradient(to right, #231a60 0%, #3c338d 51%, #231a60 100%);
-  background: -ms-linear-gradient(to right, #231a60 0%, #3c338d 51%, #231a60 100%);
-  background: -o-linear-gradient(to right, #231a60 0%, #3c338d 51%, #231a60 100%);
-  background: linear-gradient(to right, #231a60 0%, #3c338d 51%, #231a60 100%);
+  background: -webkit-linear-gradient(to right, #003300 0%, #00a800 51%, #003300 100%);
+  background: -moz-linear-gradient(to right, #003300 0%, #00a800 51%, #003300 100%);
+  background: -ms-linear-gradient(to right, #003300 0%, #00a800 51%, #003300 100%);
+  background: -o-linear-gradient(to right, #003300 0%, #00a800 51%, #003300 100%);
+  background: linear-gradient(to right, #003300 0%, #00a800 51%, #003300 100%);
   text-align: center;
   margin-bottom: 40px; }
   .pricing_item h3.p_title {
@@ -2970,7 +2970,7 @@ h6 {
     color: #fff;
     margin: 0;
     padding: 30px;
-    background: #342b7e; }
+    background: #003300; }
   .pricing_item ul {
     list-style: none;
     padding-left: 0;
