@@ -125,7 +125,7 @@ img {
 ============================================================================================ */
 .section_content {
   position: relative;
-  padding: 70px 0px 73px 70px; }
+  padding: 70px 70px 73px 70px; }
   .section_content h6 {
     color: #fff;
     font-size: 14px;
@@ -136,11 +136,11 @@ img {
     .section_content h6:after {
       content: "";
       position: absolute;
-      background: -webkit-linear-gradient(to right, #3fcaff 0%, #a4ffb0 100%);
-      background: -moz-linear-gradient(to right, #3fcaff 0%, #a4ffb0 100%);
-      background: -o-linear-gradient(to right, #3fcaff 0%, #a4ffb0 100%);
-      background: linear-gradient(to right, #3fcaff 0%, #a4ffb0 100%);
-      color: #3fcaff;
+      background: -webkit-linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+      background: -moz-linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+      background: -o-linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+      background: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+      color: #ffff;
       height: 1px;
       width: 50px;
       bottom: -10px;
@@ -211,11 +211,11 @@ img {
 
 .primary_btn {
   display: inline-block;
-  background: -webkit-linear-gradient(to right, #222222 0%, #007200 51%, #00e000 100%);
-  background: -moz-linear-gradient(to right, #222222 0%, #007200 51%, #00e000 100%);
-  background: -ms-linear-gradient(to right, #222222 0%, #007200 51%, #00e000 100%);
-  background: -o-linear-gradient(to right, #222222 0%, #007200 51%, #00e000 100%);
-  background: linear-gradient(to right, #222222 0%, #007200 51%, #00e000 100%);
+  background: -webkit-linear-gradient(to right, #42ff3f 0%, #a4ffb0 100%);
+  background: -moz-linear-gradient(to right, #42ff3f 0%, #a4ffb0 100%);
+  background: -ms-linear-gradient(to right, #42ff3f 0%, #a4ffb0 100%);
+  background: -o-linear-gradient(to right, #42ff3f 0%, #a4ffb0 100%);
+  background: linear-gradient(to right, #42ff3f 0%, #a4ffb0 100%);
   background-size: 200% auto;
   padding: 0px 35px;
   color: #222222;
@@ -363,13 +363,13 @@ img {
   top: 0;
   left: 0;
   z-index: 9999;
-  background: #217223; }
+  background: linear-gradient(to right, #003300 0%, #00a800 51%, #003300 100%); }
   .header_area .navbar-brand {
     margin-right: 30px; }
   .header_area .menu_nav {
     width: 100%; }
   .header_area .navbar {
-    background: transparent;
+    background: linear-gradient(to right, #003300 0%, #00a800 51%, #003300 100%);
     padding: 0px;
     border: 0px;
     border-radius: 0px;
@@ -2398,7 +2398,7 @@ h6 {
   left: 19px; }
 
 .confirm-switch input:checked + label:before {
-  background: #4cd3e3; }
+  background: #ffff; }
 
 .primary-checkbox {
   width: 16px;
@@ -2756,15 +2756,16 @@ h6 {
   display: inline-block;
   margin-bottom: 40px; }
   .new_games_item:hover .upcoming_title {
-    background: -webkit-linear-gradient(to right, #3fcaff 0%, #a4ffb0 100%);
-    background: -moz-linear-gradient(to right, #3fcaff 0%, #a4ffb0 100%);
-    background: -o-linear-gradient(to right, #3fcaff 0%, #a4ffb0 100%);
-    background: linear-gradient(to right, #3fcaff 0%, #a4ffb0 100%); }
+    background: -webkit-linear-gradient(to right, #42ff3f 0%, #a4ffb0 100%);
+    background: -moz-linear-gradient(to right, #42ff3f 0%, #a4ffb0 100%);
+    background: -ms-linear-gradient(to right, #42ff3f 0%, #a4ffb0 100%);
+    background: -o-linear-gradient(to right, #42ff3f 0%, #a4ffb0 100%);
+    background: linear-gradient(to right, #42ff3f 0%, #a4ffb0 100%);}
     .new_games_item:hover .upcoming_title a {
-      color: #22195e; }
+      color: #222222; }
   .new_games_item .upcoming_title {
     position: absolute;
-    background: rgba(44, 37, 93, 0.8);
+    background: rgba(1, 68, 0, 0.8);
     top: 50%;
     width: 100%;
     text-align: center;
@@ -3817,11 +3818,11 @@ h6 {
 /* Footer Area css
 ============================================================================================ */
 .footer_area {
-  background: -webkit-linear-gradient(to right, #231a60 0%, #3c338d 51%, #231a60 100%);
-  background: -moz-linear-gradient(to right, #231a60 0%, #3c338d 51%, #231a60 100%);
-  background: -ms-linear-gradient(to right, #231a60 0%, #3c338d 51%, #231a60 100%);
-  background: -o-linear-gradient(to right, #231a60 0%, #3c338d 51%, #231a60 100%);
-  background: linear-gradient(to right, #231a60 0%, #3c338d 51%, #231a60 100%); }
+  background: -webkit-linear-gradient(to right, #003300 0%, #00a800 51%, #003300 100%);
+  background: -moz-linear-gradient(to right, #003300 0%, #00a800 51%, #003300 100%);
+  background: -ms-linear-gradient(to right, #003300 0%, #00a800 51%, #003300 100%);
+  background: -o-linear-gradient(to right, #003300 0%, #00a800 51%, #003300 100%);
+  background: linear-gradient(to right, #003300 0%, #00a800 51%, #003300 100%); }
   .footer_area .f_widget .f_title {
     margin-bottom: 40px; }
     .footer_area .f_widget .f_title h4 {
@@ -3859,12 +3860,13 @@ h6 {
       height: 30px;
       width: 30px;
       line-height: 30px;
-      background: #4c4588;
+      background: #006b0c;
       margin-left: 6px;
       display: inline-block;
       text-align: center; }
       .single-footer-widget .social_widget a:hover {
-        background: #3fcaff; }
+        background: linear-gradient(to right, #42ff3f 0%, #a4ffb0 100%); 
+		color:#222222 ;}
 
 /* End Footer Area css
 ============================================================================================ */
