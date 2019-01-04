@@ -125,7 +125,7 @@ img {
 ============================================================================================ */
 .section_content {
   position: relative;
-  padding: 70px 70px 73px 70px; }
+  padding: 70px 0px 73px 40px; }
   .section_content h6 {
     color: #fff;
     font-size: 14px;
@@ -3876,6 +3876,9 @@ h6 {
 
 #center_button{
 	/*padding-right: 10px;*/
+}
+
+.changelog_content_img{
 }
 /*---------------------------------------------------- */
 
