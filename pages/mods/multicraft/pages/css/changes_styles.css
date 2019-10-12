@@ -249,3 +249,9 @@ FOOTER CLASSS
 #b_items:hover{width: 120px; height: 42px; background: #2d2d2d; border: 8px solid #0042ad; font-size:17px; color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;background: #0042ad;text-shadow: 0 0 5px #ffff;box-shadow: 0 0 10px #0042ad;transition: .3s ease;}
 #b_other:hover{width: 120px; height: 42px; background: #2d2d2d; border: 8px solid #0042ad; font-size:17px; color: #fff; text-align: center;font-family:"Trebuchet MS"; text-decoration: none;background: #0042ad;text-shadow: 0 0 5px #ffff;box-shadow: 0 0 10px #0042ad;transition: .3s ease;}
 #b_back_to_main:hover{width: 120px; height: 42px; background: #2d2d2d; border: 8px solid #0042ad; font-size:17px; color: #fff; text-align: center;font-family:"Trebuchet MS"; text-decoration: none;background: #0042ad;text-shadow: 0 0 5px #ffff;box-shadow: 0 0 10px #0042ad;transition: .3s ease;}
+
+
+.featureimg{
+	width: 254px;
+	height: 174px;
+}

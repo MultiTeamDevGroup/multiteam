@@ -1,0 +1,72 @@
+body {
+	background-color: #272727;
+	##background: url(https://i.imgur.com/zUp6vU7.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+	font-family: "Trebuchet MS";
+	color: #ffff;
+	
+}
+div{
+	align: center;
+}
+
+#logo {
+	
+}
+.container {
+	width: 50rem;
+	height: 20rem;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);
+	position: relative;
+	background: inherit;
+	overflow: hidden;
+	border-radius: 5px;
+	z-index: 1;
+	text-align: center;
+	margin: auto;
+}
+.container:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px rgba( 0, 0, 0, .5);
+	filter: blur(10px);
+	margin: -20px;
+	z-index: -1;
+}
+.container2 {
+	width: 50rem;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);
+	position: relative;
+	background: inherit;
+	overflow: hidden;
+	border-radius: 5px;
+	z-index: 1;
+	text-align: center;
+	margin: auto;
+}
+.container2:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px rgba( 0, 0, 0, .5);
+	filter: blur(10px);
+	margin: -20px;
+	z-index: -1;
+}
+
+#b_common{outline:0;border-radius: 5px; height: 42px; background: rgba(45,45,45,1); border: 8px solid rgba(0,0,0,0);font-size:17px;color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;transition: .5s ease;}
+#b_common:hover{cursor: pointer;outline:0; height: 42px; background: #2d2d2d; border: 8px solid #0042ad; font-size:17px; color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;background: #0042ad;text-shadow: 0 0 5px #ffff;box-shadow: 0 0 10px #0042ad;transition: .5s ease;}
+
+#b_common_smol{outline:0;border-radius: 5px; height: 30px; background: rgba(45,45,45,1); border: 6px solid rgba(0,0,0,0);font-size:10px;color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;transition: .5s ease;}
+#b_common_smol:hover{cursor: pointer;outline:0; height: 30px; background: #2d2d2d; border: 6px solid #0042ad; font-size:10px; color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;background: #0042ad;text-shadow: 0 0 5px #ffff;box-shadow: 0 0 10px #0042ad;transition: .5s ease;}
