@@ -6,18 +6,18 @@ body {
 	height: 100vh;
 	font-family: "Trebuchet MS";
 	color: #ffff;
-	
+	transition: background-image 2s;
+	user-select: none;
 }
 div{
-	align: center;
+	display: block;
 }
 
 #logo {
-	
+	cursor: context-menu;
 }
 .container {
 	width: 50rem;
-	height: 20rem;
 	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);
 	position: relative;
 	background: inherit;
@@ -70,3 +70,66 @@ div{
 
 #b_common_smol{outline:0;border-radius: 5px; height: 30px; background: rgba(45,45,45,1); border: 6px solid rgba(0,0,0,0);font-size:10px;color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;transition: .5s ease;}
 #b_common_smol:hover{cursor: pointer;outline:0; height: 30px; background: #2d2d2d; border: 6px solid #0042ad; font-size:10px; color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;background: #0042ad;text-shadow: 0 0 5px #ffff;box-shadow: 0 0 10px #0042ad;transition: .5s ease;}
+
+.invslot {
+	cursor: context-menu;
+    position: relative;
+    display: inline-block;
+    background: #8B8B8B no-repeat center center / 32px 32px;
+    border: 2px solid;
+    border-color: #373737 #FFF #FFF #373737;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    line-height: 1;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+.invslot-large {
+	cursor: context-menu;
+    padding: 8px;
+	position: relative;
+    display: inline-block;
+    background: #8B8B8B no-repeat center center / 32px 32px;
+    border: 2px solid;
+    border-color: #373737 #FFF #FFF #373737;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    line-height: 1;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+.mcui {
+	cursor: context-menu;
+    display: inline-block;
+    position: relative;
+    background-color: #C6C6C6;
+    border: 2px solid;
+    border-color: #DBDBDB #5B5B5B #5B5B5B #DBDBDB;
+    padding: 6px;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: bottom;
+}
+
+.mcui-output {
+	cursor: context-menu;
+    margin-top: 28px;
+}
+
+.mcui-arrow {
+	cursor: context-menu;
+    background: url(https://minecraft.gamepedia.com/media/8/86/Grid_layout_Arrow_%28small%29.png) no-repeat;
+    width: 32px;
+    height: 26px;
+    margin: 40px 4px 0;
+}
+
+#craft_item {
+	
+}
+
+	
