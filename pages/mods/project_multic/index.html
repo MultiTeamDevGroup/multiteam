@@ -6,10 +6,10 @@
 	<link rel="icon" href="https://i.imgur.com/1LzLTq1.png">
 </head>
 
-<body background="images/panorama/1.png">
+<body background="images/panorama/2.png">
 
 		<script>
-			var a=1;
+			var a=2;
 			function nextBackground() {
 			if (a>=11) {a=1;}else {a=a+1;}
 			document.body.style.backgroundImage = "url('images/panorama/"+a+".png')";
@@ -17,26 +17,115 @@
 		</script>
 	
 		<br><br><br>
-		<div class="container2"><br><div align="center" id="logo"><img alt="Logo of Multicraft" src="https://i.imgur.com/7Rw8VN4.png" style="width:45%;height:10%;"><br>1.14.4<br><br><button onclick="nextBackground()" id="b_common_smol">Next background</button><br><br></div></div>
+		<div class="container2"><br><div align="center" id="logo"><img alt="Logo of Multicraft" src="https://i.imgur.com/7Rw8VN4.png" style="width:45%;height:10%;"><br>1.14.4<br><br><button onclick="nextBackground()" id="b_common_smol_blue">Next background</button><br><br></div></div>
 		<br><br><br>
 	
 		<div class="container">
 			<br>
 				This mod adds the things we've been missing from<br>Minecraft for a long time, and even some new exciting features!
-			<!--br><a href="index.html" id="b_common"> <img src="https://i.imgur.com/1LzLTq1.png"> Multicraft</a-->
+			<!--br><a href="index.html" id="b_common_blue"> <img src="https://i.imgur.com/1LzLTq1.png"> Multicraft</a-->
 			<br><br>
 				Last release: 2019.??.??  [yyyy.mm.dd]
 			<br>
 				(We are still working on the new release. It isn't ready yet!)
 			<br><br>
-				<a href="index.html" id="b_common"> <i class="fas fa-file-download"></i> Download</a>
+				<a href="#" id="b_common_blue"> <i class="fas fa-file-download"></i> Download</a>
 			<br><br><br><br><br>
 				You can find the features here:
 			<br><br>
-				<!--<a href="index.html" id="b_common">Pillaged Villages</a>
-				<a href="index.html" id="b_common">The Upgraded Aquatics</a>
-				<a href="index.html" id="b_common">paintings...</a>-->
-				<a href="index.html" id="b_common">Coming Soon</a>
+			
+			
+			
+			<div class="tab">
+				<button class="tablinks" onclick="openCity(event, 'PillagedVillages')">Pillaged Villages</button>
+				<button class="tablinks" onclick="openCity(event, 'theUpgradedAquatics')">The Upgraded Aquatics</button>
+				<button class="tablinks" onclick="openCity(event, 'WorldofPaintUpdate')">World of paint update</button>
+			</div>
+
+			<div id="PillagedVillages" class="tabcontent">
+				<h3>Pillaged Villages [1.14]</h3>
+					<p>The "Pillaged Villages" tab contains all the features that connects somehow to the 1.14 update, alias the "Village and pillage" update. This dosen't mean that the mod is being released for this version, just has some features that could modify this update's content, or expand on it.</p>
+				<br><br>
+				<h3>Wooden Bark</h3>
+					<p>
+					The bark item is coming from logs. It just drops from the log when you strip it with your axe. Exactly 4 pieces of them, now you can use it to craft the stripped logs back to normal logs
+					<span class="mcui">
+					<span class="invslot"><img src="images/items/item_bark_acacia.png"></span>
+					<span class="invslot"><img src="images/items/item_bark_birch.png"></span>
+					<span class="invslot"><img src="images/items/item_bark_darkoak.png"></span>
+					<span class="invslot"><img src="images/items/item_bark_jungle.png"></span>
+					<span class="invslot"><img src="images/items/item_bark_oak.png"></span>
+					<span class="invslot"><img src="images/items/item_bark_spruce.png"></span>
+					</span>
+					<br>Log Crafting:<br>
+					<span class="mcui">
+					<table>
+					<tr>
+						<th><span class="mcui-input">
+						
+							<span class="mcui-row">
+								<span class="invslot"></span><span class="invslot"><img src="images/items/item_bark_oak.png"></span><span class="invslot"></span><br>
+							</span>
+							<span class="mcui-row">
+								<span class="invslot"><img src="images/items/item_bark_oak.png"></span><span class="invslot"><img src="images/items/block_log_stripped_oak.png"></span><span class="invslot"><img src="images/items/item_bark_oak.png"></span><br>
+							</span>
+							<span class="mcui-row">
+								<span class="invslot"></span><span class="invslot"><img src="images/items/item_bark_oak.png"></span><span class="invslot"></span>
+							</span>
+							
+						</span></th>
+						<th><span class="mcui-output">
+							 <span><img src="https://gamepedia.cursecdn.com/minecraft_gamepedia/8/86/Grid_layout_Arrow_%28small%29.png"></span>
+						</span>
+						
+						<span class="mcui-output">
+							<span class="invslot-large"><img src="images/items/block_log_oak.png"></span>
+						</span></th>
+					</tr>
+				
+					</table>
+				</span>
+					
+					
+					
+					</p>
+			</div>
+
+			<div id="theUpgradedAquatics" class="tabcontent">
+				<h3>The Upgraded Aquatics [1.13]</h3>
+				<p>"The Upgraded Aquatics" tab contains all the features that connects somehow to the 1.13 update, alias the "The Update Aquatic". This dosen't mean that the mod is being released for this version, just has some features that could modify this update's content, or expand on it. </p> 
+			</div>
+
+			<div id="WorldofPaintUpdate" class="tabcontent">
+				<h3>World of paint update [1.12]</h3>
+				<p>The "World of paint update" tab contains all the features that connects somehow to the 1.12 update, alias the "World of Color update". This dosen't mean that the mod is being released for this version, just has some features that could modify this update's content, or expand on it.</p>
+			</div>
+			
+			<script>
+			function openCity(evt, cityName) {
+			var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+						}
+					tablinks = document.getElementsByClassName("tablinks");
+					for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" active", "");
+						}
+				document.getElementById(cityName).style.display = "block";
+				evt.currentTarget.className += " active";
+			}
+			</script>
+			
+			
+			
+			
+			
+				<!--<a href="index.html" id="b_selective_yellow">Pillaged Villages </a><br><br><br>-->
+				<!--<img class="crossbow_icon" src="images/items/item_crossbow_0.png">-->
+				<!--<a href="index.html" id="b_common_blue">The Upgraded Aquatics</a>-->
+				<!--<a href="index.html" id="b_common_blue">paintings...</a>-->
+				<!--<a href="index.html" id="b_common_blue">Coming Soon</a>-->
 				<br><br>
 				<!--<span class="mcui">
 					<table>
@@ -67,7 +156,11 @@
 				</span>-->	
 			<br><br><br><br><br><br>
 		</div>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br>
 		
-
+	<div class="copyright">
+		<br><br>
+			2017-2019 © MultiTeam Minecraft-modding group
+		<br><br><br>
+	</div>
 </body>
