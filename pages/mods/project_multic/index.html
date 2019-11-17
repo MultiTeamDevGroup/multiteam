@@ -15,9 +15,22 @@
 			document.body.style.backgroundImage = "url('images/panorama/"+a+".png')";
 			}
 		</script>
+		<script>
+			var b=1;
+			function nextPainting() {
+			if (b>=24) {b=1;}else {b=b+1;}
+			document.querySelector("#painting").src = "images/items/paintings/"+b+".png"
+			document.querySelector("#paintingname") = ""+b+""
+			}
+			function prevPainting() {
+			if (b<=1) {b=24;}else {b=b-1;}
+			document.querySelector("#painting").src = "images/items/paintings/"+b+".png"
+			document.querySelector("#paintingname") = ""+b+""
+			}
+		</script>
 	
 		<br><br><br>
-		<div class="container2"><br><div align="center" id="logo"><img alt="Logo of Multicraft" src="https://i.imgur.com/7Rw8VN4.png" style="width:300px;height:60px;"><br>1.14.4<br><br><button onclick="nextBackground()" id="b_common_smol_blue">Next background</button><br><br></div></div>
+		<div class="container2"><br><div align="center" id="logo"><img alt="Logo of Multicraft" draggable="false" src="https://i.imgur.com/7Rw8VN4.png" style="width:300px;height:60px;"><br><img draggable="false" src="https://cf.way2muchnoise.eu/versions/285334.svg"><br><br><button onclick="nextBackground()" id="b_common_smol_blue">Next background</button><br><br></div></div>
 		<br><br><br>
 	
 		<div class="container">
@@ -29,7 +42,9 @@
 			<br>
 				(We are still working on the new release. It isn't ready yet!)
 			<br><br>
-				<a href="#" id="b_common_blue"> <i class="fas fa-file-download"></i> Download</a>
+			
+				<a href="#" id="b_common_blue"> <i class="fas fa-file-download"></i> Download</a><br><br>
+				<img draggable="false" src="https://cf.way2muchnoise.eu/full_285334_downloads.svg">
 			<br><br><br><br><br>
 				You can find the features here:
 			<br><br>
@@ -37,14 +52,14 @@
 			
 			
 			<div class="tab">
-				<button class="tablinks" onclick="openCity(event, 'PillagedVillages')">Pillaged Villages</button>
-				<button class="tablinks" onclick="openCity(event, 'theUpgradedAquatics')">The Upgraded Aquatics</button>
-				<button class="tablinks" onclick="openCity(event, 'WorldofPaintUpdate')">World of paint update</button>
+				<button class="tablinks" onclick="openCity(event, 'PillagedVillages')">Expanding vanilla</button>
+				<button class="tablinks" onclick="openCity(event, 'theUpgradedAquatics')">-</button>
+				<button class="tablinks" onclick="openCity(event, 'WorldofPaintUpdate')">-</button>
 			</div>
 
 			<div id="PillagedVillages" class="tabcontent">
-				<h3>Pillaged Villages [1.14]</h3>
-					<p>The "Pillaged Villages" tab contains all the features that connects somehow to the 1.14 update, alias the "Village and pillage" update. This dosen't mean that the mod is being released for this version, just has some features that could modify this update's content, or expand on it.</p>
+				<h3>Vanilla Expanding</h3>
+					<p>In this tab you will find all the features added by multicraft that aims on "expanding the vanilla game".</p>
 				<br><br>
 				<h3>Wooden Bark</h3>
 					<p>
@@ -89,14 +104,36 @@
 					
 					
 					</p>
+				<br><br><br>
+				<h3>New Paintings</h3>
+					<p>Yes, finally! New paintings! They are being made by IAmGama, Rellit, StaboVexo and King_of_Creepers. Also you can place them with your regular old painting item. You can see all the 24 of them here:</p>
+				<br><img draggable="false" id="painting" src="images/items/paintings/1.png"><br><br>
+				<button onclick="prevPainting()" id="b_common_smol_blue"><i class="fas fa-arrow-left"></i></button><button onclick="nextPainting()" id="b_common_smol_blue"><i class="fas fa-arrow-right"></i></button>
+			<br><br><br>
+				<h3>Blue berries</h3>
+					<p>An alternative for the Sweet berries... and its blue! Also they generates in the Roofed Forest biomes.</p>
+				<span class="mcui">
+					<span class="invslot"><img draggable="false" src="images/items/item_blue_berries.png"></span>
+					</span>
+				<br>
+					<img draggable="false" id="content_image" src="images/berryz.png">
+			<br><br><br>
+				<h3>Berries in flower pots</h3>
+					<p>Following the berry theme, now you can place berry bushes in flower pots! Also they will grow berries and you can harvest them.</p>
+					<img draggable="false" id="content_image" src="images/pottable_berryz.png">
+				<br><br>
 			</div>
 
-			<div id="theUpgradedAquatics" class="tabcontent">
+
+
+
+
+			<div id="theUpgradedAquaticsa" class="tabcontent">
 				<h3>The Upgraded Aquatics [1.13]</h3>
 				<p>"The Upgraded Aquatics" tab contains all the features that connects somehow to the 1.13 update, alias the "The Update Aquatic". This dosen't mean that the mod is being released for this version, just has some features that could modify this update's content, or expand on it. </p> 
 			</div>
 
-			<div id="WorldofPaintUpdate" class="tabcontent">
+			<div id="WorldofPaintUpdatea" class="tabcontent">
 				<h3>World of paint update [1.12]</h3>
 				<p>The "World of paint update" tab contains all the features that connects somehow to the 1.12 update, alias the "World of Color update". This dosen't mean that the mod is being released for this version, just has some features that could modify this update's content, or expand on it.</p>
 			</div>

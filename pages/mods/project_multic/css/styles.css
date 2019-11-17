@@ -231,3 +231,20 @@ div{
 	margin: -20px;
 	z-index: -1;
 }
+
+#painting{
+	height:300px;
+	max-height:300px;
+	image-rendering: pixelated;
+	transition: opacity 1s ease-in-out;
+	transition-timing-function: ease-in-out;
+	box-shadow: 0 0 10px rgba(0,0,0,1)
+}
+
+#content_image{
+	height:300px;
+	max-height:300px;
+	image-rendering: pixelated;
+	transition: opacity 1s ease-in-out;
+	box-shadow: 0 0 10px rgba(0,0,0,1)
+}
