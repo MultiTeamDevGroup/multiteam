@@ -28,8 +28,12 @@
 			document.querySelector("#paintingname") = ""+b+""
 			}
 		</script>
-	
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="hover.js"></script>
+		
 		<br><br><br>
+		<div id="tooltipjs" class="mc-tooltip">Test</div>
+		
 		<div class="container2"><br><div align="center" id="logo"><img alt="Logo of Multicraft" draggable="false" src="https://i.imgur.com/7Rw8VN4.png" style="width:300px;height:60px;"><br><img draggable="false" src="https://cf.way2muchnoise.eu/versions/285334.svg"><br><br><button onclick="nextBackground()" id="b_common_smol_blue">Next background</button><br><br></div></div>
 		<br><br><br>
 	
@@ -46,32 +50,36 @@
 				<a href="#" id="b_common_blue"> <i class="fas fa-file-download"></i> Download</a><br><br>
 				<img draggable="false" src="https://cf.way2muchnoise.eu/full_285334_downloads.svg">
 			<br><br><h3>Credits:</h3>-Rellit: Coding<br>-MaroonShaded: Coding<br>-IAmGama: Textures<br>-King_of_Creepers: Textures/Models/ideas<br><br><br><br>
+			
 				<h3>You can find the features here:</h3>
 			<br><br>
 			
 			
 			
 			<div class="tab">
-				<button class="tablinks" onclick="openCity(event, 'PillagedVillages')">Expanding vanilla</button>
-				<button class="tablinks" onclick="openCity(event, 'theUpgradedAquatics')">-</button>
-				<button class="tablinks" onclick="openCity(event, 'WorldofPaintUpdate')">-</button>
+				<button class="tablinks" onclick="openCity(event, 'ExpandingVanilla')">Expanding vanilla</button>
+				<button class="tablinks" onclick="openCity(event, 'First')">-</button>
+				<button class="tablinks" onclick="openCity(event, 'Second')">-</button>
+				<button class="tablinks" onclick="openCity(event, 'Third')">-</button>
+				<button class="tablinks" onclick="openCity(event, 'Fourth')">-</button>
+				<button class="tablinks" onclick="openCity(event, 'Fifth')">-</button>
 			</div>
 
-			<div id="PillagedVillages" class="tabcontent">
+			<div id="ExpandingVanilla" class="tabcontent">
 				<h3>Vanilla Expanding</h3>
 					<p>In this tab you will find all the features added by multicraft that aims on "expanding the vanilla game".</p>
 				<br><br>
 				<h3>Wooden Bark</h3>
-					<p>
-					The bark item is coming from logs. It just drops from the log when you strip it with your axe. Exactly 4 pieces of them, now you can use it to craft the stripped logs back to normal logs
+					<p>The bark item is coming from logs. It just drops from the log when you strip it with your axe. Exactly 4 pieces of them, now you can use it to craft the stripped logs back to normal logs</p>
 					<span class="mcui">
-					<span class="invslot"><img src="images/items/item_bark_acacia.png"></span>
-					<span class="invslot"><img src="images/items/item_bark_birch.png"></span>
-					<span class="invslot"><img src="images/items/item_bark_darkoak.png"></span>
-					<span class="invslot"><img src="images/items/item_bark_jungle.png"></span>
-					<span class="invslot"><img src="images/items/item_bark_oak.png"></span>
-					<span class="invslot"><img src="images/items/item_bark_spruce.png"></span>
+					<span class="invslot"><img class="book" id="buzerak" id="mc_item" draggable="false" src="images/items/item_bark_acacia.png" text="Acacia Bark"></span>
+					<span class="invslot"><img id="mc_item" draggable="false" src="images/items/item_bark_birch.png"></span>
+					<span class="invslot"><img id="mc_item" draggable="false" src="images/items/item_bark_darkoak.png"></span>
+					<span class="invslot"><img id="mc_item" draggable="false" src="images/items/item_bark_jungle.png"></span>
+					<span class="invslot"><img id="mc_item" draggable="false" src="images/items/item_bark_oak.png"></span>
+					<span class="invslot"><img id="mc_item" draggable="false" src="images/items/item_bark_spruce.png"></span>
 					</span>
+					
 					<br>Log Crafting:<br>
 					<span class="mcui">
 					<table>
@@ -79,13 +87,13 @@
 						<th><span class="mcui-input">
 						
 							<span class="mcui-row">
-								<span class="invslot"></span><span class="invslot"><img src="images/items/item_bark_oak.png"></span><span class="invslot"></span><br>
+								<span class="invslot"></span><span class="invslot"><img id="mc_item" draggable="false" src="images/items/item_bark_oak.png"></span><span class="invslot"></span><br>
 							</span>
 							<span class="mcui-row">
-								<span class="invslot"><img src="images/items/item_bark_oak.png"></span><span class="invslot"><img src="images/items/block_log_stripped_oak.png"></span><span class="invslot"><img src="images/items/item_bark_oak.png"></span><br>
+								<span class="invslot"><img id="mc_item" draggable="false" src="images/items/item_bark_oak.png"></span><span class="invslot"><img draggable="false" id="mc_item" src="images/items/block_log_stripped_oak.png"></span><span class="invslot"><img id="mc_item" draggable="false" src="images/items/item_bark_oak.png"></span><br>
 							</span>
 							<span class="mcui-row">
-								<span class="invslot"></span><span class="invslot"><img src="images/items/item_bark_oak.png"></span><span class="invslot"></span>
+								<span class="invslot"></span><span class="invslot"><img id="mc_item" draggable="false" src="images/items/item_bark_oak.png"></span><span class="invslot"></span>
 							</span>
 							
 						</span></th>
@@ -94,7 +102,7 @@
 						</span>
 						
 						<span class="mcui-output">
-							<span class="invslot-large"><img src="images/items/block_log_oak.png"></span>
+							<span class="invslot-large"><img id="mc_item" src="images/items/block_log_oak.png"></span>
 						</span></th>
 					</tr>
 				
@@ -103,25 +111,59 @@
 					
 					
 					
-					</p>
+					
 				<br><br><br>
 				<h3>New Paintings</h3>
 					<p>Yes, finally! New paintings! They are being made by IAmGama, Rellit, StaboVexo and King_of_Creepers. Also you can place them with your regular old painting item. You can see all the 24 of them here:</p>
-				<br><img draggable="false" id="painting" src="images/items/paintings/1.png"><br><br>
-				<button onclick="prevPainting()" id="b_common_smol_blue"><i class="fas fa-arrow-left"></i></button><button onclick="nextPainting()" id="b_common_smol_blue"><i class="fas fa-arrow-right"></i></button>
-			<br><br><br>
+				<br>
+					<img draggable="false" id="painting" src="images/items/paintings/1.png"><br><br>
+					<button onclick="prevPainting()" id="b_common_smol_blue"><i class="fas fa-arrow-left"></i></button>
+					<button onclick="nextPainting()" id="b_common_smol_blue"><i class="fas fa-arrow-right"></i></button>
+				<br><br><br>
 				<h3>Blue berries</h3>
 					<p>An alternative for the Sweet berries... and its blue! Also they generates in the Roofed Forest biomes.</p>
-				<span class="mcui">
-					<span class="invslot"><img draggable="false" src="images/items/item_blue_berries.png"></span>
+					<span class="mcui">
+						<span class="invslot"><img id="mc_item" draggable="false" src="images/items/item_blue_berries.png"></span>
 					</span>
 				<br>
-					<img draggable="false" id="content_image" src="images/berryz.png">
-			<br><br><br>
+					<img draggable="false" id="content_image" src="images/game/berryz.png">
+				<br><br><br>
 				<h3>Berries in flower pots</h3>
 					<p>Following the berry theme, now you can place berry bushes in flower pots! Also they will grow berries and you can harvest them.</p>
-					<img draggable="false" id="content_image" src="images/pottable_berryz.png">
-				<br><br>
+					<img draggable="false" id="content_image" src="images/game/pottable_berryz.png">
+				<br><br><br>
+				<h3>Terracotta Bricks</h3>
+					<p>We had the colorful update in 1.12, but we didint get these... The terracotta bricks. These bricks are same as the normal ones, but they are made out of terracotta.</p>
+					Brick Crafting:<br>
+						<span class="mcui">
+						<table>
+						<tr>
+							<th><span class="mcui-input">
+						
+								<span class="mcui-row">
+									<span class="invslot"><img id="mc_item" draggable="false" src="images/items/block_terracotta.png"></span><span class="invslot"><img id="mc_item" draggable="false" src="images/items/block_terracotta.png"></span><span class="invslot"></span><br>
+								</span>
+								<span class="mcui-row">
+									<span class="invslot"><img id="mc_item" draggable="false" src="images/items/block_terracotta.png"></span><span class="invslot"><img id="mc_item" draggable="false" src="images/items/block_terracotta.png"></span><span class="invslot"></span><br>
+								</span>
+								<span class="mcui-row">
+									<span class="invslot"></span><span class="invslot"></span><span class="invslot"></span>
+								</span>
+							
+							</span></th>
+							<th><span class="mcui-output">
+								<span><img src="https://gamepedia.cursecdn.com/minecraft_gamepedia/8/86/Grid_layout_Arrow_%28small%29.png"></span>
+							</span>
+						
+							<span class="mcui-output">
+								<span class="invslot-large"><img id="mc_item" draggable="false" src="images/items/block_terracotta_brick.png"></span>
+							</span></th>
+						</tr>
+				
+						</table>
+						</span><br><br>
+						<img draggable="false" id="content_image2" src="images/game/terracotta_bricks.png">
+					<br><br>
 			</div>
 
 
@@ -197,7 +239,7 @@
 		
 	<div class="copyright">
 		<br><br>
-			2017-2019 © MultiTeam Minecraft-modding group
+			2017-2019 © MultiTeam Minecraft-Modding Group
 		<br><br><br>
 	</div>
 </body>

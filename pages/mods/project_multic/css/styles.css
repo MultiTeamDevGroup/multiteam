@@ -90,6 +90,9 @@ div{
     text-align: left;
     vertical-align: bottom;
 }
+.invslot:hover {
+background: rgba(196,196,196,1) no-repeat center center / 32px 32px;
+}
 
 .invslot-large {
 	cursor: context-menu;
@@ -106,6 +109,9 @@ div{
     text-align: left;
     vertical-align: bottom;
 }
+.invslot-large:hover {
+background: rgba(196,196,196,1) no-repeat center center / 32px 32px;
+}
 
 .mcui {
 	margin-top:6px;
@@ -121,6 +127,7 @@ div{
     white-space: nowrap;
     vertical-align: bottom;
 }
+
 
 .mcui-output {
 	cursor: context-menu;
@@ -247,4 +254,119 @@ div{
 	image-rendering: pixelated;
 	transition: opacity 1s ease-in-out;
 	box-shadow: 0 0 10px rgba(0,0,0,1)
+}
+#content_image2{
+	max-width:700;
+	max-height:300px;
+	image-rendering: pixelated;
+	transition: opacity 1s ease-in-out;
+	box-shadow: 0 0 10px rgba(0,0,0,1)
+}
+
+.mc-tooltip{
+	display:none;
+	text-align:left;
+	position:fixed;
+	top:0;
+	left:0;
+	background-color:#100010;
+	background-color:rgba(16,0,16,.94);
+	color:#fff;
+	padding:6px;
+	font-family:Minecraft;
+	font-size:16px;
+	word-spacing:4px;
+	white-space:nowrap;
+	line-height:20px;
+	text-shadow:2px 2px 0 #3f3f3f;
+	margin:2px 4px;
+	pointer-events:none;
+	z-index:99
+}
+.mc-tooltip:before{
+	right:-2px;
+	left:-2px;
+	border-style:none solid;
+	border-color:rgba(16,0,16,.94)
+}
+.mc-tooltip:after,.mc-tooltip:before{
+	content:"";
+	position:absolute;
+	top:2px;
+	bottom:2px
+}
+.mc-tooltip:after{
+	right:0;
+	left:0;
+	border:2px solid #2d0a63;
+	-webkit-border-image:-webkit-gradient(linear,left top,left bottom,from(rgba(80,0,255,.31)),to(rgba(40,0,127,.31))) 1;
+	-webkit-border-image:-webkit-linear-gradient(rgba(80,0,255,.31),rgba(40,0,127,.31)) 1;
+	border-image:-webkit-gradient(linear,left top,left bottom,from(rgba(80,0,255,.31)),to(rgba(40,0,127,.31))) 1;
+	border-image:linear-gradient(rgba(80,0,255,.31),rgba(40,0,127,.31)) 1
+}
+.mc-tooltip>.mc-tooltip-description{
+	font-size:12px;
+	display:block
+	;margin-top:4px
+}
+
+
+
+@font-face {
+  font-family: Minecraft;
+  src: url(Minecraftia-Regular.ttf);
+}
+
+body{
+	background-color:#282d36;
+}
+
+.hoverdiv{
+
+	text-align:left;
+	position:fixed;
+	top:0;
+	left:0;
+	background-color:#100010;
+	background-color:rgba(16,0,16,.94);
+	color:#fff;
+	padding:13px;
+	font-family:Minecraft;
+	font-size:13px;
+	word-spacing:4px;
+	white-space:nowrap;
+	line-height:20px;
+	text-shadow:2px 2px 0 #3f3f3f;
+	margin:10px 4px;
+	pointer-events:none;
+	z-index:99
+}
+.hoverdiv:before{
+	right:-2px;
+	left:-2px;
+	border-style:none solid;
+	border-color:rgba(16,0,16,.94)
+}
+.hoverdiv:after,#hoverdiv:before{
+	content:"";
+	position:absolute;
+	top:2px;
+	bottom:2px
+}
+.hoverdiv:after{
+	right:0;
+	left:0;
+	border:2px solid #2d0a63;
+	-webkit-border-image:-webkit-gradient(linear,left top,left bottom,from(rgba(80,0,255,.31)),to(rgba(40,0,127,.31))) 1;
+	-webkit-border-image:-webkit-linear-gradient(rgba(80,0,255,.31),rgba(40,0,127,.31)) 1;
+	border-image:-webkit-gradient(linear,left top,left bottom,from(rgba(80,0,255,.31)),to(rgba(40,0,127,.31))) 1;
+	border-image:linear-gradient(rgba(80,0,255,.31),rgba(40,0,127,.31)) 1
+}
+
+.hoverdiv {
+  display: none;
+}
+
+.buzerak:hover .hoverdiv {
+  display: block;
 }

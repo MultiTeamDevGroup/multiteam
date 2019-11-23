@@ -1,0 +1,37 @@
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<link rel="stylesheet" type="text/css" href="test.css">
+
+<div id="hoverdiv">WE ARE BETTER THAN THE DISCORD'S DEVS </div>
+
+<script>
+const cursor = document.querySelector('#hoverdiv');
+    var isin = false;
+    document.addEventListener('mousemove', e => {
+        $('#buzerak').mouseover(function() {
+            isin = true;
+        });
+        $('#buzerak').mouseout(function() {
+            isin = false;
+        });
+        if (isin) {
+                cursor.setAttribute("style", "top: " + e.pageY + "; left: " + e.pageX + "; display: block;")
+        } else {
+                cursor.setAttribute("style", "top: " + e.pageY + "; left: " + e.pageX + "; display: none;")
+        }
+    });
+	</script>
+
+	<script>
+		function show() {
+		document.getElementById('hoverdiv').style.visibility = "visible";
+		}
+		function hide() {
+		document.getElementById('hoverdiv').style.visibility = "hidden";
+		}
+
+	</script>
+
+<a><img class="book" id="buzerak" src="images/creative_tab_icon.png"></a>
