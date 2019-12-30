@@ -1,8 +1,6 @@
 body {
 	background-color: #272727;
 	##background: url(https://i.imgur.com/zUp6vU7.jpg);
-	background-size: cover;
-	background-attachment: fixed;
 	height: 100vh;
 	font-family: "Trebuchet MS";
 	color: #ffff;

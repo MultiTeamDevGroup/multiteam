@@ -1,10 +1,11 @@
 @font-face {
   font-family: Minecraft;
   src: url(Minecraftia-Regular.ttf);
+  url:(images/nether_bricks.png);
 }
 
 body{
-	background-color:#282d36;
+	background:;
 }
 
 #hoverdiv{
@@ -49,8 +50,12 @@ body{
 	border-image:linear-gradient(rgba(80,0,255,.31),rgba(40,0,127,.31)) 1
 }
 
-img:hover + #hoverdiv {
-    display: block;
+#hoverdiv {
+  display: none;
+}
+
+.buzerak:hover .hoverdiv {
+  display: block;
 }
 
 .book{
@@ -62,4 +67,85 @@ img:hover + #hoverdiv {
 
 .book:hover{
 	box-shadow: 0 0 10px #0042ad;
+}
+
+.box{
+	background-image: url("images/book/book_1.svg");
+	background-repeat: no-repeat;
+	height:100px;
+	width:100px;
+	image-rendering: pixelated;
+	
+}
+
+.box:hover{
+	animation:book 1s ;
+	animation-fill-mode:forwards;
+}
+
+@keyframes book {
+    0% {
+		background-image: url("images/book/book_1.svg");
+	}
+	20% {
+		background-image: url("images/book/book_2.svg");
+	}
+	40% {
+		background-image: url("images/book/book_3.svg");
+	}
+	60% {
+		background-image: url("images/book/book_4.svg");
+	}
+	80% {
+		background-image: url("images/book/book_5.svg");
+	}
+    100% {
+		background-image: url("images/book/book_5.svg");
+	}
+}
+
+.totem{
+	background-image: url("images/book/totem_of_undying.svg");
+	background-repeat: no-repeat;
+	height:100px;
+	width:100px;
+	image-rendering: pixelated;
+	animation:totem 7s;
+	border: 8px solid rgba(44, 111, 219,1);
+	position:relative;
+}
+
+.totem_anim{
+	margin-left:100px;
+	height:300px;
+	width:300px;
+	image-rendering: pixelated;
+	border: 8px solid rgba(44, 111, 219,1);
+	
+}
+
+.totem:hover{
+	
+
+}
+
+@keyframes totem {
+    0% {
+		transform: scale(0);
+		top:-50;
+		left:-50;
+		-webkit-transform: rotate(0deg);
+	}
+	50% {
+		transform: scale(1);
+		top:50;
+		left:50;
+		-webkit-transform: rotate(180deg);
+	}
+    100% {
+		transform: scale(0);
+		top:200;
+		left:200;
+		-webkit-transform: rotate(360deg);
+	}
 }
