@@ -74,6 +74,11 @@ div{
 	height:600px;
 	
 }
+.AppLight2{
+	background-color:#404040;
+	height:600px;
+	
+}
 .AppHeader{
 background: linear-gradient(90deg,#008ce2, #404040);
 height:50px;
@@ -235,7 +240,47 @@ padding-left:20px;
 	width:280px;
 	background: linear-gradient(90deg, rgba(13, 13, 13, 1), rgba(13, 13, 13, 1), rgba(13, 13, 13, 0));
 }
+#QUI_Button{
+	left:100px;
+	top:100px;
+	position:absolute;
+	border-radius: 0px;
+	padding: 1rem;
+	font-size: 1rem;
+	padding: .5rem 3rem;
+	box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+	border: solid 4px transparent;
+	background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(90deg, #008ce2,#262626);
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	box-shadow: 2px 1000px 1px #262626 inset;
+	color:white;
+	font-family: "Trebuchet MS";
+	transition:.5s;
+	transition-timing-function: ease-in-out;
+}
 
+
+#QUI_Button:hover{
+	left:100px;
+	top:100px;
+	position:absolute;
+	border-radius: 0px;
+	padding: 1rem;
+	font-size: 1rem;
+	padding: .5rem 3rem;
+	box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+	border: solid 4px transparent;
+	background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(90deg, #008ce2, #00c8e2);
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	box-shadow: 2px 1000px 1px #262626 inset;
+	color:white;
+	font-family: "Trebuchet MS";
+	box-shadow: 0 0 15px rgba(130, 207, 255, .5);
+	text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+	
+}
 
 #b_common_blue{outline:0;border-radius: 5px; height: 42px; background: rgba(45,45,45,1); border: 8px solid rgba(0,0,0,0);font-size:17px;color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;transition: .5s ease;}
 #b_common_blue:hover{cursor: pointer;outline:0; height: 42px; background: #2d2d2d; border: 8px solid #0042ad; font-size:17px; color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;background: #0042ad;text-shadow: 0 0 5px #ffff;box-shadow: 0 0 10px #0042ad;transition: .5s ease;}
