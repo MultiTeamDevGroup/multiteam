@@ -1,0 +1,130 @@
+<head>
+
+	<title>QplayOS - Qui v0.2</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<script src="https://kit.fontawesome.com/ecf1eef1d8.js"></script>
+	<link rel="icon" href="images/settings_icon.png">
+</head>
+
+<body background="images/bg_2.png">
+
+		<script>
+			var a=2;
+			function nextBackground() {
+			if (a>=11) {a=1;}else {a=a+1;}
+			document.body.style.backgroundImage = "url('images/panorama/"+a+".png')";
+			}
+		</script>
+		<script>
+			var b=1;
+			function nextPainting() {
+			if (b>=24) {b=1;}else {b=b+1;}
+			document.querySelector("#painting").src = "images/items/paintings/"+b+".png"
+			document.querySelector("#paintingname") = ""+b+""
+			}
+			function prevPainting() {
+			if (b<=1) {b=24;}else {b=b-1;}
+			document.querySelector("#painting").src = "images/items/paintings/"+b+".png"
+			document.querySelector("#paintingname") = ""+b+""
+			}
+		</script>
+		<script>
+			var slider = document.getElementById("DiskSpace1");
+			var disk2 = document.getElementById("DiskSpace2");
+			var disk3 = document.getElementById("DiskSpace3");
+			var output1 = document.getElementById("diskout1");
+			var output2 = document.getElementById("diskout2");
+			var output3 = document.getElementById("diskout3");
+			output1.innerHTML = slider.value;
+			output2.innerHTML = disk2.value;
+			output3.innerHTML = disk3.value;
+
+			// Update the current slider value (each time you drag the slider handle)
+			slider.oninput = function() {
+			output1.innerHTML = this.value;
+			output2.innerHTML = this.value;
+			output3.innerHTML = this.value;
+			}
+		</script>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="hover.js"></script>
+		
+		<br><br><br>
+		<div id="tooltipjs" class="mc-tooltip">Test</div>
+		
+		<div class="container2"><br><div align="center" id="logo"><img alt="Logo of Qui" draggable="false" src="images/Qui_logo.png" style="width:350px;height:192px;"><br><br>Sooo, when i started the "redesign" and named it Qui, it wasnt really modern looking, so i just started redesigning it again... but not completely. just modernized it. So i name it Qui v0.2<br><br><!--button onclick="nextBackground()" id="b_common_smol_blue">Next background</button><br><br><a href="https://king-of-creepers.github.io/multiteam.github.io/index" id="b_common_smol_blue">Back to MultiTeam page</a><!--a href="ghostpepper.html" id="b_common_smol_blue"><img id="gp_logo" src="images/gp_logo.png"></a--></div></div>
+		<br><br><br>
+		
+		
+		
+			<div class="containerBlur">
+				<div class="containerHeader"><span class="containerHeaderTitle">File Browser</span><span class="containerHeaderIcons"><img src="images/App_desk.png" class="app_header_icon">  <img src="images/App_window.png" class="app_header_icon"> <img src="images/App_close.png" class="app_header_icon"></span></div>
+				<div class="AppLight">
+					<div class="AppHeader"><input class="APPfilepath" type="text" name="FilePath" value="System\..."></div>
+						<div class="diskname_container">
+							<img src="images/Disk_Icon.png" class="disk_icon">
+							<div class="diskname">C:\</div>
+						</div><input type="range" min="1" max="100" value="70" class="DiskSpace" id="DiskSpace1"><span class="DiskInfo" id="diskout1">X GB used, X GB free</span><br><br><br><br><br><br><br>
+						<div class="diskname_container">
+							<img src="images/Disk_Icon.png" class="disk_icon">
+							<div class="diskname">D:\</div>
+						</div><input type="range" min="1" max="100" value="99" class="DiskSpace" id="DiskSpace2"><span class="DiskInfo" id="diskout2">X GB used, X GB free</span><br><br><br><br><br><br><br>
+						<div class="diskname_container">
+							<img src="images/Disk_Icon.png" class="disk_icon">
+							<div class="diskname">E:\</div>
+						</div><input type="range" min="1" max="100" value="30" class="DiskSpace" id="DiskSpace3"><span class="DiskInfo" id="diskout3">X GB used, X GB free</span>
+					
+				<br></div><span class="AppBlur"><br><br></span></div><span class="darkenPanel"><div class="CurrentSidepanelLocation">This PC</div><br><div class="SidepanelLocation">Documents</div><br><div class="SidepanelLocation">Images</div><br><div class="SidepanelLocation">Videos</div><br><div class="SidepanelLocation">Musics</div><br><div class="SidepanelLocation">Drive C:\</div><br><div class="SidepanelLocation">Drive D:\</div><br><div class="SidepanelLocation">Drive E:\</div><br><div class="SidepanelLocation">Folder X</div></span>
+				
+			</div>
+			
+			<br><br><br><br><br><br>
+		<div class="containerApp"><br><br><br><br></div>
+		<!--<div class="container">
+			
+			<br><br>
+			
+			
+			
+			<div class="tab">
+				<button class="tablinks" onclick="openCity(event, 'ExpandingVanilla')">-</button>
+				<button class="tablinks" onclick="openCity(event, 'First')">-</button>
+				<button class="tablinks" onclick="openCity(event, 'Second')">-</button>
+				<button class="tablinks" onclick="openCity(event, 'Third')">-</button>
+				<button class="tablinks" onclick="openCity(event, 'Fourth')">-</button>
+				<button class="tablinks" onclick="openCity(event, 'Fifth')">-</button>
+			</div>
+
+			<div id="ExpandingVanilla" class="tabcontent">
+				
+				<br><br>
+			</div>
+
+			
+			<script>
+			function openCity(evt, cityName) {
+			var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+						}
+					tablinks = document.getElementsByClassName("tablinks");
+					for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" active", "");
+						}
+				document.getElementById(cityName).style.display = "block";
+				evt.currentTarget.className += " active";
+			}
+			</script>
+			
+			
+			<br><br><br><br><br><br>
+		</div-->
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		
+	<div class="copyright">
+		<br><br>
+			2020 © QplayOS
+		<br><br><br>
+	</div>
+</body>

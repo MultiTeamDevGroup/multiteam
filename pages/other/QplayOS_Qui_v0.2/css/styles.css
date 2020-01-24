@@ -1,0 +1,544 @@
+body {
+	background-color: #272727;
+	##background: url(https://i.imgur.com/zUp6vU7.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+	font-family: "Trebuchet MS";
+	color: #ffff;
+	transition: background-image 1s;
+	user-select: none;
+}
+div{
+	display: block;
+}
+
+#logo {
+	cursor: context-menu;
+}
+.containerBlur {
+	width: 1110px;
+	height:640px;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);
+	position: relative;
+	background: inherit;
+	overflow: hidden;
+	border-radius: 5px;
+	z-index: 1;
+	margin: auto;
+	border: 1px solid rgba(0, 0, 0, .5);
+}
+.containerBlur:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px rgba( 0, 0, 0, .9);
+	filter: blur(10px);
+	margin: -20px;
+	z-index: -1;
+	
+}
+.container2 {
+	width: 50rem;
+	
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);
+	position: relative;
+	background: inherit;
+	overflow: hidden;
+	border-radius: 5px;
+	z-index: 1;
+	text-align: center;
+	margin: auto;
+}
+.container2:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px rgba( 0, 0, 0, .5);
+	filter: blur(10px);
+	margin: -20px;
+	z-index: -1;
+}
+
+.AppLight{
+	background-color:#404040;
+	margin-right:300px;
+	height:600px;
+	
+}
+.AppHeader{
+background: linear-gradient(90deg,#008ce2, #404040);
+height:50px;
+max-height:50px;
+font-size:30px;
+padding-top:10px;
+padding-left:20px;
+}
+.AppDark{
+	background-color:#262626;
+	
+}
+.darkenPanel{
+	background-color:rgba(3, 3, 3, .4);
+	float:right;
+	width:300px;
+	height:597px;
+	bottom:597px;
+	position: relative;
+	left:-370px;
+	z-index:2;
+}
+.AppBlur {
+	background-color:rgba(3, 3, 3, .4);
+	float:right;
+	width:300px;
+	height:600px;
+	bottom:600px;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .1);
+	position: relative;
+	background: inherit;
+	overflow: hidden;
+	z-index: 1;
+	margin:auto;
+}
+.AppBlur:before {
+
+	content: "";
+	position: absolute;
+	background: inherit;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px rgba( 0, 0, 0, 100);
+	filter: blur(30px);
+	margin: -50px;
+	z-index: -1;
+	}
+.containerHeader{
+	margin-right:10px;
+	margin-bottom:10px;
+	margin-top:10px;
+}
+.containerHeaderTitle{
+	width:40%;
+	text-align: left;
+	margin-left:10px;
+	margin-bottom:10px;
+	margin-top:10px;
+}
+.containerHeaderIcons{
+	width:200px;
+	padding-left:930px;
+	text-align: right;
+	margin-bottom:10px;
+	margin-top:10px;
+}
+.app_header_icon{
+	height:20px;
+	width:20px;
+}
+
+.APPfilepath{
+	color:#fff;
+	font-size:30px;
+	padding-top:3px;
+	margin-bottom:15px;
+	padding-left:20px;
+	background-color:#7f7f7f;
+	border: 2px solid #262626;
+}
+
+.disk_icon{
+	width:68px;
+	height:88px;
+}
+
+.diskname_container {
+	float:left;
+	top:30px;
+	left:50px;
+	position: relative;
+	text-align: center;
+	color: white;
+}
+.diskname{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -70%);
+	font-size:30px;
+	color:#008ce2;
+}
+.DiskSpace{
+	position:relative;
+	top:60px;
+	left:70px;
+	-webkit-appearance: none;
+	appearance: none;
+	width: 400px;
+	height: 35px;
+	background-color:#2d2d2d;
+	outline: none;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+	border: 2px solid #262626;
+	border-radius:5px;
+	overflow: hidden;
+}
+.DiskSpace::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px; /* 1 */
+    height: 40px;
+	background: #5bc1ff;
+    box-shadow: -100vw 0 0 100vw #5bc1ff;
+}
+.DiskSpace::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 31px;
+	height: 31px;
+	background: #5bc1ff;
+	cursor: pointer;
+}
+
+.DiskInfo{
+	position:relative;
+	left:-330px;
+	top:20px;
+}
+
+.CurrentSidepanelLocation{
+	position:relative;
+	right:50px;
+	top:100px;
+	padding-top:5px;
+	height:25px;
+	width:350px;
+	background: linear-gradient(90deg,rgba(13, 13, 13, 0), rgba(13, 13, 13, 1), rgba(13, 13, 13, 1));
+}
+.SidepanelLocation{
+	position:relative;
+	top:100px;
+	left:0px;
+	padding-top:5px;
+	padding-left:20px;
+	height:25px;
+	width:280px;
+	background: linear-gradient(90deg, rgba(13, 13, 13, 1), rgba(13, 13, 13, 1), rgba(13, 13, 13, 0));
+}
+
+
+#b_common_blue{outline:0;border-radius: 5px; height: 42px; background: rgba(45,45,45,1); border: 8px solid rgba(0,0,0,0);font-size:17px;color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;transition: .5s ease;}
+#b_common_blue:hover{cursor: pointer;outline:0; height: 42px; background: #2d2d2d; border: 8px solid #0042ad; font-size:17px; color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;background: #0042ad;text-shadow: 0 0 5px #ffff;box-shadow: 0 0 10px #0042ad;transition: .5s ease;}
+#b_common_blue:active{cursor: pointer;outline:0; height: 42px;background:rgba(44, 111, 219,1); border: 8px solid rgba(44, 111, 219,1); font-size:17px; color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;text-shadow: 0 0 20px #ffff;box-shadow: 0 0 30px #0042ad;transition: .01s ease;}
+
+#b_selective_yellow{outline:0;border-radius: 5px; height: 42px; background: rgba(45,45,45,1); border: 8px solid rgba(0,0,0,0);font-size:17px;color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;transition: .5s ease;}
+#b_selective_yellow:hover{cursor: pointer;outline:0; height: 42px; background: rgba(255,209,49,1); border: 8px solid rgba(255,209,49,1); font-size:17px; color: #000; text-align: center;font-family:"Trebuchet MS";text-decoration: none;text-shadow: 0 0 5px #000;box-shadow: 0 0 10px rgba(255,209,49,1);transition: .5s ease;}
+
+#b_common_smol_blue{outline:0;border-radius: 5px; height: 30px; background: rgba(45,45,45,1); border: 6px solid rgba(0,0,0,0);font-size:10px;color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;transition: .5s ease;}
+#b_common_smol_blue:hover{cursor: pointer;outline:0; height: 30px; border: 6px solid #0042ad; font-size:10px; color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;background: #0042ad;text-shadow: 0 0 5px #ffff;box-shadow: 0 0 10px #0042ad;transition: .5s ease;}
+#b_common_smol_blue:active{cursor: pointer;outline:0; height: 30px;background:rgba(44, 111, 219,1); border: 6px solid rgba(44, 111, 219,1); font-size:10px; color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;text-shadow: 0 0 5px #ffff;box-shadow: 0 0 10px #0042ad;transition: .01s ease;}
+
+.invslot {
+	cursor: context-menu;
+    position: relative;
+    display: inline-block;
+    background: #8B8B8B no-repeat center center / 32px 32px;
+    border: 2px solid;
+    border-color: #373737 #FFF #FFF #373737;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    line-height: 1;
+    text-align: left;
+    vertical-align: bottom;
+}
+.invslot:hover {
+background: rgba(196,196,196,1) no-repeat center center / 32px 32px;
+}
+
+.invslot-large {
+	cursor: context-menu;
+    padding: 8px;
+	position: relative;
+    display: inline-block;
+    background: #8B8B8B no-repeat center center / 32px 32px;
+    border: 2px solid;
+    border-color: #373737 #FFF #FFF #373737;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    line-height: 1;
+    text-align: left;
+    vertical-align: bottom;
+}
+.invslot-large:hover {
+background: rgba(196,196,196,1) no-repeat center center / 32px 32px;
+}
+
+.mcui {
+	margin-top:6px;
+	margin-bottom:6px;
+	cursor: context-menu;
+    display: inline-block;
+    position: relative;
+    background-color: #C6C6C6;
+    border: 2px solid;
+    border-color: #DBDBDB #5B5B5B #5B5B5B #DBDBDB;
+	padding: 6px 6px;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: bottom;
+}
+
+
+.mcui-output {
+	cursor: context-menu;
+    margin-top: 28px;
+}
+
+.mcui-arrow {
+	cursor: context-menu;
+    background: url(https://minecraft.gamepedia.com/media/8/86/Grid_layout_Arrow_%28small%29.png) no-repeat;
+    width: 32px;
+    height: 26px;
+    margin: 40px 4px 0;
+}
+
+#craft_item {
+	
+}
+
+.crossbow_icon {
+	background-image: url("images/items/item_crossbow_0.png");
+	width: 20px;
+	height: 20px;
+}
+.crossbow_icon:hover {
+	animation:crossbowpullup 5s ease-in-out 0s;
+}
+
+@keyframes crossbowpullup {
+    0% {
+		background-image: url("images/items/item_crossbow_0.png");
+		width: 20px;
+		height: 20px;
+	}
+    22% {
+		background-image: url("images/items/item_crossbow_1.png");
+		width: 20px;
+		height: 20px;
+	}
+    45% {
+		background-image: url("images/items/item_crossbow_2.png");
+		width: 20px;
+		height: 20px;
+	}
+    70% {
+		background-image: url("images/items/item_crossbow_3.png");
+		width: 20px;
+		height: 20px;
+	}
+	80% {
+		background-image: url("images/items/item_crossbow_3.png");
+		width: 20px;
+		height: 20px;
+	}
+    100% {
+		background-image: url("images/items/item_crossbow_4.png");
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: rgba(44, 111, 219,0.1);
+}
+
+/* Style the buttons inside the tab */
+.tab button {outline:0;height: 42px; background: rgba(45,45,45,1); border: 8px solid rgba(0,0,0,0);font-size:17px;color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;transition: .5s ease;}
+
+/* Change background color of buttons on hover */
+.tab button:hover {cursor: pointer;outline:0; height: 42px; background: #2d2d2d; border: 8px solid #0042ad; font-size:17px; color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;background: #0042ad;text-shadow: 0 0 5px #ffff;box-shadow: 0 0 10px #0042ad;transition: .5s ease;}
+
+/* Create an active/current tablink class */
+.tab button.active {cursor: pointer;outline:0; height: 42px;background:rgba(44, 111, 219,1); border: 8px solid rgba(44, 111, 219,1); font-size:17px; color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;text-shadow: 0 0 20px #ffff;box-shadow: 0 0 30px #0042ad;transition: .01s ease;}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: rgba(44, 111, 219,0.1);
+}
+
+
+
+.copyright {
+	width: 100%;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);
+	position: relative;
+	background: inherit;
+	overflow: hidden;
+	border-radius: 5px;
+	z-index: 1;
+	text-align: center;
+	margin: auto;
+}
+.copyright:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px rgba( 0, 0, 0, .5);
+	filter: blur(10px);
+	margin: -20px;
+	z-index: -1;
+}
+
+#painting{
+	height:300px;
+	max-height:300px;
+	image-rendering: pixelated;
+	transition: opacity 1s ease-in-out;
+	transition-timing-function: ease-in-out;
+	box-shadow: 0 0 10px rgba(0,0,0,1)
+}
+
+#content_image{
+	height:300px;
+	max-height:300px;
+	image-rendering: pixelated;
+	transition: opacity 1s ease-in-out;
+	box-shadow: 0 0 10px rgba(0,0,0,1)
+}
+#content_image2{
+	max-width:700;
+	max-height:300px;
+	image-rendering: pixelated;
+	transition: opacity 1s ease-in-out;
+	box-shadow: 0 0 10px rgba(0,0,0,1)
+}
+
+.mc-tooltip{
+	display:none;
+	text-align:left;
+	position:fixed;
+	top:0;
+	left:0;
+	background-color:#100010;
+	background-color:rgba(16,0,16,.94);
+	color:#fff;
+	padding:6px;
+	font-family:Minecraft;
+	font-size:16px;
+	word-spacing:4px;
+	white-space:nowrap;
+	line-height:20px;
+	text-shadow:2px 2px 0 #3f3f3f;
+	margin:2px 4px;
+	pointer-events:none;
+	z-index:99
+}
+.mc-tooltip:before{
+	right:-2px;
+	left:-2px;
+	border-style:none solid;
+	border-color:rgba(16,0,16,.94)
+}
+.mc-tooltip:after,.mc-tooltip:before{
+	content:"";
+	position:absolute;
+	top:2px;
+	bottom:2px
+}
+.mc-tooltip:after{
+	right:0;
+	left:0;
+	border:2px solid #2d0a63;
+	-webkit-border-image:-webkit-gradient(linear,left top,left bottom,from(rgba(80,0,255,.31)),to(rgba(40,0,127,.31))) 1;
+	-webkit-border-image:-webkit-linear-gradient(rgba(80,0,255,.31),rgba(40,0,127,.31)) 1;
+	border-image:-webkit-gradient(linear,left top,left bottom,from(rgba(80,0,255,.31)),to(rgba(40,0,127,.31))) 1;
+	border-image:linear-gradient(rgba(80,0,255,.31),rgba(40,0,127,.31)) 1
+}
+.mc-tooltip>.mc-tooltip-description{
+	font-size:12px;
+	display:block
+	;margin-top:4px
+}
+
+
+
+@font-face {
+  font-family: Minecraft;
+  src: url(Minecraftia-Regular.ttf);
+}
+
+body{
+	background-color:#282d36;
+}
+
+.hoverdiv{
+
+	text-align:left;
+	position:fixed;
+	top:0;
+	left:0;
+	background-color:#100010;
+	background-color:rgba(16,0,16,.94);
+	color:#fff;
+	padding:13px;
+	font-family:Minecraft;
+	font-size:13px;
+	word-spacing:4px;
+	white-space:nowrap;
+	line-height:20px;
+	text-shadow:2px 2px 0 #3f3f3f;
+	margin:10px 4px;
+	pointer-events:none;
+	z-index:99
+}
+.hoverdiv:before{
+	right:-2px;
+	left:-2px;
+	border-style:none solid;
+	border-color:rgba(16,0,16,.94)
+}
+.hoverdiv:after,#hoverdiv:before{
+	content:"";
+	position:absolute;
+	top:2px;
+	bottom:2px
+}
+.hoverdiv:after{
+	right:0;
+	left:0;
+	border:2px solid #2d0a63;
+	-webkit-border-image:-webkit-gradient(linear,left top,left bottom,from(rgba(80,0,255,.31)),to(rgba(40,0,127,.31))) 1;
+	-webkit-border-image:-webkit-linear-gradient(rgba(80,0,255,.31),rgba(40,0,127,.31)) 1;
+	border-image:-webkit-gradient(linear,left top,left bottom,from(rgba(80,0,255,.31)),to(rgba(40,0,127,.31))) 1;
+	border-image:linear-gradient(rgba(80,0,255,.31),rgba(40,0,127,.31)) 1
+}
+
+.hoverdiv {
+  display: none;
+}
+
+.buzerak:hover .hoverdiv {
+  display: block;
+}
