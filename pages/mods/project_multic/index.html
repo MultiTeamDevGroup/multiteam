@@ -11,7 +11,7 @@
 		<script>
 			var a=2;
 			function nextBackground() {
-			if (a>=11) {a=1;}else {a=a+1;}
+			if (a>=14) {a=1;}else {a=a+1;}
 			document.body.style.backgroundImage = "url('images/panorama/"+a+".png')";
 			}
 		</script>
@@ -42,14 +42,18 @@
 				This mod adds the things we've been missing from<br>Minecraft for a long time, and even some new exciting features!
 			<!--br><a href="index.html" id="b_common_blue"> <img src="https://i.imgur.com/1LzLTq1.png"> Multicraft</a-->
 			<br><br>
-				Last release: 2020.01.02  [year.month.day]
+				Last release: 2020.01.25  [year.month.day]
 			<br>
 				(Note that this version is still in alpha state!)
 			<br><br>
 			
 				<a href="https://www.curseforge.com/minecraft/mc-mods/mt-multicraft/files/2853589" id="b_common_blue"> <i class="fas fa-file-download"></i> Download</a><br><br>
 				<img draggable="false" src="https://cf.way2muchnoise.eu/full_285334_downloads.svg">
-			<br><br><h3>Credits:</h3>-Rellit: Coding<br>-MaroonShaded: Coding<br>-IAmGama: Textures<br>-King_of_Creepers: Textures/Models/ideas<br><br><br><br>
+			<br><br><h3>Credits:</h3>-Rellit: Coding<br>-MaroonShaded: Coding<br>-IAmGama: Textures<br>-King_of_Creepers: Textures/Models/ideas
+			<br><br>
+			<h3>DISCORD</h3>
+				If you want to see the development, or just to see the plans, i recomend you to join our <div class="tooltipDC"><a class="DClink" href="http://discord.gg/sTdenHy">discord</a><span class="tooltiptextDC">CLICK TO JOIN!!!</span></div> server!
+			<br><br><br><br>
 			
 				<h3>You can find the features here:</h3>
 			<br><br>
@@ -57,10 +61,10 @@
 			
 			
 			<div class="tab">
-				<button class="tablinks" onclick="openCity(event, 'ExpandingVanilla')">Expanding vanilla</button>
-				<button class="tablinks" onclick="openCity(event, 'First')">-</button>
-				<button class="tablinks" onclick="openCity(event, 'Second')">-</button>
-				<button class="tablinks" onclick="openCity(event, 'Third')">-</button>
+				<button class="tablinks" onclick="openCity(event, 'ExpandingVanilla')">Expanding Vanilla</button>
+				<button class="tablinks" onclick="openCity(event, 'VanillaRepair')">Repaired Vanilla</button>
+				<button class="tablinks" onclick="openCity(event, 'PlansTab')">Plans</button>
+				<button class="tablinks" onclick="openCity(event, 'BuzzyerPlans')">Plans: Bee edition</button>
 				<button class="tablinks" onclick="openCity(event, 'Fourth')">-</button>
 				<button class="tablinks" onclick="openCity(event, 'Fifth')">-</button>
 			</div>
@@ -238,22 +242,352 @@
 					<br>
 				<br>
 					<img draggable="false" id="content_image" src="images/game/plar_and_panda_pelts.png">
+					
+				<br><br><br>
+				
+				<div class="ALERT"><h3>Warning!</h3><br>These features below from here are not contained by any public release of multicraft.<br>They will be available in the next update.<br><br></div>
+				
+				<br><br><br>
+				<h3>Ocelot pelt</h3>
+					<p>Ocelots, well they are boring since the village and pillage update made them useless. Now they drop you something: Their pelts. Just like with bear pelts, you can craft them to normal leather, but this time you will need 2 pelts to craft 1 leather.</p><br>
+					<span class="mcui">
+					<span class="invslot"><img id="mc_item" draggable="false" src="images/items/item_pelt_ocelot.png"></span>
+					</span>
+					<br>
+				<br>
+					<img draggable="false" id="content_image" src="images/game/ocelot_pelt.png">
+				<br><br>
+				
+				<br><br><br>
+				<h3>Ruby</h3>
+					<p>Yes, the diamond and emerald is enough... for the overworld... How about being in a new dimension? Ruby can be found in the nether ceiling (Not really high, but high enough). Just like the other gems it drops one item when mined, fortune works as well, and you can craft it into block form. Traveler, keep your eyes on this shiny orb, somewhen you will find out how to use it...</p><br>
+					<span class="mcui">
+					<span class="invslot"><img id="mc_item" draggable="false" src="images/items/block_ruby_ore.png" style="max-width:32px;max-height:32px;"></span>
+					<span class="invslot"><img id="mc_item" draggable="false" src="images/items/item_ruby.png"></span>
+					<span class="invslot"><img id="mc_item" draggable="false" src="images/items/block_ruby.png" style="max-width:32px;max-height:32px;"></span>
+					</span>
+					<br>
+				<br>
+					<img draggable="false" id="content_image" src="images/game/ruby_gen.png">
+				<br><br>
+				
+				<br><br><br>
+				<h3>Parrots And The Bats!</h3>
+					<p>No, not the advancement... They now will drop something, you probably need. So what they drop? Parrots now will give you their meat, wich you can cook and eat! The bats will give you their wings, wich you will be able to use for brewing a levitation potion in the newar future.</p><br>
+					<span class="mcui">
+					<span class="invslot"><img id="mc_item" draggable="false" src="images/items/item_parrot_meat.png"></span>
+					<span class="invslot"><img id="mc_item" draggable="false" src="images/items/item_bat_wing.png"></span>
+					</span>
+					<br>
+				<br>
+					<img draggable="false" id="content_image" src="images/game/parrotz_and_the_batz.png">
 				<br><br>
 			</div>
-
-
-
-
-
-			<div id="theUpgradedAquaticsa" class="tabcontent">
-				<h3>The Upgraded Aquatics [1.13]</h3>
-				<p>"The Upgraded Aquatics" tab contains all the features that connects somehow to the 1.13 update, alias the "The Update Aquatic". This dosen't mean that the mod is being released for this version, just has some features that could modify this update's content, or expand on it. </p> 
+			
+			
+			
+			
+			
+			
+			<div id="VanillaRepair" class="tabcontent">
+			<h3>"Repairing minecraft 101"</h3>
+					<p>Int this section of the webpage, you will find features of multicraft that aims on fixing and/or changing some stuff around the base game instead of adding new content. So here will be some terrain generation tweaks, bug-fixes, and maybe even sugar cane will actually grow faster ons sand</p>
+				<br><br>
+				
 			</div>
+			
+			
+			
+			
+			
+			
+			<div id="PlansTab" class="tabcontent">
+			<h3>Plans and Upcoming features of Multicraft</h3>
+					<p>Yes, you heared right. Instead of inviting you to our discord server (again), we list our plans here.</p>
+				<br><br><br>
+			<h3>Emerald Apple</h3>
+					<p>the emerald apple. this item was made into the mod, so lets implement it here. When you eat this apple. it gives you a xp levelup. no matters what leve you are on. like, you have 34 levels, eat the apple, and now you have 35. but if you just have 1 level, and eat it, you will have 2 levels. its being crafted like golden apple, but with emeralds.</p><br><br>
+					<img draggable="false" id="content_image" src="images/plans/emerald_apple.png">
+				<br><br><br>
+			<h3>Wither Bone</h3>
+					<p>the wither bone and wither bone meal.<br>
+						-wither skeletons drop wither bones when they die.<br>
+						-the wither bone meal crafted from the wither bone, just like normal bones.<br>
+						-and a new thing to it: if you combine the wither bone meal with awkward potion in the brewing stand, you will get wither II potion<br>
+						-the wither bonemeal used to speed up the growth of nether warts (like normal bone meal do with normal plants)</p><br><br>
+					<img draggable="false" id="content_image" src="images/plans/witherbone.png">
+				<br><br><br>
+			<h3>Ender Pearl Shard</h3>
+					<p>the ender pearl shard. dropped by ender mites, only when the player kills it. always drop 1.</p><br><br>
+					<img draggable="false" id="content_image" src="images/plans/pearlshard.png">
+				<br><br><br>
+			<h3>Chese</h3>
+					<p>the chese. crafted with 1 milk bucket. you get back the empty bucket after crafting. and it restores 2 and a half food bars</p><br><br>
+					<img draggable="false" id="content_image" src="images/plans/chese.png">
+				<br><br><br>
+			<h3>Chain</h3>
+					<p>the chain item. planned functions for it:<br>
+						-used to craft chain armor<br>
+						-placeable item, for extending lanterns and such<br>
+						-you can connect minecarts with this item. right click on the first and then on the second cart, and the link is created</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/chain.png"><br><br>
+					<img draggable="false" id="content_image" src="images/plans/lantern.png">
+				<br><br><br>
+			<h3>Basalt</h3>
+					<p>previously called volcanic stone, now its called basalt<br>
+						-generates in large amounts around lava lakes in the overworld.</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/basalt.png">
+				<br><br><br>
+			<h3>Rotten Food</h3>
+					<p>the rotten/poisonous variants of plants! (just like with potato) when you use the wither bone meal on a plant instead of the normal one, for first look it does nothing, but when the grown to full, and you harvest them, you will only get the rotten item. with the melon, the next block what grows, will be normal.
+						<br>-all the poisonous items have 100% chance to compost (in the composter)</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/rottenfood.png" style="max-width:700px;height:100px;">
+				<br><br><br>
+			<h3>Glowstone feeding</h3>
+					<p>the glowstone force-feeding! you can right click with glowstone on any entity to apply 15 seconds of glowing effect on them.</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/glowfeed.png"><br><br>
+					<img draggable="false" id="content_image" src="images/plans/moreglow.png" style="max-width:700px;height:100px;">
+				<br><br><br>
+			<h3>Nether rod</h3>
+					<p>the nether rods. they work same as the end rods.</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/netherrod.png">
+				<br><br><br>
+			<h3>Fox pelts</h3>
+					<p>The Fox Pelt. red fox and snow fox drop, with a chance to get 0 or 1. just like rabbit hide, you can use this to make normal leather. but instead of 4, you will need only 2, because foxes are larger than rabbits.</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/foxpelt.png">
+				<br><br><br>
+			<h3>Dolphin fin</h3>
+					<p>"Dolphin Fin", dropped by dolphins. have a 35% chance to drop this item.<br>
+						-you can eat it, restore :mc_half_food: , and you get nausea<br>
+						-you can brew potion from it, just add it to an awkward potion, and you will get a "dolphins grace potion" (this is an existing vanilla effect)</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/dol_fin.png">
+				<br><br><br>
+			<h3>Llama fur</h3>
+					<p>the llama fur was an old item, but now evolved. have types for all the llama types. 0-1 drop rate. (from left to right: brown, creamy, gray, white)
+						<br>-they can be turned into leather as well. but here is fur = 1 leather. just drop it into the crafting grid</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/lamafur.png" style="max-width:700px;height:100px;">
+				<br><br><br>
+			<h3>Trident rework</h3>
+					<p>an item called guardian spike, dropped by the elder guardians with 100% chance. why is it good? you need for tridents. And remove the trident from the drowneds.</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/tridentstuff.png">
+				<br><br><br>
+			<h3>Quartz tools</h3>
+					<p>the quartz tools. they are crafted the same way as normal tools, but instead of stick use nether brick(items) and the material is quartz
+							<br>-all of them have same durability as iron
+							<br>-they deal damage to normal mobs same as stone tools
+							<br>-they deal damage to nether mobs same as diamond tools</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/quartztools.png" style="max-width:700px;height:100px;">
+				<br><br><br>
+			<h3>Berry pies</h3>
+					<p>and the berry pies! they restore 8 food points (:mc_food: :mc_food: :mc_food: :mc_food:)
+						<br>-can be crafted from sweet berry or blue berry</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/berrypie.png">
+				<br><br><br>
+			<h3>Pyro table</h3>
+					<p>a workstation of a new villager, the pyrotechnist stable.
+					<br>-it's villager will come later
+					<br>-used to craft fireworks
+					<br>-it's gui will come later (before the villager)</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/pyrotable.png">
+				<br><br><br>
+			<h3>Pyro table functionality</h3>
+					<p>introducing the gui of the pyrotechnist table.
+						<br>the numbers:
+						<br>1-first set of input slot "input markers"
+						<br>2-second set of input slot "input markers"
+						<br>3-input set changing buttons
+						<br>4-input slots
+						<br>5-type selector board (like in the loom)
+						<br>6-output slot
+						<br>7-type buttons (like in the loom)
+						<br>How it will work:
+						the input set changing buttons will be above the input slots. click on one of them to switch between modes (sets)
+						first set:
+						if the player place a gunpowder into the first input slot, the "type buttons" will show up, and will display all possible fireworkcharge item in the game. you can hover over it, and will display the charge's infos in a form of a tooltip. and if you click on one of them, it will place the required items into the slots, if you have missing items, it will place the items in you have, but it will mark the missing items with red. like when you using the recipe book in crafting, but you have missing items.
+						second set:
+						you only need to place in the charge, a paper, and minimum 1 gunpowder. the other 2 is optional.
+						In this "mode", there will be no "type buttons"</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/pyrofunc.png">
+				<br><br><br>
+			<h3>More Armorstands</h3>
+					<p>more type of armor stands.(from left to right: the vanilla wooden one, bamboo, bone, iron bars, blaze rod)
+						<br>-they work the same as normal armor stands
+						<br>-(can be positioned with commands)
+						<br>the crafting recipe is the same for all, but instead of sticks, use the matching material</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/standies.png" style="max-width:700px;height:100px;"><br><br>
+					<img draggable="false" id="content_image" src="images/plans/item_standies.png">
+				<br><br><br>
+			<h3>Villager hats for players</h3>
+					<p>Villager hats now will be wearable by the player. You can get them by trading, from the villager that is on max level (villager with diamond badge). these are only cosmetics. they dont have durability, and have 1 armor point (:mc_half_armor:) (only for the head slot)
+						<br>image: (from left to right, in rows)
+						<br>Armorer, Butcher, Cartographer, Farmer, Fisher, Fletcher, Librarian, Shepherd, Weaponsmith</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/villihats.png">
+				<br><br><br>
+			<h3>Bamboo flute</h3>
+					<p>The bamboo flute. with a nice 3d model. it uses the flute sound that can be made with noteblocks
+						<br>-hold right click to make "music" (when holding, position the player's hands to make it look its being used, and summon some noteblock particles)
+						<br>-shift right click to load an arrow into it. IMPORTANT: you can only load posion arrows into it. (cant "store" arrows like crossbows)
+						<br>-2 times slower than normal bows</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/bamflut.png">
+				<br><br><br>
+			<h3>Better Sheep coloring</h3>
+					<p>an old feature comes back: better sheep coloring. just like in bedrock edition, when you shears a sheep's wool, the leftover wool on the sheep stays colored.</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/sheepcolor.png">
+				<br><br><br>
+			<h3>Model for the Hook</h3>
+					<p>3D fishing hook. just like in bedrock edition. just a cosmetic feature</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/3dhook.png">
+				<br><br><br>
+			<h3>Item descriptions on the hud</h3>
+					<p>from bedrock edition:
+					<br>item descriptions and enchantments show up below the items name on the hud.(descriptions shows up, but not durabiliti or attack speed/attack damage)
+					<br>-if the advanced tooltips are enabled (F3+H), the id will show up too</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/descriptionbrick.png">
+				<br><br><br>
+			<h3>Bricks and stonebricks</h3>
+					<p>a set of new block variants
+					<br>-mossy bricks: just a mossy version of the normal bricks. good for decorations
+					<br>-mycelic blocks: cobblestone, srone bricks and normal bricks. (mycelic? what dose that mean? they are infected with mycelium.) you can place mushroom on the mycelic blocks.
+					<br>Crafting:
+					<br>-the mossy brcik is a shapeless recipe, just 1 vine and a brick.
+					<br>-the mycelic blocks are not being crafted. if you place a cobblestone/stonebrick/brick on the mycelium, after 6-10 seconds, it will turn into the mycelic version. if its happening in rain, it will take only 5 seconds (no more or less).</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/bricksnstuff.png">
+				<br><br><br>
+			<h3>More Villagers</h3>
+					<p>3 new villager type!
+					<br>from left to right:
+					<br>-sushi chef: Not workstation block currently, will come in the future; It will trade kelp, fishes, and sushi (a future item)
+					<br>-pyrotechnist: Pyrotechnist table as a workstation; It will trade gunpowder, paper, fire charge, on higher levels firework stars, on the highest level expensive fireworks
+					<br>-tinkerer: Not workstation block currently, will come in the future; It will trade redstone related item such as redstone, repeaters, comparators, dispensers, observers and more (but not doors,trapdoors,buttons or pressure plates).</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/villagers.png">
+				<br><br><br>
+			<h3>Redstone engineering table</h3>
+					<p>The new tinkerer table for the new tinkerer villager. functionality coming soon.</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/engietable.png">
+				<br><br><br>
+			<h3>Sushi table</h3>
+					<p>and the sushi table. functionality coming soon</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/susstable.png">
+				<br><br><br>
+			<h3>Rice</h3>
+					<p>rice. an edible item, restores 2 food point ( :mc_food: ) grows on crop, the crop drops 4-5 rice item upon harvesting. it have same growing time as wheat. can be cooked, the cooked version restores 2.5 food point ( :mc_food: :mc_half_food: )</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/rizsa.png">
+				<br><br><br>
+			<h3>Sushi</h3>
+					<p>sushi items!
+					<br>-they will be crafted in the sushi table, when the functionality is coming.
+					<br>-maki roll (right) restores 5 food point ( :mc_food: :mc_food: :mc_half_food: ); and nigiri (left) restores 5.5 food point ( :mc_food: :mc_food: :mc_food: )</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/suss.png">
+				<br><br><br>
+			<h3>Debug-gui</h3>
+					<p>this was shown at the minecon, and i need it as a feature:
+					<br>-debug stick gui. its pretty self-explanatory. instead of always trying to figure out the controls of the stick, you can just simply right-click on a block that has stuff to change on it, and the gui opens.
+					<br>(this image is from the live show, and iirc the fotage they showed is on bedrock, thats why the buttons looks like this. we will use the standard buttons)</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/debuggui.png">
+				<br><br><br>
+			<h3>Nether planting</h3>
+					<p>Now using a golden hoe (only gold, others wont work) on soulsand creates soulsand framland. it will use lava to hydrate the farmland, and you can plant (later on the other new plants) the nether warts on it. from now, nether warts cant be placed on normal soul sand.
+						lava hydrates the soulsand in a radius of 4 blocks, but only in the nether.
+						in the overworld the radius decreses to 2 block
+						additional: if you walk on the hydrated farmland, you get damaged. if you crouch you wont be damaged. just like magma blocks
 
-			<div id="WorldofPaintUpdatea" class="tabcontent">
-				<h3>World of paint update [1.12]</h3>
-				<p>The "World of paint update" tab contains all the features that connects somehow to the 1.12 update, alias the "World of Color update". This dosen't mean that the mod is being released for this version, just has some features that could modify this update's content, or expand on it.</p>
+						(the textures of the soulsand farmland block: there is only a new texture for the top. just like the normal farmland, the sides and the bottom will use the "source material" aka the soulsand texture)
+
+						:ghost_pepper_addition: :exclamation_MT: [#0065b]
+						If the ghost pepper mod is present, the pepper will only be plantable on the soulsand farmland</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/netherplanting.png">
+				<br><br><br>
+			<h3>Ghast plant</h3>
+					<p>a very creepy plant, the ghastoid. its the "block version" of the Ghast tear seed.
+					takes 8 minecraft days to grow fully (from stage 1 to stage 8)
+					<br>Every stage has its drop:
+					<br>stage 1: drops the seed back
+					<br>stage 2: same
+					<br>stage 3: it wont drop the seed back, so you just loose it.
+					<br>stage 4-5: still dropps nothing
+					<br>stage 6: when you broke it, it will spawn a ghast.
+					<br>stage 7: drops (always) 1 ghast tear.
+					<br>Stage 8 is a kind of corrupted form. the plant will become a ghast spawner. but these ghast will not drop tears or gunpowder, only some xp. if you break it, it will drop a seed with a chance of 20%.</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/ghatsplant.png" style="max-width:700px;height:100px;">
+				<br><br><br>
+			<h3>Egg (semi)rework</h3>
+					<p>Placeable eggs. from now, instead of throwing the eggs when you right click ,they should be placed as a block. this "new block" works like the sea pickles. its "stacks" in that block. (up to 4 eggs)
+						they going to hatch in 20 minutes with 50% chance for a little chicken from each egg (each = if you have 3 eggs placed at once, each egg has a 90% chance to spawn a chicken when hatching)
+						more behavior: adult chickens targets these placed eggs, and they going to stand "in the block" (they clip trough the block, like how the player does with the plants). if the player stands on them, they crack instantly (=vanish). If a adult chicken is "sitting" on the eggs, the birth chance increases to 80%/each egg
+
+						This feature does not overwrites how the chickens lays their eggs. they still "dropps them on the ground"</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/eggz.png" style="max-width:700px;height:100px;">
+				<br><br><br>
+				<h3>Roses</h3>
+					<p>the alpha release gave it, and then the 1.7 revoke it.... guess what it is: The rose. once upon a time, there was a release back then, and removed the rose, and replaced it with poppys... no its not a revenge, poppy stays. we just add the rose back alongside the poppy. and forget the phrase "roses are red, violets are blue", because they are coming in 6 variants, red, pink, blue, yellow, purple and white.
+
+					<br>Generation:
+					<br>-all of them: mixed in the flower forest biome
+					<br>-red,pink,yellow: plains, forests
+					<br>-blue, purple, white: cold biomes, like: taiga, mega taiga, snowy taiga, mountains</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/rozezarered.png" style="max-width:700px;height:100px;">
+				<br><br><br>
+				
 			</div>
+			
+			
+			
+			
+			
+			
+			<div id="BuzzyerPlans" class="tabcontent">
+			<h3>Plans and Upcoming features of Multicraft: Bee edition</h3>
+					<p>Bee edition? Well, yes, this page will cover up all the plans for Multicraft 1.15.x<br>NOTE: only new features will be listed here.<br>All the current/planned features for 1.14.4 are going to be ported.</p>
+				<br><br><br>
+				<h3>Beehive Gui</h3>
+						<p>The beehive gui.
+						<br>-it show the honey level in it, and you can take it when its full
+						<br>-Shows the bees. exactyl:
+						<br>there is 3 bee slots. the bee icon shows up when that slot is occupied (the icons are those big cute bee "heads").
+						<br>next to them, you can see informations about the bees. i will go from top to bottom and left to right with explanation:
+						<br>so one bee has 2 icons. the left one is always changing. if a bee is wandering and just does nothing, it shows no icon. if a bee hading towards a flower, it shows that "> Flower " icon. its a cornflower because thats my favorite flower. if a bee is being pollenated, and hading towards the hive, it shows that "< Flower" icon. the next one i explain is the right one. its a hive icon with either an X mark or a checkmark. it show when that be is being in the hive or flying outside. (checkmar=bee in, X=bee out).
+						<br>and the last icon really depends on the previous: the honey comb icon. it appears almost everytime when a bee is inside the hive, and marks that the bee is making honey currently.
+						<br>there should be a lock icon on the bottle input until there's a campfire under the hive so the player doesn't accidentally shift-click and get a bunch of bees following them.</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/1_15/beegui.png">
+				<br><br><br>
+			
+			</div>
+			
+			
+			
+			
+			
 			
 			<script>
 			function openCity(evt, cityName) {
