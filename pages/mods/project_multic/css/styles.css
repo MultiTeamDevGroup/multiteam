@@ -134,10 +134,12 @@ background: rgba(196,196,196,1) no-repeat center center / 32px 32px;
 
 .mcui-arrow {
 	cursor: context-menu;
-    background: url(https://minecraft.gamepedia.com/media/8/86/Grid_layout_Arrow_%28small%29.png) no-repeat;
+    background-image: url('https://minecraft.gamepedia.com/media/8/86/Grid_layout_Arrow_%28small%29.png') no-repeat;
     width: 32px;
     height: 26px;
     margin: 40px 4px 0;
+	bottom:7px;
+	position:relative;
 }
 
 #craft_item {
