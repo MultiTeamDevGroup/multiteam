@@ -124,6 +124,7 @@ background: rgba(196,196,196,1) no-repeat center center / 32px 32px;
     text-align: left;
     white-space: nowrap;
     vertical-align: bottom;
+	image-rendering:pixelated;
 }
 
 
@@ -184,6 +185,18 @@ background: rgba(196,196,196,1) no-repeat center center / 32px 32px;
 }
 
 
+table{
+	-webkit-appearance: none;
+}
+tr{
+	-webkit-appearance: none;
+}
+th{
+	-webkit-appearance: none;
+}
+tbody{
+	-webkit-appearance: none;
+}
 
 .copyright {
 	width: 100%;
@@ -398,7 +411,7 @@ position: absolute;}
 .mcui_itemtooltip {
   position: relative;
   display: inline-block;
-  user-select: text;
+  user-select: none;
   
 }
 .mcui_itemtooltip_text{
