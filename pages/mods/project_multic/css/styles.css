@@ -50,6 +50,7 @@ div{
 	z-index: 1;
 	text-align: center;
 	margin: auto;
+	
 }
 .container2:before {
 	content: "";
@@ -441,9 +442,10 @@ body{
 }
 
 #splash{
+	float:left;
 	position:absolute;
-	left:470px;
-	top:50px;
+	left:480px;
+	top:60px;
 	text-align:center;
 	z-index:100;
 	transform: rotate(-20deg);
@@ -451,6 +453,10 @@ body{
 	color:#fffd00;
 	animation: splashISsplashing 0.7s infinite;
 	overflow: visible;
+	transform-origin: 50% 50%;
+	overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 @font-face {
@@ -470,3 +476,13 @@ body{
 		font-size:17px;
 	}
 }
+
+.mainstuff{
+	text-align: center;
+	margin: auto;
+	position: relative;
+	
+	max-width:50rem;
+}
+.mainstuff:before{
+position: absolute;}
