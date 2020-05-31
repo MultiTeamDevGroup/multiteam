@@ -9,7 +9,7 @@
 <body>
 
 		<script>
-			var k=0;
+			
 			var a=2;
 			function nextBackground() {
 			if (a>=14) {a=1;}else {a=a+1;}
@@ -29,8 +29,12 @@
 			}
 			
 			function openTab() {
+			if (document.getElementById("panel-content").style.display == "block")
+			{document.getElementById("panel-content").style.display = "none";}
+			else{document.getElementById("panel-content").style.display = "block";}
 			
 			}
+			
 		</script>
 		<!--script>
 			//splash:
@@ -83,7 +87,7 @@
 				<br><br>
 				Lets get started! Projects are sorted from most active to least active.
 				<br><br>
-			<a id="btn-custom" style="width:500px;">
+			<a id="btn-custom" style="width:500px;" onclick="openTab()">
 			MultiCraft
 					<div id="panel-content">
 					<br>Phase 1 - Multicraft-OldAlpha (1.11.2)<br>
@@ -114,61 +118,61 @@
 					<img alt="Logo of Multicraft-OldAlpha" draggable="false" src="images/Graves/MULTICRAFT/MultiExpansion_Thumbnail.png" style="width:250px;height:150px;"><br><br><br>
 					</div>
 			</a><br>
-			<a id="btn-custom" style="width:500px;">
+			<a id="btn-custom" style="width:500px;" onclick="openTab()">
 			FactoryAutomation
 					<div id="panel-content">
 					<br><br><br><br>COMING SOON<br><br><br><br>
 					</div>
 			</a><br>
-			<a id="btn-custom" style="width:500px;">
+			<a id="btn-custom" style="width:500px;" onclick="openTab()">
 			StarWars
 					<div id="panel-content">
 					<br><br><br><br>COMING SOON<br><br><br><br>
 					</div>
 			</a><br>
-			<a id="btn-custom" style="width:500px;">
+			<a id="btn-custom" style="width:500px;" onclick="openTab()">
 			LittleTrains
 					<div id="panel-content">
 					<br><br><br><br>COMING SOON<br><br><br><br>
 					</div>
 			</a><br>
-			<a id="btn-custom" style="width:500px;">
+			<a id="btn-custom" style="width:500px;" onclick="openTab()">
 			AdvancedFarming
 					<div id="panel-content">
 					<br><br><br><br>COMING SOON<br><br><br><br>
 					</div>
 			</a><br>
-			<a id="btn-custom" style="width:500px;">
+			<a id="btn-custom" style="width:500px;" onclick="openTab()">
 			Traincraft Addon
 					<div id="panel-content">
 					<br><br><br><br>COMING SOON<br><br><br><br>
 					</div>
 			</a><br>
-			<a id="btn-custom" style="width:500px;">
+			<a id="btn-custom" style="width:500px;" onclick="openTab()">
 			GardenArsenal
 					<div id="panel-content">
 					<br><br><br><br>COMING SOON<br><br><br><br>
 					</div>
 			</a><br>
-			<a id="btn-custom" style="width:500px;">
+			<a id="btn-custom" style="width:500px;" onclick="openTab()">
 			Cyberwear: Rise of Robotics
 					<div id="panel-content">
 					<br><br><br><br>COMING SOON<br><br><br><br>
 					</div>
 			</a><br>
-			<a id="btn-custom" style="width:500px;">
+			<a id="btn-custom" style="width:500px;" onclick="openTab()">
 			MulitDynamics
 					<div id="panel-content">
 					<br><br><br><br>COMING SOON<br><br><br><br>
 					</div>
 			</a><br>
-			<a id="btn-custom" style="width:500px;">
+			<a id="btn-custom" style="width:500px;" onclick="openTab()">
 			MeeCreeps Addon
 					<div id="panel-content">
 					<br><br><br><br>COMING SOON<br><br><br><br>
 					</div>
 			</a><br>
-			<a id="btn-custom" style="width:500px;" >
+			<a id="btn-custom" style="width:500px;" onclick="openTab()">
 				Multicraft: Connection Overload
 					<div id="panel-content">
 					<br><br><br><br>COMING SOON<br><br><br><br>

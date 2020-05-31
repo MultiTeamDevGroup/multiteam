@@ -490,7 +490,7 @@ position: absolute;}
 	border: 2px solid #e0e0e0;
 }
 #btn-custom:hover #panel-content {
-	display:block;
+	
 	transition: all 0.5s;
 	text-transform: capitalize;
 }
