@@ -455,7 +455,6 @@ position: absolute;}
 }
 #btn-custom {
 	font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase;
 	color: #e0e0e0;
 	background-color: #222;
 	border: 2px solid #222;
@@ -492,10 +491,8 @@ position: absolute;}
 #btn-custom:hover #panel-content {
 	
 	transition: all 0.5s;
-	text-transform: capitalize;
 }
 
 #panel-content {
 	display:none;
-	text-transform: capitalize;
 }
