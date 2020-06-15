@@ -42,7 +42,7 @@ div{
 }
 .container2 {
 	width: 50rem;
-	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .7);
 	position: relative;
 	background: inherit;
 	overflow: hidden;
@@ -363,7 +363,7 @@ body{
 	float:left;
 	position:absolute;
 	left:480px;
-	top:60px;
+	top:80px;
 	text-align:center;
 	z-index:100;
 	transform: rotate(-20deg);
