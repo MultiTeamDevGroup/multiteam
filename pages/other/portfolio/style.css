@@ -141,6 +141,7 @@ hr {
 }
 
 .artwork {
+	align:center;
 	background-color: #262626;
 	border: 1px dashed #78d113;
 	display: inline-block;
