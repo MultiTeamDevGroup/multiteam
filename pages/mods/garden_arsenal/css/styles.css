@@ -198,7 +198,7 @@ tbody{
 }
 
 .copyright {
-	width: 100%;
+	width: 100rem;
 	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);
 	position: relative;
 	background: inherit;
@@ -536,6 +536,133 @@ position: absolute;}
 #info{
 	text-align:left;
 }
+
+#pixelatedrender{
+	image-rendering: pixelated;
+}
+
+#rarity_badge-common{
+	background-color:#fff;
+	border-radius:20px;
+	color:#000000;
+	width:relative;
+	padding-left:7px;
+	padding-right:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+#rarity_badge-uncommon{
+	background-color:#1f870f;
+	border-radius:20px;
+	color:#fff;
+	width:relative;
+	padding-left:7px;
+	padding-right:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+#rarity_badge-rare{
+	background-color:#2c64fa;
+	border-radius:20px;
+	color:#fff;
+	width:relative;
+	padding-left:7px;
+	padding-right:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+#rarity_badge-epic{
+	background-color:#964bfa;
+	border-radius:20px;
+	color:#fff;
+	width:relative;
+	padding-left:7px;
+	padding-right:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+#rarity_badge-legendary{
+	background-color:#d929ff;
+	border-radius:20px;
+	color:#fff;
+	width:relative;
+	padding-left:7px;
+	padding-right:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+#rarity_badge-mythical{
+	background-color:#fa2409;
+	border-radius:20px;
+	color:#000000;
+	width:relative;
+	padding-left:7px;
+	padding-right:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+#rarity_badge-camo{
+	background-image:url("../images/badges_etc/camo_overlay.png");
+	overflow: hidden;
+	border-radius:20px;
+	color:#ffff;
+	width:relative;
+	padding-left:7px;
+	padding-right:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+#rarity_badge-metalic{
+	background-image:url("../images/badges_etc/metalic_overlay.png");
+	overflow: hidden;
+	border-radius:20px;
+	color:#000000;
+	width:relative;
+	padding-left:7px;
+	padding-right:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+#rarity_badge-seasonal{
+	background-image:url("../images/badges_etc/seasonal_overlay.png");
+	overflow: hidden;
+	border-radius:20px;
+	color:#000000;
+	width:relative;
+	padding-left:7px;
+	padding-right:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+#rarity_badge-special{
+	background-color:#001437;
+	border-radius:20px;
+	border: 3px solid #01FFC3;
+	color:#01FFC3;
+	width:relative;
+	padding-left:7px;
+	padding-right:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+#rarity_badge-teams{
+	background-color:#fff;
+	border-radius:20px;
+	color:#000000;
+	width:relative;
+	padding-left:7px;
+	padding-right:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+#pls{
+	font-size:10px;
+}
+
+
+
+
 
 
 
