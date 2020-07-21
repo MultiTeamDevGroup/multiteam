@@ -1,6 +1,6 @@
 body {
 	background-color: #141414;
-	##background: url(https://i.imgur.com/zUp6vU7.jpg);
+	background: url("images/bg/ga_bg_1080p.png");
 	background-size: cover;
 	background-attachment: fixed;
 	height: 100vh;
@@ -17,7 +17,7 @@ div{
 	cursor: context-menu;
 }
 .container {
-	width: 50rem;
+	width: 100rem;
 	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);
 	position: relative;
 	background: inherit;
@@ -496,3 +496,16 @@ position: absolute;}
 #panel-content {
 	display:none;
 }
+
+#ModelFrame{
+	margin-left:100px;
+}
+
+
+
+
+
+
+
+
+
