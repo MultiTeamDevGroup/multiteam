@@ -1,0 +1,238 @@
+<head>
+
+	<title>GARDEN ARSENAL</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<script src="https://kit.fontawesome.com/ecf1eef1d8.js"></script>
+	<link rel="icon" href="images/tab_icon.png">
+	<script src="https://kit.fontawesome.com/8609b0ec82.js" crossorigin="anonymous"></script>
+	
+</head>
+
+<body>
+
+		<script>
+			
+			var a=2;
+			function nextBackground() {
+			if (a>=14) {a=1;}else {a=a+1;}
+			document.body.style.backgroundImage = "url('images/panorama/"+a+".png')";
+			}
+		
+			var b=1;
+			function nextPainting() {
+			if (b>=24) {b=1;}else {b=b+1;}
+			document.querySelector("#painting").src = "images/items/paintings/"+b+".png"
+			document.querySelector("#paintingname") = ""+b+""
+			}
+			function prevPainting() {
+			if (b<=1) {b=24;}else {b=b-1;}
+			document.querySelector("#painting").src = "images/items/paintings/"+b+".png"
+			document.querySelector("#paintingname") = ""+b+""
+			}
+			
+			/*--function openTab(element) {
+			if (element.childNodes[0].style.display == "block")
+			{element.childNodes[0].style.display = "none";}
+			else{element.childNodes[0].style.display = "block";}
+			
+			}*/
+			
+			function openTab(element) {
+			try {
+			if (element.childNodes[1].style.display == "block")
+				element.childNodes[1].style.display = "none";
+			else
+				element.childNodes[1].style.display = "block";
+			}catch(error) {
+				element.childNodes[1].style.display = "block";
+				}
+			}
+			
+		</script>
+		<!--script>
+			//splash:
+			
+			window.onload = function() {
+			var doMinecraftSplashes = true;
+			var randUnicode = String.fromCharCode(0x0000 + Math.random() * (0xFFFF - 0x0000 + 1));
+			for (var i = 0; i <= 127; i++) {
+				randUnicode = randUnicode.concat(String.fromCharCode(0x0000 + Math.random() * (0xFFFF - 0x0000 + 1)));
+				}
+			randUnicode = randUnicode.concat("!");
+			var splashes = [randUnicode, "Multi Expansion by Multiteam!"];
+			var mcSplashes = ["As seen on TV!", "Awesome!", "100% pure!", "May contain nuts!", "Better than Prey!", "More polygons!", "Sexy!", "Limited edition!", "Flashing letters!", "Made by Notch!", "It's here!", "Best in class!", "It's finished!", "Kind of dragon free!", "Excitement!", "More than 500 sold!", "One of a kind!", "Heaps of hits on YouTube!", "Indev!", "Spiders everywhere!", "Check it out!", "Holy cow, man!", "It's a game!", "Made in Sweden!", "Uses LWJGL!", "Reticulating splines!", "Minecraft!", "Yaaay!", "Singleplayer!", "Keyboard compatible!", "Undocumented!", "Ingots!", "Exploding creepers!", "That's no moon!", "l33t!", "Create!", "Survive!", "Dungeon!", "Exclusive!", "The bee's knees!", "Down with O.P.P.!", "Closed source!", "Classy!", "Wow!", "Not on steam!", "Oh man!", "Awesome community!", "Pixels!", "Teetsuuuuoooo!", "Kaaneeeedaaaa!", "Now with difficulty!", "Enhanced!", "90% bug free!", "Pretty!", "12 herbs and spices!", "Fat free!", "Absolutely no memes!", "Free dental!", "Ask your doctor!", "Minors welcome!", "Cloud computing!", "Legal in Finland!", "Hard to label!", "Technically good!", "Bringing home the bacon!", "Indie!", "GOTY!", "Ceci n'est pas une title screen!", "Euclidian!", "Now in 3D!", "Inspirational!", "Herregud!", "Complex cellular automata!", "Yes, sir!", "Played by cowboys!", "OpenGL 1.2!", "Thousands of colors!", "Try it!", "Age of Wonders is better!", "Try the mushroom stew!", "Sensational!", "Hot tamale, hot hot tamale!", "Play him off, keyboard cat!", "Guaranteed!", "Macroscopic!", "Bring it on!", "Random splash!", "Call your mother!", "Monster infighting!", "Loved by millions!", "Ultimate edition!", "Freaky!", "You've got a brand new key!", "Water proof!", "Uninflammable!", "Whoa, dude!", "All inclusive!", "Tell your friends!", "NP is not in P!", "Notch <3 ez!", "Music by C418!", "Livestreamed!", "Haunted!", "Polynomial!", "Terrestrial!", "All is full of love!", "Full of stars!", "Scientific!", "Cooler than Spock!", "Collaborate and listen!", "Never dig down!", "Take frequent breaks!", "Not linear!", "Han shot first!", "Nice to meet you!", "Buckets of lava!", "Ride the pig!", "Larger than Earth!", "sqrt(-1) love you!", "Phobos anomaly!", "Punching wood!", "Falling off cliffs!", "0% sugar!", "150% hyperbole!", "Synecdoche!", "Let's danec!", "Seecret Friday update!", "Reference implementation!", "Lewd with two dudes with food!", "Kiss the sky!", "20 GOTO 10!", "Verlet intregration!", "Peter Griffin!", "do not distribute!", "Cogito ergo sum!", "D + E", "4815162342 lines of code!", "A skeleton popped out!", "The Work of Notch!", "The sum of its parts!", "BTAF used to be good!", "I miss ADOM!", "umop-apisdn!", "OICU812!", "Bring me Ray Cokes!", "Finger-licking!", "Thematic!", "Pneumatic!", "Sublime!", "Octagonal!", "Une baguette!", "Gargamel plays it!", "Rita is the new top dog!", "SWM forever!", "Representing Edsbyn!", "Matt Damon!", "Supercalifragilisticexpialidocious!", "Consummate V's!", "Cow Tools!", "Double buffered!", "Fan fiction!", "Flaxkikare!", "Jason! Jason! Jason!", "Hotter than the sun!", "Internet enabled!", "Autonomous!", "Engage!", "Fantasy!", "DRR! DRR! DRR!", "Kick it root down!", "Regional resources!", "Woo, facepunch!", "Woo, somethingawful!", "Woo, /v/!", "Woo, tigsource!", "Woo, minecraftforum!", "Woo, worldofminecraft!", "Woo, reddit!", "Woo, 2pp!", "Google anlyticsed!", "Now supports åäö!", "Give us Gordon!", "Tip your waiter!", "Very fun!", "12345 is a bad password!", "Vote for net neutrality!", "Lives in a pineapple under the sea!", "MAP11 has two names!", "Omnipotent!", "Gasp!", "...!", "Bees, bees, bees, bees!", "Jag känner en bot!", "This text is hard to read if you play the game at the default resolution, but at 1080p it's fine!", "Haha, LOL!", "Hampsterdance!", "Switches and ores!", "Menger sponge!", "idspispopd!", "Eple (original edit)!", "So fresh, so clean!", "Slow acting portals!", "Try the Nether!", "Don't look directly at the bugs!", "Oh, ok, Pigmen!", "Finally with ladders!", "Scary!", "Play Minecraft, Watch Topgear, Get Pig!", "Twittered about!", "Jump up, jump up, and get down!", "Joel is neat!", "A riddle, wrapped in a mystery!", "Huge tracts of land!", "Welcome to your Doom!", "Stay a while, stay forever!", "Stay a while and listen!", "Treatment for your rash!", '"Autological" is!', "Information wants to be free!", '"Almost never" is an interesting concept!', "Lots of truthiness!", "The creeper is a spy!", "Turing complete!", "It's groundbreaking!", "Let our battle's begin!", "The sky is the limit!", "Jeb has amazing hair!", "Casual gaming!", "Undefeated!", "Kinda like Lemmings!", "Follow the train, CJ!", "Leveraging synergy!", "This message will never appear on the splash screen, isn't that weird?", "DungeonQuest is unfair!", "110813!", "90210!", "Check out the far lands!", "Tyrion would love it!", "Also try VVVVVV!", "Also try Super Meat Boy!", "Also try Terraria!", "Also try Mount And Blade!", "Also try Project Zomboid!", "Also try World of Goo!", "Also try Limbo!", "Also try Pixeljunk Shooter!", "Also try Braid!", "That's super!", "Bread is pain!", "Read more books!", "Khaaaaaaaaan!", "Less addictive than TV Tropes!", "More addictive than lemonade!", "Bigger than a bread box!", "Millions of peaches!", "Fnord!", "This is my true form!", "Totally forgot about Dre!", "Don't bother with the clones!", "Pumpkinhead!", "Hobo humping slobo babe!", "Made by Jeb!", "Has an ending!", "Finally complete!", "Feature packed!", "Boots with the fur!", "Stop, hammertime!", "Testificates!", "Conventional!", "Homeomorphic to a 3-sphere!", "Doesn't avoid double negatives!", "Place ALL the blocks!", "Does barrel rolls!", "Meeting expectations!", "PC gaming since 1873!", "Ghoughpteighbteau tchoghs!", "Déjà vu!", "Déjà vu!", "Got your nose!", "Haley loves Elan!", "Afraid of the big, black bat!", "Doesn't use the U-word!", "Child's play!", "See you next Friday or so!", "From the streets of Södermalm!", "150 bpm for 400000 minutes!", "Technologic!", "Funk soul brother!", "Pumpa kungen!", "日本ハロー！", "한국 안녕하세요!", "Helo Cymru!", "Cześć Polska!", "你好中国!", "Привет Россия!", "Γεια σου ελλάδα!", "My life for Aiur!", "Lennart lennart = new Lennart();", "I see your vocabulary has improved!", "Who put it there?", "You can't explain that!", "if not ok then return end", "§1C§2o§3l§4o§5r§6m§7a§8t§9i§ac", "§kFUNKY LOL", "SOPA means LOSER in Swedish"]; 
+			if (Math.floor(Math.random() * 2.25) === 0 && doMinecraftSplashes === true) {
+				var lengthSplashes = mcSplashes.length;
+				var randSplashId = Math.floor(Math.random() * lengthSplashes);
+				document.getElementById("splash").innerHTML = mcSplashes[randSplashId];
+			} else {
+				var lengthSplashes = mcSplashes.length;
+				var randSplashId = Math.floor(Math.random() * lengthSplashes);
+				document.getElementById("splash").innerHTML = mcSplashes[randSplashId];
+				}
+			}
+		</script-->
+		<!--script src="js/splashes.js" type="text/javascript"></script!-->
+		<script type="text/javascript" src="jquery.js"></script>
+		
+		<script src="js/three.min.js"></script>
+
+		
+		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+		<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+		<!-- Use it like any other HTML element -->
+		
+		
+		
+		
+		<br><br><br>
+		<div class="mainstuff">
+		<a id="splash"></a>
+			<div class="container2">
+				
+				<br>
+					<div align="center" id="logo">
+						<img alt="Logo of Multi Expansion" draggable="false" src="images/MT_LOGO.png" style="width:400px;height:60px;">
+						<br>PROJECT GRAVEYARD
+						<br><br>
+						<br><br>
+						<a href="https://laz-the-artist.github.io/multiteam.github.io/index" id="btn-custom2">Back to MultiTeam page</a>
+						<br><br>
+					</div>
+			</div>
+		</div>
+		<br><br><br>
+	
+		<div class="container" align="center">
+			<br>
+			<model-viewer src="rifle.gltf" alt="A 3D model of an astronaut" auto-rotate camera-controls></model-viewer>
+				Welcome on the webpage of MultiTeam's history! But the page is called graveyard, then why history? Because this page contains every MT project, running, dead, or even those that exist in concept. All of them!
+				<br><br>
+				Lets get started! Projects are sorted from most active to least active.
+				<br><br>
+			<a id="btn-custom" style="width:500px;" onclick="openTab(this)">
+			MultiCraft
+					<div id="panel-content">
+					<br>Phase 1 - Multicraft-OldAlpha (1.11.2)<br>
+					<br>MultiCraft is the oldest mod of the team. Multicraft-OldAlpha is the first version that existed, from 2017.Q1 (around february) to 2017.Q3 (around september) It was created with Mcreator, and the basic idea was to add features to the game that are useful, community wants it, or at some point some mod had it but the mod hasnt been updated. IamGama did most of the textures, and i (Lezly_Gaming aka King of Creepers) made it into the game with mcreator. The cheese item in the 1.12.2 (Beta Multicraft) version, and the flute item from 1.14.4 (Multicraft) version was originated from here.<br>
+					Thumbnail/logo of Multicraft-OldAlpha (1.11.2) :<br>
+					<img alt="Logo of Multicraft-OldAlpha" draggable="false" src="images/Graves/MULTICRAFT/Multicraft_OldAlpha_Thumbnail.png" style="width:250px;height:150px;"><br>
+					Recorded during development of Multicraft-OldAlpha (1.11.2) :<br>
+					<img alt="Logo of Multicraft-OldAlpha" draggable="false" src="images/Graves/MULTICRAFT/Multicraft_OldAlpha_Dev.png" style="width:250px;height:150px;"><br><br><br>
+					
+					Phase 2 - Beta MultiCraft (1.12.2)<br><br>
+					This phase has the longest lore, because this one has the longest lifetime. Started in 2017.Q4 (around november) and ended in 2018.Q3 (around in july). At this point of development i started believeing this mod has a good future, but hings turned dark very soon. The development started on 1.12.2 this time with proper coding and not mcreator, entirely coded by Lukas. I mainly done textures, sometimes IamGama helped with them. The first public was released on 2018.jan.14th on curseforge. Back in 2017 i recruited Monstahh to work on the mod, because Lukas was alone. Later Lukas decided to stop working on the mod because he lost his interest in it. Monstahh as a helper coder wasnt enough to work on the mod alone. Here comes in SkyHawk, the second main coder of multicraft. He started working on the mod, around this time came the third and fourth release of the mod. But things changed. back in the time, i havent bought the game yet, so i used a cracked version. This made skyhawk Quit working on the mod.
+					In 2019 february, there was a try to revive the mod, this time AwakenedRedstone took the place of a leader coder, but it wasnt a long lasting thing.<br>
+					Thumbnail/logo of Beta MultiCraft (1.12.2) :<br>
+					<img alt="Logo of Multicraft-OldAlpha" draggable="false" src="images/Graves/MULTICRAFT/Beta_Multicraft_Thumbnail.png" style="width:250px;height:150px;"><br>
+					Recorded during development of Beta MultiCraft (1.12.2) :<br>
+					<img alt="Logo of Multicraft-OldAlpha" draggable="false" src="images/Graves/MULTICRAFT/Beta_Multicraft_Dev.png" style="width:250px;height:150px;"><br><br><br>
+					
+					Phase 3 - MultiCraft (1.14.4)<br><br>
+					This phase started in 2019 august, and still going on to this day. A new main coder, Rellit was recruited to work on the mod, but this time he was the only coder. Now everything was slow, because Rellit had not much time, but the mod started to become a thing, now on the (at that time) the newset version, 1.14.4. Later on MaroonShaded was recruited to help push the mod forward alongside Rellit. the first version released in 2020 januray, but due to the slow development the next version just aproaching now in june.<br>
+					Thumbnail/logo of MultiCraft (1.14.4) :<br>
+					<img alt="Logo of Multicraft-OldAlpha" draggable="false" src="images/Graves/MULTICRAFT/Multicraft_Thumbnail.png" style="width:250px;height:150px;"><br>
+					Recorded during development of MultiCraft (1.14.4) :<br>
+					<img alt="Logo of Multicraft-OldAlpha" draggable="false" src="images/Graves/MULTICRAFT/Multicraft_Dev.png" style="width:250px;height:150px;"><br><br><br>
+					
+					Phase 4 - MultiExpansion (1.15.2)<br><br>
+					This phase is a very interesting section, its not history, instead these are future plans. So, why the name change? because we figured out that a server managment thing is called multicraft, but unfortunatly they choosed this name first. The updated name comes paired with a version update to 1.15.2, as well as bee related features to the mod.
+					<br>Thumbnail/logo of MultiExpansion (1.15.2) : (I'd claim that the logo is likely to change)<br>
+					<img alt="Logo of Multicraft-OldAlpha" draggable="false" src="images/Graves/MULTICRAFT/MultiExpansion_Thumbnail.png" style="width:250px;height:150px;"><br><br><br>
+					</div>
+			</a><br>
+			<a id="btn-custom" style="width:500px;" onclick="openTab(this)">
+			FactoryAutomation
+					<div id="panel-content">
+					<br><br>A tech mod. adds various tech realed things, with an age system.
+					<br><br><br><br>COMING SOON<br><br><br><br>
+					</div>
+			</a><br>
+			<a id="btn-custom" style="width:500px;" onclick="openTab(this)">
+			StarWars
+					<div id="panel-content">
+					<br><br>A mod about star wars. adds various things from the Star Wars movie series.
+					<br><br><br><br>COMING SOON<br><br><br><br>
+					</div>
+			</a><br>
+			<a id="btn-custom" style="width:500px;" onclick="openTab(this)">
+			LittleTrains
+					<div id="panel-content">
+					<br><br>A mod about small, model/"toy" trains. You will be able to make a landscape table with trains and vehicels.
+					<br><br><br><br>COMING SOON<br><br><br><br>
+					</div>
+			</a><br>
+			<a id="btn-custom" style="width:500px;" onclick="openTab(this)">
+			AdvancedFarming
+					<div id="panel-content">
+					<br><br>A mod was planned to expand, and enhacne on minecraft's farming mechanics. Maay be merged into multicraft.
+					<br><br><br><br>COMING SOON<br><br><br><br>
+					</div>
+			</a><br>
+			<a id="btn-custom" style="width:500px;" onclick="openTab(this)">
+			Traincraft Addon
+					<div id="panel-content">
+					<br><br>Traincraft is a mod for 1.7.10 (By: EternalBlueFlame), about trains. This mod was planned to expand on that mod.
+					<br><br><br><br>COMING SOON<br><br><br><br>
+					</div>
+			</a><br>
+			<a id="btn-custom" style="width:500px;" onclick="openTab(this)">
+			GardenArsenal
+					<div id="panel-content">
+					<br><br>A mod about weapons (mostly guns) that shoots vegetables, fruits, and basically food.
+					<br><br><br><br>COMING SOON<br><br><br><br>
+					</div>
+			</a><br>
+			<a id="btn-custom" style="width:500px;" onclick="openTab(this)">
+			Cyberwear: Rise of Robotics
+					<div id="panel-content">
+					<br><br>A mod planned to be an addon, that would expand on Cyberware (By: Flaxbeard), and adding a new robotic state when only your brain is not a robotic component.
+					<br><br><br><br>COMING SOON<br><br><br><br>
+					</div>
+			</a><br>
+			<a id="btn-custom" style="width:500px;" onclick="openTab(this)">
+			MulitDynamics
+					<div id="panel-content">
+					<br><br>A mod planned to add seasons, more type of weather, alongside a "server side" shader that would allow the game to make weather and wind be "physically there"
+					<br><br><br><br>COMING SOON<br><br><br><br>
+					</div>
+			</a><br>
+			<a id="btn-custom" style="width:500px;" onclick="openTab(this)">
+			MeeCreeps Addon
+					<div id="panel-content">
+					<br><br>A mod was planned to be an addon for MeeCreeps (By: McJty), that would expand on it, with more content from the cartoon series rick and morty.
+					<br><br><br><br>COMING SOON<br><br><br><br>
+					</div>
+			</a><br>
+			<a id="btn-custom" style="width:500px;" onclick="openTab(this)">
+				Multicraft: Connection Overload
+					<div id="panel-content">
+					<br><br>Multicraft expands on the vanilla game itself. Connection Overload would done that, but with other mods. it would connect other mods with multicraft, and adds more content to them if they are installed.
+					<br><br><br><br>COMING SOON<br><br><br><br>
+					</div>
+			</a><br>
+			<a id="btn-custom" style="width:500px;" onclick="openTab(this)">
+				ElementalEternality
+					<div id="panel-content">
+					<br><br>A mod based on 2 cartoons series by nickelodeon, "Avatar the Last Airbender" and "Legend of Korra". it would add almost everything from the series, not only bending.
+					<br><br><br><br>COMING SOON<br><br><br><br>
+					</div>
+			</a>
+			<a id="btn-custom" style="width:500px;" onclick="openTab(this)">
+				ImmersiveMechanics
+					<div id="panel-content">
+					<br><br>A mod planned to be an addon for Immersive Engineering (By: BlueSunrise). IE is a mod about electricity, but this addon would add mechanical power, robots and mechs.
+					<br><br><br><br>COMING SOON<br><br><br><br>
+					</div>
+			</a>
+			
+			<br><br>
+		</div>
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		
+	<div class="copyright">
+		<br><br>
+			2017-2020 © MultiTeam Minecraft-Modding Group
+		<br><br><br>
+	</div>
+</body>
