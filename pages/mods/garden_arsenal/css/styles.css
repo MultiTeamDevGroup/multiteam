@@ -1,6 +1,5 @@
 body {
-	background-color: #141414;
-	background: url("images/bg/ga_bg_1080p.png");
+	background-image: url("../images/bg/ga_bg_1080p.png");
 	background-size: cover;
 	background-attachment: fixed;
 	height: 100vh;
@@ -488,6 +487,24 @@ position: absolute;}
 	background-color: #e0e0e0;
 	border: 2px solid #e0e0e0;
 }
+#btn-custom3 {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	color: #e0e0e0;
+	background-color: #222;
+	border: 2px solid #222;
+	padding: 14px 20px;
+	margin: 20px;
+	font-size: 14px;
+	text-decoration: none;
+	border-radius: 0;
+	transition: all 0.5s;
+}
+#btn-custom3:hover {
+	color: #222;
+	background-color: #ef801d;
+	border: 2px solid #ef801d;
+}
 #btn-custom:hover #panel-content {
 	
 	transition: all 0.5s;
@@ -498,11 +515,27 @@ position: absolute;}
 }
 
 #ModelFrame{
-	margin-left:100px;
+	margin-left:5rem;
+	background-color:#222;
+	float:left;
+	display:inline-block;
+	margin-right:2rem;
 }
 
+#deviderLine{
+	height:5px;
+	width: 90rem;
+	background-color: #ef801d;
+	border-radius: 90px;
+	align:center;
+	margin-left:5rem;
+	margin-bottom:1rem;
+	margin-top:1rem;
+}
 
-
+#info{
+	text-align:left;
+}
 
 
 
