@@ -1,0 +1,151 @@
+<head>
+	<title>Soldiers of the Office</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<script src="https://kit.fontawesome.com/ecf1eef1d8.js"></script>
+	<link rel="icon" href="images/logo_icon.png">
+	<script src="https://kit.fontawesome.com/8609b0ec82.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/discordInvite.css"/>
+	
+</head>
+<body>
+	
+	<script type="text/javascript" src="jquery.js"></script>
+	<script>
+		//dropdown function
+			function openCity(evt, cityName) {
+			var i, tabcontent, headlineItem;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+						}
+					headlineItem = document.getElementsByClassName("headlineItem");
+					for (i = 0; i < headlineItem.length; i++) {
+					headlineItem[i].className = headlineItem[i].className.replace(" active", "");
+						}
+				document.getElementById(cityName).style.display = "block";
+				evt.currentTarget.className += " active";
+			}
+			
+			
+		//secondary dropdown function
+			function openTab(element) {
+			try {
+			if (element.childNodes[1].style.display == "block")
+				element.childNodes[1].style.display = "none";
+			else
+				element.childNodes[1].style.display = "block";
+			}catch(error) {
+				element.childNodes[1].style.display = "block";
+				}
+			}
+	</script>
+	<script src="js/discordInvite.js"></script>
+	<script>
+		discordInvite.init({
+		inviteCode: 'KtKgz4T',
+		title: 'Soldiers of the Office',
+		});
+		discordInvite.render();
+	</script>
+	
+	<div class="headline">
+		<a class="headlineText">Soldier of The Office</a> 
+		<a class="headlineItem" onclick="openCity(event, 'MainTab')">Main</a>
+		<a class="headlineItem" onclick="openCity(event, 'Devlogs')">Devlogs</a>
+		<a class="headlineItem" onclick="openCity(event, 'AnnouncedFeatures')">Feature Plans</a>
+		<a class="headlineItem" onclick="openCity(event, 'Discord')">Discord</a>
+	</div>
+	
+	<div class="container-left" >
+		<a id="Title">Soldier of the Office is a 2D platformer game, about a soldier who fights with various crazy weapons and enemys.</a><br><br>
+		<a id="devlog-link">To open the tabs, use the buttons in the header</a>
+		<div class="tabcontent" id="MainTab">
+			<br><a id="#">This game is being developed on Unity (2020.1.0a17), by LazTheArtist [Code/Art], and many ideas given by @ZoLeY#4832 and @DragonsMoon3#2285.<br></a>
+		</div>
+	</div>
+	
+	<div class="container-right">
+		<a id="Title">Devlogs</a>
+		<div class="tabcontent" id="Devlogs">
+			<br>
+			<!--a id="devlog_date_badge" href="#2k20january">2020 january</a>
+			<a id="devlog_date_badge" href="#2k20june">2020 june</a>
+			<a id="devlog_date_badge" href="#2k20july">2020 july</a><br><br-->
+			<!--enable this feature above if there are too many devlogs. this is just navigation "buttons" (badges)-->
+			
+			<a id="2k20january">2020 january</a><br>
+			
+			<a id="#">[#0000]</a>
+				<a id="devlog-link" onclick="openTab(this)">Initiation - Player movement</a>
+					<a id="open-devlog-btn" onclick="openTab(this)">⯈
+					<div id="panel-content">Player movement gif needs to be here</div>
+					⯇ (click to open)
+				</a><br>
+			<a id="#">[#0001]</a>
+				<a id="devlog-link" onclick="openTab(this)">Basic Gun mechanics (nailgun)</a>
+					<a id="open-devlog-btn" onclick="openTab(this)">⯈
+					<div id="panel-content">nailgun uasage gif needs to be here</div>
+					⯇
+				</a><br>
+				
+			<br><a id="2k20june">2020 june</a><br>
+			
+			<a id="#">[#0002]</a>
+				<a id="devlog-link" onclick="openTab(this)">Picking up objects</a>
+					<a id="open-devlog-btn" onclick="openTab(this)">⯈
+					<div id="panel-content">picking up objects gif needs to be here</div>
+					⯇
+				</a><br>
+			<a id="#">[#0003]</a>
+				<a id="devlog-link" onclick="openTab(this)">Ammo game-mechanic</a>
+					<a id="open-devlog-btn" onclick="openTab(this)">⯈
+					<div id="panel-content">ammo usage gif needs to be here</div>
+					⯇
+				</a><br>
+			<a id="#">[#0004]</a>
+				<a id="devlog-link" onclick="openTab(this)">Tooltip system</a>
+					<a id="open-devlog-btn" onclick="openTab(this)">⯈
+					<div id="panel-content">tooltip showcase gif needs to be here</div>
+					⯇ 
+					</a>
+				<br>
+				
+			<br><a id="2k20july">2020 july</a><br>
+			
+			<a id="#">[#0005]</a>
+				<a id="devlog-link">Button and Lamp game-mechanic</a>
+					<a id="open-devlog-btn" onclick="openTab(this)">⯈
+					<div id="panel-content">button and lamp gif needs to be here</div>
+					⯇
+					</a>
+				<br>
+			<a id="#">[Technical]</a><a id="devlog-link" onclick="openTab(this)"> Engine version update (unity 2020.1.0a17 -> 2020.1)</a><br>
+			<a id="#">[#0006]</a>
+				<a id="devlog-link">Damage system</a>
+					<a id="open-devlog-btn" onclick="openTab(this)">⯈
+					<div id="panel-content">damage system gif needs to be here</div>
+					⯇
+					</a>
+				<br>
+		</div>
+	</div>
+	
+	<div class="container-left">
+		<a id="Title">Future Plans</a>
+		<div class="tabcontent" id="AnnouncedFeatures">
+			<br><br>
+			<a>Future plans will be here soon</a><br>
+		</div>
+	</div>
+	
+	<div class="container-right">
+		<a id="Title">Discord Server</a>
+		<div class="tabcontent" id="Discord">
+			<br><br>
+			<div id="discordInviteBox"></div><br><br>
+			<a id="#">Join our discord server to observ the development, or just to have fun with us! Tho it could be weird to see us talk in a weird language that most of you wont understand... #hungary</a>
+		</div>
+	</div>
+	
+	
+</body>
