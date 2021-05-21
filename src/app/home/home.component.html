@@ -1,0 +1,26 @@
+
+    <div class="header-menu">
+        <div class="header-menu-entrys">
+            <a class="header-menu-entry" *ngIf="currentpath != '/'" routerLink="/"><i-feather name="info"
+                    id="header-menu-entry-icon"></i-feather>About</a>
+            <a class="header-menu-entry-selected" *ngIf="currentpath == '/'" routerLink="/"><i-feather name="info" 
+                    id="header-menu-entry-icon"></i-feather>About</a>
+            <a class="header-menu-entry" routerLink="/game" routerLinkActive="header-menu-entry-selected"><i class="fas fa-gamepad" id="header-menu-entry-icon"
+                    style="right: 28px;"></i>Games</a>
+            <a class="header-menu-entry" routerLink="/minecraft" routerLinkActive="header-menu-entry-selected"><i-feather name="box" id="header-menu-entry-icon"
+                    style="right: 40px;"></i-feather>Minecraft</a>
+            <a class="header-menu-entry" routerLink="/premium" routerLinkActive="header-menu-entry-selected"> <i-feather class="icon-MTPremiumBadge"
+                    id="header-menu-entry-icon" style="right: 40px;"></i-feather> Premium</a>
+            <a class="header-menu-entry" routerLink="/donate" routerLinkActive="header-menu-entry-selected"><i-feather name="gift" id="header-menu-entry-icon"
+                    style="right: 31px;"></i-feather>Donate</a>
+            <a class="header-menu-entry" routerLink="/account" routerLinkActive="header-menu-entry-selected"><i class="fas fa-user-circle"
+                    id="header-menu-entry-icon" style="right: 37px;"></i>Account</a>
+        </div>
+    </div>
+
+<app-main *ngIf="currentpath == '/'"></app-main>
+<app-games *ngIf="currentpath == '/game'"></app-games>
+<app-minecraft *ngIf="currentpath == '/minecraft'"></app-minecraft>
+<app-premium *ngIf="currentpath == '/premium'"></app-premium>
+<app-donate *ngIf="currentpath == '/donate'"></app-donate>
+<app-account *ngIf="currentpath == '/account'"></app-account>

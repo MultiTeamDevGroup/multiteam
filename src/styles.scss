@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap");
+@font-face {
+  font-family: "MTFont";
+  src: url("assets/fontello/fonts/MTFont.eot?4j5adm");
+  src: url("assets/fontello/fonts/MTFont.eot?4j5adm#iefix")
+      format("embedded-opentype"),
+    url("assets/fontello/fonts/MTFont.ttf?4j5adm") format("truetype"),
+    url("assets/fontello/fonts/MTFont.woff?4j5adm") format("woff"),
+    url("assets/fontello/fonts/MTFont.svg?4j5adm#MTFont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+//COLORS
+:root {
+  --mtWhite: #e1e1e1;
+  --mtWhiteHover: #c4c4c4;
+  --mtBg: #141414;
+  --mtPanel: #262626;
+  --accentBlue: #7f91e9;
+
+  --discordGreen: #3ba55c;
+  --discordGreenHover: #359553;
+  --discordBlurple: #5865F2;
+}
+
+//SCROLLBAR
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar:active {
+  cursor: pointer;
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-background-color: var(--mtPanel);
+  background-color: var(--mtPanel);
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background: #e1e1e1;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #e1e1e1;
+}

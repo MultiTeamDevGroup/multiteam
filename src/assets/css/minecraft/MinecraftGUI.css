@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'MinecraftFont';
+    src: url('MinecraftFont.ttf');
+}
+
+.mcgui-panel{
+    margin-top: 6px;
+    margin-bottom: 6px;
+    cursor: context-menu;
+    display: inline-block;
+    position: relative;
+    background-color: #C6C6C6;
+    border: 2px solid;
+    border-color: #DBDBDB #5B5B5B #5B5B5B #DBDBDB;
+    padding: 6px 6px;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: bottom;
+    image-rendering: pixelated;
+}
+
+.mcgui-slot{
+    cursor: context-menu;
+    position: relative;
+    display: inline-block;
+    background: #8B8B8B no-repeat center center / 32px 32px;
+    border: 2px solid;
+    border-color: #373737 #FFF #FFF #373737;
+    width: 32px;
+    height: 32px;
+    text-align: left;
+    vertical-align: bottom;
+    transition: 0s;
+}
+
+.mcgui-slot:hover{
+    transition: 0s;
+    background: #c5c5c3 no-repeat center center / 32px 32px;
+}
+
+
+.mcgui-slot-content{
+    image-rendering: pixelated;
+    width: 32px;
+    height: 32px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.mcgui-title{
+    font-family: MinecraftFont;
+    color: #373737;
+}
+
+.mcgui-tooltip{
+    cursor: context-menu;
+    position: absolute;
+    display: none;
+    border: 5px solid transparent;
+    border-image-source: url('tooltip_border.png');
+    border-image-repeat: round;
+    border-image-slice: 5;
+    border-image-outset: 5px;
+    background-color: #0d001b;
+    padding: 0px;
+    z-index: 100;
+    transform: translateX(42px);
+    font-family: MinecraftFont;
+    text-rendering: optimizeLegibility;
+}
+
+.mgui-tooltip-name{
+    margin: 0px;
+    color: #fff;
+}
+
+.mgui-tooltip-description{
+    margin: 0px;
+    color: #fff;
+}
+
+.mgui-tooltip-effect{
+    margin: 0px;
+    color: #5555ff;
+}
+
+.mgui-tooltip-lore{
+    margin: 0px;
+    color: #81217b;
+    font-style: italic;
+}
+
+.mgui-tooltip-id{
+    margin: 0px;
+    margin-top: 8px;
+    color: #555555;
+}
+
+.mcgui-crafting{
+    padding: 0px;
+    margin: 0px;
+    width: fit-content;
+    height: fit-content;
+    border: 0px;
+    border-collapse: collapse;
+    display: inline-block;
+}
+
+.mcgui-crafting-row{
+    padding: 0px;
+    margin: 0px;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+
+.mcgui-crafting-slot{
+    cursor: context-menu;
+    display: inline-block;
+    background: #8B8B8B no-repeat center center / 32px 32px;
+    border: 2px solid;
+    border-color: #373737 #FFF #FFF #373737;
+    width: 32px;
+    height: 32px;
+    text-align: left;
+    vertical-align: bottom;
+    transition: 0s;
+    padding: 0px;
+    margin: 0px;
+}
+
+.mcgui-crafting-slot:hover{
+    transition: 0s;
+    background: #c5c5c3 no-repeat center center / 32px 32px;
+}
+
+.mcgui-crafting-output-arrow{
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: 40px;
+}
+
+.mcgui-crafting-output-slot{
+    cursor: context-menu;
+    display: inline-block;
+    padding: 8px;
+    background: #8B8B8B no-repeat center center / 32px 32px;
+    border: 2px solid;
+    border-color: #373737 #FFF #FFF #373737;
+    width: 32px;
+    height: 32px;
+    text-align: left;
+    vertical-align: top;
+    transition: 0s;
+    margin: 0px;
+    margin-top: 26px;
+}
+
+.mcgui-crafting-output-slot:hover{
+    transition: 0s;
+    background: #c5c5c3 no-repeat center center / 32px 32px;
+}

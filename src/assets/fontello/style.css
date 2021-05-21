@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'MTFont';
+  src:  url('fonts/MTFont.eot?t0r9g9');
+  src:  url('fonts/MTFont.eot?t0r9g9#iefix') format('embedded-opentype'),
+    url('fonts/MTFont.ttf?t0r9g9') format('truetype'),
+    url('fonts/MTFont.woff?t0r9g9') format('woff'),
+    url('fonts/MTFont.svg?t0r9g9#MTFont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'MTFont' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-CurseforgeIcon:before {
+  content: "\e909";
+}
+.icon-MTPremiumBadge:before {
+  content: "\e908";
+}

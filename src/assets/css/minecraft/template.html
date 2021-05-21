@@ -1,0 +1,114 @@
+<head>
+
+	<link rel="stylesheet" href="MinecraftGUI.css"/>
+
+</head>
+
+
+<body>
+    
+    <script>
+        function tooltipHover(tooltipId){
+                if(document.getElementById(tooltipId).style.display == "inline-block"){
+                    document.getElementById(tooltipId).style.display = "none";
+                }else{
+                    document.getElementById(tooltipId).style.display = "inline-block";
+                }
+            }
+    </script>
+
+    <div class="mcgui-panel">
+        <div class="mcgui-title">Inventory</div>
+        <div class="mcgui-tooltip" id="tooltip_000">
+            <p class="mgui-tooltip-name">Item Name</p>
+            <p class="mgui-tooltip-description" style="color: #fff;">Item Description</p>
+            <p class="mgui-tooltip-effect">Item Effect</p>
+            <p class="mgui-tooltip-lore">Item Lore</p>
+            <p class="mgui-tooltip-id">Item:Id</p>
+        </div>
+        <div class="mcgui-slot" onmouseover="tooltipHover('tooltip_000')" onmouseout="tooltipHover('tooltip_000')">
+            <img src="cake.png" class="mcgui-slot-content">
+        </div>
+        <div class="mcgui-slot">
+            
+        </div>
+        <div class="mcgui-slot">
+            
+        </div>
+    </div> <br> <br>
+    <div class="mcgui-panel">
+        <div class="mcgui-title">Crafting</div>
+        <table class="mcgui-crafting">
+            <tr class="mcgui-crafting-row">
+                <th class="mcgui-crafting-slot">0</th>
+                <th class="mcgui-crafting-slot">1</th>
+                <th class="mcgui-crafting-slot">2</th>
+            </tr>
+            <tr class="mcgui-crafting-row">
+                <th class="mcgui-crafting-slot">3</th>
+                <th class="mcgui-crafting-slot">4</th>
+                <th class="mcgui-crafting-slot">5</th>
+            </tr>
+            <tr class="mcgui-crafting-row">
+                <th class="mcgui-crafting-slot">6</th>
+                <th class="mcgui-crafting-slot">7</th>
+                <th class="mcgui-crafting-slot">8</th>
+            </tr>
+        </table>
+        <img class="mcgui-crafting-output-arrow" src="https://gamepedia.cursecdn.com/minecraft_gamepedia/8/86/Grid_layout_Arrow_%28small%29.png">
+        <div class="mcgui-crafting-output-slot">9</div>
+    </div>
+    <div class="mcgui-panel">
+        <div class="mcgui-title">Crafting</div>
+        <table class="mcgui-crafting">
+            <tr class="mcgui-crafting-row">
+                <th class="mcgui-crafting-slot"></th>
+                <th class="mcgui-crafting-slot"></th>
+                <th class="mcgui-crafting-slot"></th>
+            </tr>
+            <tr class="mcgui-crafting-row">
+                <th class="mcgui-crafting-slot"></th>
+                <th class="mcgui-crafting-slot"></th>
+                <th class="mcgui-crafting-slot"></th>
+            </tr>
+            <tr class="mcgui-crafting-row">
+                <th class="mcgui-crafting-slot"></th>
+                <th class="mcgui-crafting-slot"></th>
+                <th class="mcgui-crafting-slot"></th>
+            </tr>
+        </table>
+        <img class="mcgui-crafting-output-arrow" src="https://gamepedia.cursecdn.com/minecraft_gamepedia/8/86/Grid_layout_Arrow_%28small%29.png">
+        <div class="mcgui-crafting-output-slot"></div>
+    </div>
+    <div class="mcgui-panel">
+        <div class="mcgui-title">Crafting</div>
+        <table class="mcgui-crafting">
+            <tr class="mcgui-crafting-row">
+                <th class="mcgui-crafting-slot" onmouseover="tooltipHover('tooltip_007')" onmouseout="tooltipHover('tooltip_007')"><img src="cake.png" class="mcgui-slot-content"></th>
+                <div class="mcgui-tooltip" id="tooltip_007">
+                    <p class="mgui-tooltip-name">Item Name</p>
+                    <p class="mgui-tooltip-description" style="color: #fff;">Item Description</p>
+                    <p class="mgui-tooltip-effect">Item Effect</p>
+                    <p class="mgui-tooltip-lore">Item Lore</p>
+                    <p class="mgui-tooltip-id">Item:Id</p>
+                </div>
+                <th class="mcgui-crafting-slot"></th>
+                <th class="mcgui-crafting-slot"></th>
+            </tr>
+            <tr class="mcgui-crafting-row">
+                <th class="mcgui-crafting-slot"></th>
+                <th class="mcgui-crafting-slot"></th>
+                <th class="mcgui-crafting-slot"><img src="cake.png" class="mcgui-slot-content"></th>
+            </tr>
+            <tr class="mcgui-crafting-row">
+                <th class="mcgui-crafting-slot"></th>
+                <th class="mcgui-crafting-slot"></th>
+                <th class="mcgui-crafting-slot"></th>
+            </tr>
+        </table>
+        <img class="mcgui-crafting-output-arrow" src="https://gamepedia.cursecdn.com/minecraft_gamepedia/8/86/Grid_layout_Arrow_%28small%29.png">
+        <div class="mcgui-crafting-output-slot">
+            <img src="cake.png" class="mcgui-slot-content">
+        </div>
+    </div>
+</body>
