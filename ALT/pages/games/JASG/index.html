@@ -1,0 +1,113 @@
+<head>
+    <link rel="icon" href="res/img/JASG_icon.png">
+    <title>JASG</title>
+    <link rel="stylesheet" type="text/css" href="res/css/styles.css">
+    <link rel="stylesheet" href="../../../res/css/mt/mt_scrollbar.css">
+    <link rel="stylesheet" href="../../../res/css/discord/discordProfile-normal.css">
+    <link rel="stylesheet" href="../../../res/css/discord/discordInvite.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ecf1eef1d8.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="res/js/discordInvite.js"></script>
+</head>
+<body>
+
+    <script type="text/javascript">
+        
+        function openPanel(PanelName) {
+            document.getElementById(PanelName).style.display = "block";
+        }
+
+        function openOrClosePanel(PanelName) {
+            if(document.getElementById(PanelName).style.display == "block"){
+                document.getElementById(PanelName).style.display = "none";
+            }else{
+                document.getElementById(PanelName).style.display = "block";
+            }
+            
+        }
+
+        function closeAllPanel() {
+            document.getElementById("play_panel").style.display = "none";
+            document.getElementById("about_panel").style.display = "none";
+            document.getElementById("account_panel").style.display = "none";
+            document.getElementById("devlogs_panel").style.display = "none";
+            
+        }
+
+    </script>
+
+    <div class="main-menu">
+        <div class="main-menu-item">
+            <img class="ui-logo" src="res/img/JASG_logo_transparent_fit.png" draggable="false">
+        </div><br>
+        <div class="main-menu-item">
+            <a class="ui-button" id="play_button" onclick="openPanel('play_panel')"> PLAY </a> <br>
+            <a class="ui-button" id="about_button" onclick="openPanel('about_panel')"> ABOUT </a> <br>
+            <a class="ui-button" id="account_button" onclick="openPanel('account_panel')"> ACCOUNT </a> <br>
+            <a class="ui-button" id="devlogs_button" onclick="openPanel('devlogs_panel')"> DEVLOGS </a> <br> <br>
+            <a class="ui-button" id="devlogs_button" href="../../../index.html#header-games"> BACK TO MULTITEAM </a>
+        </div>
+    </div>
+
+    <div class="slide-panel" id="play_panel">
+        <div class="panel-content">
+            Get the game in the MultiTeam Launcher!<br><br>
+            The launcher is available for both Linux and Windows, so is the game! <br><br><br>
+            <div class="cardpanel-display">
+                <div class="cardpanel-display-header">MultiTeam Launcher<div class="shine-effect">.</div></div>
+                <div class="cardpanel-display-container">
+                    <img src="../../../res/img/icons/mt_launcher_icon.png" alt="MultiTeam launcher Icon" id="MTLicon" draggable="false"> <br> <br>
+                    <a class="ui-button" id="devlogs_button" href="../../../index.html#header-games"> GET THE LAUNCHER HERE </a>
+                </div>
+            </div>
+
+        </div><br>
+        <div class="ui-button" id="back_to_main_menu_button" onclick="closeAllPanel()"> BACK </div> <br>
+    </div>
+
+    <div class="slide-panel" id="about_panel">
+        <div class="panel-content">
+            You might wonder, whats this game about? Think no more, i'll explain here :D <br>
+            You fall into a world, where you're alone you may think, but no. You'll encounter several foes and even some that could be your friend! <br>
+            As the name suggests, like in many others, the main point is to survive for as long as you can! 
+        </div>
+        <div class="ui-button" id="back_to_main_menu_button" onclick="closeAllPanel()"> BACK </div>
+    </div>
+
+    <div class="slide-panel" id="account_panel">
+        <div class="panel-content"><br><br>
+            Accounts are managed trough the MultiTeam Website! <br>
+            You'll need an account to play the game, since the game is available trough the MultiTeam launcher and you need to log-in to use it! <br>
+            No worries, its super easy to create an account if you dont have one already, a few clicks and you'll be good to go! <br>
+            About the registration process, you'll find more information on the MultiTeam website, at the Account section!
+        </div><br>
+        <a class="ui-button" id="devlogs_button" href="../../../index.html#header-account"> MULTITEAM ACCOUNTS </a> <br> <br>
+        <div class="ui-button" id="back_to_main_menu_button" onclick="closeAllPanel()"> BACK </div> <br>
+    </div>
+
+    <div class="slide-panel" id="devlogs_panel">
+        <div class="panel-content"> <br>
+
+            Welcome to the devlogs section! <br> <br>
+            
+            <div class="panel-content-scrollable">
+                
+                <div class="devlog-panel">
+                    <div class="devlog-panel-header"> <a class="devlog-title">Test Devlog - 000</a> <a class="devlog-widget" id="expand-devlog" onclick="openOrClosePanel('devlog_id_000')"><i data-feather="chevron-down"></i></a></div>
+                    <div class="devlog-panel-content" id="devlog_id_000">
+                        Test Devlog Content
+                    </div>
+                </div><br>
+
+            </div>
+
+        </div> <br> <br>
+        <div class="ui-button" id="back_to_main_menu_button" onclick="closeAllPanel()"> BACK </div>
+    </div>
+
+    <script>
+        feather.replace()
+      </script>
+
+</body>

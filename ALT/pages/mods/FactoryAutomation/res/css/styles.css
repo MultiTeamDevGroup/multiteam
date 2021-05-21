@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'MinecraftChat';
+    src: url('../font/Custom_Minecraft_font.ttf');
+}
+
+*{
+    transition: cubic-bezier(.88,.1,.23,.82);
+    transition-duration: 0.2s;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --mtWhite: #E1E1E1;
+    --mtWhiteHover: #c4c4c4;
+    --mtBg: #141414;
+    --mtPanel: #262626;
+    --accentBlue: #7F91E9;
+    --accentColor: #eca201;
+}
+
+body {
+    cursor: context-menu;
+    background-color: var(--mtBg);
+    color: var(--mtWhite);
+    font-family: 'Segoe UI' , 'Open Sans';
+    padding: 0px;
+    margin: 0px;
+    user-select: none;
+}
+
+
+.page-header{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 20px;
+    margin-bottom: 2%;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.2), 0 0 0 1px rgba(32,34,37,.6);
+}
+
+.mod-logo{
+    max-height: 150px;
+}
+
+.title-splash{
+    position: absolute;
+    right: 30%;
+    color: #fffd00;
+    font-family: MinecraftChat;
+	animation: splashISsplashing 0.8s infinite;
+}
+
+@keyframes splashISsplashing {
+    0% {
+		transform: rotate(-20deg) scale(1);
+	}
+    50% {
+		transform: rotate(-20deg) scale(1.2) ;
+	}
+    100% {
+		transform: rotate(-20deg) scale(1);
+	}
+}
+
+.page-navbar{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: var(--mtPanel);
+    text-align: center;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.6);
+}
+
+.navbar-item{
+    display: inline-block;
+    margin: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 3px;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--mtBg);
+    background-color: var(--mtWhite);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.6);
+}
+
+.navbar-item:hover{
+    background-color: var(--accentColor);
+    color: var(--mtBg);
+    transform: scale(1.2);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.6);
+}
+
+.navbar-item:active{
+    transform: scale(0.9);
+}
+
+.page-content{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: var(--mtPanel);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.6);
+    display: none;
+}
+
+#tab-about{
+    display: block;
+}
+
+.page-content-title{
+    font-size: 30px;
+    margin: 0px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+#curseforeg-downloads-badge{
+    transform: translateY(5px);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.6);
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.page-footer{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: var(--mtPanel);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.6);
+}
+
+#deviderLine{
+	height:5px;
+	width: auto;
+    background-image: url('../img/decorline.png');
+    background-size: contain;
+	border-radius: 90px;
+	align:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-showcaser{
+    display: inline-block;
+    background-color: var(--mtBg);
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.image-showcaser-display{
+    height:300px;
+	max-height:300px;
+	image-rendering: pixelated;
+	transition: opacity 1s ease-in-out;
+	transition-timing-function: ease-in-out;
+}
+
+.image-showcaser-footer{
+    padding: 5px;
+}
+
+.display-inline-block{
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+}
+
+.showcase-image-1000{
+    max-width: 1000px;
+}

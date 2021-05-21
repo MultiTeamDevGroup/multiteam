@@ -1,0 +1,193 @@
+<head>
+
+	<title>GARDEN ARSENAL</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="../../../res/css/mt/mt_colors.css">
+	<link rel="stylesheet" href="../../../res/css/mt/mt_scrollbar.css">
+	<script src="https://kit.fontawesome.com/ecf1eef1d8.js"></script>
+	<link rel="icon" href="images/GA_Carrot.png">
+	<script src="https://kit.fontawesome.com/8609b0ec82.js" crossorigin="anonymous"></script>
+	
+</head>
+
+<body>
+
+		<script>
+			
+			/*--var a=2;
+			function nextBackground() {
+			if (a>=14) {a=1;}else {a=a+1;}
+			document.body.style.backgroundImage = "url('images/panorama/"+a+".png')";
+			}
+		
+			var b=1;
+			function nextPainting() {
+			if (b>=24) {b=1;}else {b=b+1;}
+			document.querySelector("#painting").src = "images/items/paintings/"+b+".png"
+			document.querySelector("#paintingname") = ""+b+""
+			}
+			function prevPainting() {
+			if (b<=1) {b=24;}else {b=b-1;}
+			document.querySelector("#painting").src = "images/items/paintings/"+b+".png"
+			document.querySelector("#paintingname") = ""+b+""
+			}*/
+			
+			/*--function openTab(element) {
+			if (element.childNodes[0].style.display == "block")
+			{element.childNodes[0].style.display = "none";}
+			else{element.childNodes[0].style.display = "block";}
+			
+			}*/
+			
+			function openTab(element) {
+			try {
+			if (element.childNodes[1].style.display == "block")
+				element.childNodes[1].style.display = "none";
+			else
+				element.childNodes[1].style.display = "block";
+			}catch(error) {
+				element.childNodes[1].style.display = "block";
+				}
+			}
+			
+		</script>
+		<script type="text/javascript" src="jquery.js"></script>
+		
+		<script src="js/three.min.js"></script>
+
+		
+		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+		<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+		<!-- Use it like any other HTML element -->
+		
+		
+		
+		
+		<br><br><br>
+		<div class="mainstuff">
+		<a id="splash"></a>
+			<div class="container2">
+				<br>
+				<div id="logo">
+					<img alt="Logo of Garden Arsenal" draggable="false" src="images/GardenArsenal_logo_transparent.png" style="max-height: 200px;">
+					<br><br>
+					<a href="../../../index.html#header-minecraft" id="btn-custom3">MultiTeam</a> X <a href="https://vampirestudios.netlify.app/index.html" id="btn-custom3">Vampire Studios</a>
+					<br><br>
+				</div>
+			</div>
+		</div>
+		<br><br><br>
+	
+		<div class="container" >
+			<br>
+			<h1>Garden Arsenal v0.3.0 by MultiTeam</h1>
+			A mod that adds fun things, like weapons that shoots various vegetables and fruits, and sometimes food items, by MulitTeam in collaboration with VampireStudios<br>
+			v0.3.0 is the rewrite for MC 1.16.4/5 Forge & Fabric. Alongside the rewritten code, all assets and textures has been reworked.
+			<div id="deviderLine"></div>
+			<h1>Credits</h1>
+			CatCore - Fabric Code <br>
+			Laz The Artist - Forge Code - Main art & founder
+			<div id="deviderLine" ></div>
+			<h1>Weapons and Guns</h1>
+				<model-viewer id="ModelFrame" src="models/rifle/rifle.gltf" alt="A 3D model of an astronaut" auto-rotate camera-controls></model-viewer>
+				<div id="info" >
+					<h2>Carrot Rifle</h2>
+					Shoots carrots.
+					<br><br><br><br><br>
+				</div> <br>
+				<model-viewer id="ModelFrame" src="models/bazooka/bazooka.gltf" alt="A 3D model of an astronaut" auto-rotate camera-controls></model-viewer>
+				<div id="info" >
+					<h2>Potato Bazooka</h2>
+					Shoots potatoes that explodes.
+					<br><br><br><br><br>
+				</div>
+			<div id="deviderLine" ></div>
+			<h1>Skins and Skin Cards</h1>
+				<div id="info" >
+					<img id="pixelatedrender" style="width:5rem;height:5rem;float:left;margin-left:5rem;" src="images/skin_cards/skin_card_camo_desert.png">
+					Desert Skin card. Applicable to every weapon. When applied, adds a camouflage type skin to your weapon.
+					<br><br><a id="rarity_badge-common">common</a> <a id="rarity_badge-camo">camo</a>
+				</div><br><br>
+				<div id="info" >
+					<img id="pixelatedrender" style="width:5rem;height:5rem;float:left;margin-left:5rem;" src="images/skin_cards/skin_card_camo_end.png">
+					End Skin card. Applicable to every weapon. When applied, adds a camouflage type skin to your weapon.
+					<br><br><a id="rarity_badge-common">common</a> <a id="rarity_badge-camo">camo</a>
+				</div><br><br>
+				<div id="info" >
+					<img id="pixelatedrender" style="width:5rem;height:5rem;float:left;margin-left:5rem;" src="images/skin_cards/skin_card_camo_forest.png">
+					Forest Skin card. Applicable to every weapon. When applied, adds a camouflage type skin to your weapon.
+					<br><br><a id="rarity_badge-common">common</a> <a id="rarity_badge-camo">camo</a>
+				</div><br><br>
+				<div id="info" >
+					<img id="pixelatedrender" style="width:5rem;height:5rem;float:left;margin-left:5rem;" src="images/skin_cards/skin_card_camo_frost.png">
+					Frost Skin card. Applicable to every weapon. When applied, adds a camouflage type skin to your weapon.
+					<br><br><a id="rarity_badge-common">common</a> <a id="rarity_badge-camo">camo</a>
+				</div><br><br>
+				<div id="info" >
+					<img id="pixelatedrender" style="width:5rem;height:5rem;float:left;margin-left:5rem;" src="images/skin_cards/skin_card_camo_nether.png">
+					Nether Skin card. Applicable to every weapon. When applied, adds a camouflage type skin to your weapon.
+					<br><br><a id="rarity_badge-common">common</a> <a id="rarity_badge-camo">camo</a>
+				</div><br><br>
+				<div id="info" >
+					<img id="pixelatedrender" style="width:5rem;height:5rem;float:left;margin-left:5rem;" src="images/skin_cards/skin_card_metalic_gold.png">
+					Gold Skin card. Applicable to every weapon. When applied, adds a metalic type skin to your weapon.
+					<br><br><a id="rarity_badge-rare">rare</a> <a id="rarity_badge-metalic">metalic</a>
+				</div><br><br>
+				<div id="info" >
+					<img id="pixelatedrender" style="width:5rem;height:5rem;float:left;margin-left:5rem;" src="images/skin_cards/skin_card_metalic_iron.png">
+					Iron Skin card. Applicable to every weapon. When applied, adds a metalic type skin to your weapon.
+					<br><br><a id="rarity_badge-uncommon">uncommon</a> <a id="rarity_badge-metalic">metalic</a>
+				</div><br><br>
+				<div id="info" >
+					<img id="pixelatedrender" style="width:5rem;height:5rem;float:left;margin-left:5rem;" src="images/skin_cards/skin_card_metalic_netherite.png">
+					Netherite Skin card. Applicable to every weapon. When applied, adds a metalic type skin to your weapon.
+					<br><br><a id="rarity_badge-epic">epic</a> <a id="rarity_badge-metalic">metalic</a>
+				</div><br><br>
+				<div id="info" >
+					<img id="pixelatedrender" style="width:5rem;height:5rem;float:left;margin-left:5rem;" src="images/skin_cards/skin_card_seasonal_christmas.png">
+					Christmas Skin card. Applicable to every weapon. When applied, adds a seasonal type skin to your weapon.
+					<br><br><a id="rarity_badge-rare">rare</a> <a id="rarity_badge-seasonal">seasonal</a>
+				</div><br><br>
+				<div id="info" >
+					<img id="pixelatedrender" style="width:5rem;height:5rem;float:left;margin-left:5rem;" src="images/skin_cards/skin_card_seasonal_halloween.png">
+					Halloween Skin card. Applicable to every weapon. When applied, adds a seasonal type skin to your weapon.
+					<br><br><a id="rarity_badge-rare">rare</a> <a id="rarity_badge-seasonal">seasonal</a>
+				</div><br><br>
+				<div id="info" >
+					<img id="pixelatedrender" style="width:5rem;height:5rem;float:left;margin-left:5rem;" src="images/skin_cards/skin_card_special_aquatic.png">
+					Aquatic Skin card. Applicable to every weapon. When applied, adds a special type skin to your weapon.
+					<br><br><a id="rarity_badge-rare">rare</a> <a id="rarity_badge-special">special</a>
+				</div><br><br>
+				<div id="info" >
+					<img id="pixelatedrender" style="width:5rem;height:5rem;float:left;margin-left:5rem;" src="images/skin_cards/skin_card_special_neon.png">
+					Neon Skin card. Applicable to every weapon. When applied, adds a special type skin to your weapon.
+					<br><br><a id="rarity_badge-legendary">legendary</a> <a id="rarity_badge-special">special</a>
+				</div><br><br>
+				<div id="info" >
+					<img id="pixelatedrender" style="width:5rem;height:5rem;float:left;margin-left:5rem;" src="images/skin_cards/skin_card_teams_multiteam.png">
+					MultiTeam branded Skin card. Applicable to every weapon. When applied, adds a teams type skin to your weapon.
+					<br><br><a id="rarity_badge-mythical">mythical</a> <a id="rarity_badge-teams">teams</a>
+				</div><br><br>
+				<div id="info" >
+					<img id="pixelatedrender" style="width:5rem;height:5rem;float:left;margin-left:5rem;" src="images/skin_cards/skin_card_teams_vampirestudios.png">
+					VampireStudios branded Skin card. Applicable to every weapon. When applied, adds a teams type skin to your weapon. <a id="pls">"Please, dig the hatchet..."</a>
+					<br><br><a id="rarity_badge-mythical">mythical</a> <a id="rarity_badge-teams">teams</a>
+				</div><br><br>
+				<div id="info" >
+					<img id="pixelatedrender" style="width:5rem;height:5rem;float:left;margin-left:5rem;" src="images/skin_cards/skin_card_teams_mcabnormals.png">
+					MCAbnormals branded Skin card. Applicable to every weapon. When applied, adds a teams type skin to your weapon. <a id="pls">"Please, dig the hatchet..."</a>
+					<br><br><a id="rarity_badge-mythical">mythical</a> <a id="rarity_badge-teams">teams</a> <a id="rarity_badge-special">special</a>
+				</div>
+			
+			
+			
+			<br><br><br><br><br><br>
+		</div>
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		
+	<div class="copyright">
+		<br><br>
+			2017-2020 © MultiTeam Minecraft-Modding Group
+		<br><br><br>
+	</div>
+</body>

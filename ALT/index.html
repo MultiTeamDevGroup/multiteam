@@ -1,0 +1,841 @@
+<head>
+
+    <link rel="icon" href="res/img/MultiTeamLogo_monogram_fit.png">
+    <title>MultiTeam</title>
+    <link rel="stylesheet" type="text/css" href="res/css/styles.css">
+    <link rel="stylesheet" href="res/css/mt/mt_scrollbar.css">
+    <link rel="stylesheet" href="res/css/discord/discordProfile-normal.css">
+    <link rel="stylesheet" href="res/css/discord/discordInvite.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ecf1eef1d8.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="res/js/discordInvite.js"></script>
+
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script-->
+
+</head>
+
+<body>
+
+    <script src="js/discordInvite.js"></script>
+    <script>
+        discordInvite.init({
+            inviteCode: 'rudHdrJ',
+            title: 'MultiTeam HUB',
+        });
+        discordInvite.render();
+    </script>
+
+    <div class="page" id="main">
+
+        <div class="header-menu">
+            <div class="header-menu-entrys">
+                <a class="header-menu-entry-selected" href="#main"><i data-feather="info"
+                        id="header-menu-entry-icon"></i>About</a>
+                <a class="header-menu-entry" href="#header-games"><i class="fas fa-gamepad" id="header-menu-entry-icon"
+                        style="right: 28px;"></i>Games</a>
+                <a class="header-menu-entry" href="#header-minecraft"><i data-feather="box" id="header-menu-entry-icon"
+                        style="right: 40px;"></i>Minecraft</a>
+                <a class="header-menu-entry" href="#header-premium"> <i class="icon-MTPremiumBadge"
+                        id="header-menu-entry-icon" style="right: 40px;"></i> Premium</a>
+                <a class="header-menu-entry" href="#header-donate"><i data-feather="gift" id="header-menu-entry-icon"
+                        style="right: 31px;"></i>Donate</a>
+                <a class="header-menu-entry" href="#header-account"><i class="fas fa-user-circle"
+                        id="header-menu-entry-icon" style="right: 37px;"></i>Account</a>
+            </div>
+        </div>
+
+        <a href="#header-games" class="button_nav"> <i class="fas fa-caret-down"></i> </a>
+
+        <div class="panel" id="About">
+            <p class="panel-title"> All about</p> <img id="logo-disp" src="res/img/MultiTeamLogo_full_transparent.png"
+                draggable="false"> <br> <br>
+
+            <p class="panel-text">
+                Our group was founded by <a href="pages/misc/LazTheArtist's Portfolio/index.html"
+                    class="dc_username">@[László Gaming]#3764</a> aka LazTheArtist back in 2017.<br><br>
+                We started as a minecraft modding group, but we grew larger by making games since 2020. There were tries
+                before that, but officially its 2020.<br><br>
+                Back in the day, i aka Laz, wanted to make minecraft mods, but i wasnt able to code myself, so i began
+                searching for someone who can.
+                Basically this is how MultiTeam was founded; It consists of me, and those who could code minecraft mods.
+                We had started several mods, and some are still being worked on today. But in 2020 came the change,
+                specially in the last quarter.
+                I started to work on a game with my friends in the first quarter of 2020, learned a bit of C# and unty
+                itself,
+                and the idea of Multiteam being more than a minecraft modding group started forming.
+                Later in the year, near the third or fourth quarter, i started working on another game, and as we gone
+                along,
+                i finally wanted to make it official: We are no longer just a minecraft modding group.
+                This is how this site was renewed in december of 2020, and basically the whole idea of
+                Multiteam.<br><br>
+                And now you know the history, you can be part of it here:<br>
+
+            <div id="discordInviteBox"></div><br><br>
+
+
+            Our Team members, in "cronological" order:<br><br>
+
+            <div class="profile">
+                <div class="pro-header">
+                    <div class="pro-avatar"> <img draggable="false"
+                            src="https://cdn.discordapp.com/avatars/203505346109636617/ab5f0d82496d061dc554f99f6155b4e2.png?size=128"
+                            alt="avatar-username"> <span class="pro-status">
+                            <i class="fas fa-circle usr-status-online"></i></span></div>
+                    <div class="pro-username"><span class="text-username">IAmGama™</span><span
+                            class="text-discrim">#4944</span></div>
+                </div>
+
+                <div class="pro-body">
+                    <div class="pro-content">
+                        <div class="title-body">ROLES</div>
+                        <div class="roles-body">
+                            <!-- roles list -->
+                            <div class="rol" style="color: var(--dcRoleArtist);">
+                                <i class="fas fa-circle"></i><span>Artist</span>
+                            </div>
+                            <!-- <div class="rol" style="color: #7F91E9;">
+                                        <i class="fas fa-circle"></i><span>Mod</span>
+                                    </div>
+                                    <div class="rol" style="color: #7F91E9;">
+                                        <i class="fas fa-circle"></i><span>Member</span>
+                                    </div>
+                                    <div class="rol" style="color: #7F91E9;">
+                                        <i class="fas fa-circle"></i><span>Dev</span>
+                                    </div>
+                                        -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile">
+                <div class="pro-header">
+                    <div class="pro-avatar"> <img draggable="false"
+                            src="https://cdn.discordapp.com/avatars/302379230308859905/fcffa47347321b58cb0cc0e7a59fe560.png?size=128"
+                            alt="avatar-username"> <span class="pro-status">
+                            <i class="fas fa-circle usr-status-invisible"></i></span></div>
+                    <div class="pro-username"><span class="text-username">m00n</span><span
+                            class="text-discrim">#7678</span></div>
+                </div>
+
+                <div class="pro-body">
+                    <div class="pro-content">
+                        <div class="title-body">ROLES</div>
+                        <div class="roles-body">
+                            <!-- roles list -->
+                            <div class="rol" style="color: var(--dcRoleCoder);">
+                                <i class="fas fa-circle"></i><span>Coder</span>
+                            </div>
+                            <div class="rol" style="color: var(--dcRoleMultiEx);">
+                                <i class="fas fa-circle"></i><span>MultiExpansion Mod</span>
+                            </div>
+                            <!-- <div class="rol" style="color: #7F91E9;">
+                                        <i class="fas fa-circle"></i><span>Member</span>
+                                    </div>
+                                    <div class="rol" style="color: #7F91E9;">
+                                        <i class="fas fa-circle"></i><span>Dev</span>
+                                    </div>
+                                        -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile">
+                <div class="pro-header">
+                    <div class="pro-avatar"> <img draggable="false"
+                            src="https://cdn.discordapp.com/avatars/94031621396635648/4a8c4b3ab22531d21a8b8d12e28cc2c8.png?size=128"
+                            alt="avatar-username"> <span class="pro-status">
+                            <i class="fas fa-circle usr-status-afk"></i></span></div>
+                    <div class="pro-username"><span class="text-username">fabbe50</span><span
+                            class="text-discrim">#6969</span></div>
+                </div>
+
+                <div class="pro-body">
+                    <div class="pro-content">
+                        <div class="title-body">ROLES</div>
+                        <div class="roles-body">
+                            <!-- roles list -->
+                            <div class="rol" style="color: var(--dcRoleCoder);">
+                                <i class="fas fa-circle"></i><span>Coder</span>
+                            </div>
+                            <div class="rol" style="color: var(--dcRoleStarwars);">
+                                <i class="fas fa-circle"></i><span>StarWars Mod</span>
+                            </div>
+                            <!-- <div class="rol" style="color: #7F91E9;">
+                                        <i class="fas fa-circle"></i><span>Member</span>
+                                    </div>
+                                    <div class="rol" style="color: #7F91E9;">
+                                        <i class="fas fa-circle"></i><span>Dev</span>
+                                    </div>
+                                        -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile">
+                <div class="pro-header">
+                    <div class="pro-avatar"> <img draggable="false"
+                            src="https://cdn.discordapp.com/avatars/257247527630274561/4eacb72e664645751c06d7c6aac01e10.png?size=128"
+                            alt="avatar-username"> <span class="pro-status">
+                            <i class="fas fa-circle usr-status-invisible"></i></span></div>
+                    <div class="pro-username"><span class="text-username">Monstahhh</span><span
+                            class="text-discrim">#9629</span></div>
+                </div>
+
+                <div class="pro-body">
+                    <div class="pro-content">
+                        <div class="title-body">ROLES</div>
+                        <div class="roles-body">
+                            <!-- roles list -->
+                            <div class="rol" style="color: var(--dcRoleCoder);">
+                                <i class="fas fa-circle"></i><span>Coder helper</span>
+                            </div>
+                            <div class="rol" style="color: var(--dcRoleMultiEx);">
+                                <i class="fas fa-circle"></i><span>MultiExpansion Mod</span>
+                            </div>
+                            <!-- <div class="rol" style="color: #7F91E9;">
+                                        <i class="fas fa-circle"></i><span>Member</span>
+                                    </div>
+                                    <div class="rol" style="color: #7F91E9;">
+                                        <i class="fas fa-circle"></i><span>Dev</span>
+                                    </div>
+                                        -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile">
+                <div class="pro-header">
+                    <div class="pro-avatar"> <img draggable="false"
+                            src="https://cdn.discordapp.com/avatars/295683263014633482/179c9e854f4406e91a7ca8b4f452b4cf.png?size=128"
+                            alt="avatar-username"> <span class="pro-status">
+                            <i class="fas fa-circle usr-status-online"></i></span></div>
+                    <div class="pro-username"><span class="text-username">boblovespi</span><span
+                            class="text-discrim">#9817</span></div>
+                </div>
+
+                <div class="pro-body">
+                    <div class="pro-content">
+                        <div class="title-body">ROLES</div>
+                        <div class="roles-body">
+                            <!-- roles list -->
+                            <div class="rol" style="color: var(--dcRoleCoder);">
+                                <i class="fas fa-circle"></i><span>Coder</span>
+                            </div>
+                            <div class="rol" style="color: var(--dcRoleFactorya);">
+                                <i class="fas fa-circle"></i><span>FactoryAutomation Mod</span>
+                            </div>
+                            <!-- <div class="rol" style="color: #7F91E9;">
+                                        <i class="fas fa-circle"></i><span>Member</span>
+                                    </div>
+                                    <div class="rol" style="color: #7F91E9;">
+                                        <i class="fas fa-circle"></i><span>Dev</span>
+                                    </div>
+                                        -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile">
+                <div class="pro-header">
+                    <div class="pro-avatar"> <img draggable="false"
+                            src="https://cdn.discordapp.com/avatars/276550742905585674/74fdffc6dbcbd3196fa16bf99f5a3579.png?size=128"
+                            alt="avatar-username"> <span class="pro-status">
+                            <i class="fas fa-circle usr-status-online"></i></span></div>
+                    <div class="pro-username"><span class="text-username">Rellit</span><span
+                            class="text-discrim">#7212</span></div>
+                </div>
+
+                <div class="pro-body">
+                    <div class="pro-content">
+                        <div class="title-body">ROLES</div>
+                        <div class="roles-body">
+                            <!-- roles list -->
+                            <div class="rol" style="color: var(--dcRoleCoder);">
+                                <i class="fas fa-circle"></i><span>Coder</span>
+                            </div>
+                            <div class="rol" style="color: var(--dcRoleMultiEx);">
+                                <i class="fas fa-circle"></i><span>MultiExpansion Mod</span>
+                            </div>
+                            <!-- <div class="rol" style="color: #7F91E9;">
+                                        <i class="fas fa-circle"></i><span>Member</span>
+                                    </div>
+                                    <div class="rol" style="color: #7F91E9;">
+                                        <i class="fas fa-circle"></i><span>Dev</span>
+                                    </div>
+                                        -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile">
+                <div class="pro-header">
+                    <div class="pro-avatar"> <img draggable="false"
+                            src="https://cdn.discordapp.com/avatars/409673299241598976/8e1de8229f4dcf965a198f745b1c7e4e.png?size=128"
+                            alt="avatar-username"> <span class="pro-status">
+                            <i class="fas fa-circle usr-status-online"></i></span></div>
+                    <div class="pro-username"><span class="text-username">MaroonShaded</span><span
+                            class="text-discrim">#9545</span></div>
+                </div>
+
+                <div class="pro-body">
+                    <div class="pro-content">
+                        <div class="title-body">ROLES</div>
+                        <div class="roles-body">
+                            <!-- roles list -->
+                            <div class="rol" style="color: var(--dcRoleCoder);">
+                                <i class="fas fa-circle"></i><span>Coder</span>
+                            </div>
+                            <div class="rol" style="color: var(--dcRoleMultiEx);">
+                                <i class="fas fa-circle"></i><span>MultiExpansion Mod</span>
+                            </div>
+                            <div class="rol" style="color: var(--dcRoleJASG)">
+                                <i class="fas fa-circle"></i><span>JASG</span>
+                            </div>
+                            <!-- <div class="rol" style="color: #7F91E9;">
+                                        <i class="fas fa-circle"></i><span>Dev</span>
+                                    </div>
+                                        -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile">
+                <div class="pro-header">
+                    <div class="pro-avatar"> <img draggable="false"
+                            src="https://cdn.discordapp.com/avatars/707672707558539315/4c73e826a9a4d4169ee2527d58e377f3.png?size=128"
+                            alt="avatar-username"> <span class="pro-status">
+                            <i class="fas fa-circle usr-status-online"></i></span></div>
+                    <div class="pro-username"><span class="text-username">Crocoduck</span><span
+                            class="text-discrim">#1809</span></div>
+                </div>
+
+                <div class="pro-body">
+                    <div class="pro-content">
+                        <div class="title-body">ROLES</div>
+                        <div class="roles-body">
+                            <!-- roles list -->
+                            <div class="rol" style="color: var(--dcRoleJASG);">
+                                <i class="fas fa-circle"></i><span>JASG</span>
+                            </div>
+                            <!-- <div class="rol" style="color: var(--dcRoleMultiEx);">
+                                        <i class="fas fa-circle"></i><span>MultiExpansion Mod</span>
+                                    </div>
+                                    <div class="rol" style="color: #7F91E9;">
+                                        <i class="fas fa-circle"></i><span>Member</span>
+                                    </div>
+                                    <div class="rol" style="color: #7F91E9;">
+                                        <i class="fas fa-circle"></i><span>Dev</span>
+                                    </div>
+                                        -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile">
+                <div class="pro-header">
+                    <div class="pro-avatar"> <img draggable="false"
+                            src="https://cdn.discordapp.com/avatars/431007747505520642/c0f80c9b1c47eb12f5e62be7a99e7c47.png?size=128"
+                            alt="avatar-username"> <span class="pro-status">
+                            <i class="fas fa-circle usr-status-online"></i></span></div>
+                    <div class="pro-username"><span class="text-username">Shroomer</span><span
+                            class="text-discrim">#0399</span></div>
+                </div>
+
+                <div class="pro-body">
+                    <div class="pro-content">
+                        <div class="title-body">ROLES</div>
+                        <div class="roles-body">
+                            <!-- roles list -->
+                            <div class="rol" style="color: var(--dcRoleArtist);">
+                                <i class="fas fa-circle"></i><span>Artist</span>
+                            </div>
+                            <div class="rol" style="color: var(--dcRoleJASG);">
+                                <i class="fas fa-circle"></i><span>JASG</span>
+                            </div>
+                            <!-- <div class="rol" style="color: #7F91E9;">
+                                        <i class="fas fa-circle"></i><span>Member</span>
+                                    </div>
+                                    <div class="rol" style="color: #7F91E9;">
+                                        <i class="fas fa-circle"></i><span>Dev</span>
+                                    </div>
+                                        -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile">
+                <div class="pro-header">
+                    <div class="pro-avatar"> <img draggable="false"
+                            src="https://cdn.discordapp.com/avatars/703276665442140162/259b4b76f41207c8f7d8915b1e2d0df7.png?size=128"
+                            alt="avatar-username"> <span class="pro-status">
+                            <i class="fas fa-circle usr-status-online"></i></span></div>
+                    <div class="pro-username"><span class="text-username">Void Demon</span><span
+                            class="text-discrim">#0759</span></div>
+                </div>
+
+                <div class="pro-body">
+                    <div class="pro-content">
+                        <div class="title-body">ROLES</div>
+                        <div class="roles-body">
+                            <!-- roles list -->
+                            <div class="rol" style="color: var(--dcRoleArtist);">
+                                <i class="fas fa-circle"></i><span>Artist</span>
+                            </div>
+                            <div class="rol" style="color: var(--dcRoleJASG);">
+                                <i class="fas fa-circle"></i><span>JASG</span>
+                            </div>
+                            <!-- <div class="rol" style="color: #7F91E9;">
+                                        <i class="fas fa-circle"></i><span>Member</span>
+                                    </div>
+                                    <div class="rol" style="color: #7F91E9;">
+                                        <i class="fas fa-circle"></i><span>Dev</span>
+                                    </div>
+                                        -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile">
+                <div class="pro-header">
+                    <div class="pro-avatar"> <img draggable="false"
+                            src="https://cdn.discordapp.com/avatars/452676989355032597/186e5fc0249d64a53b7dbb50db24358e.png?size=128"
+                            alt="avatar-username"> <span class="pro-status">
+                            <i class="fas fa-circle usr-status-online"></i></span></div>
+                    <div class="pro-username"><span class="text-username">GLaDOS Edition</span><span
+                            class="text-discrim">#3407</span></div>
+                </div>
+
+                <div class="pro-body">
+                    <div class="pro-content">
+                        <div class="title-body">ROLES</div>
+                        <div class="roles-body">
+                            <!-- roles list -->
+                            <div class="rol" style="color: var(--dcRoleArtist);">
+                                <i class="fas fa-circle"></i><span>Artist</span>
+                            </div>
+                            <div class="rol" style="color: var(--dcRoleJASG);">
+                                <i class="fas fa-circle"></i><span>JASG</span>
+                            </div>
+                            <!-- <div class="rol" style="color: #7F91E9;">
+                                        <i class="fas fa-circle"></i><span>Member</span>
+                                    </div>
+                                    <div class="rol" style="color: #7F91E9;">
+                                        <i class="fas fa-circle"></i><span>Dev</span>
+                                    </div>
+                                        -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile">
+                <div class="pro-header">
+                    <div class="pro-avatar"> <img draggable="false"
+                            src="https://cdn.discordapp.com/avatars/567900373877129239/3389952730f2a7754928a7f328417a19.png?size=128"
+                            alt="avatar-username"> <span class="pro-status">
+                            <i class="fas fa-circle usr-status-online"></i></span></div>
+                    <div class="pro-username"><span class="text-username">Pyrocide (Wesley)</span><span
+                            class="text-discrim">#5768</span></div>
+                </div>
+
+                <div class="pro-body">
+                    <div class="pro-content">
+                        <div class="title-body">ROLES</div>
+                        <div class="roles-body">
+                            <!-- roles list -->
+                            <div class="rol" style="color: #2ecc71;">
+                                <i class="fas fa-circle"></i><span>MusicMaker</span>
+                            </div>
+                            <div class="rol" style="color: var(--dcRoleJASG);">
+                                <i class="fas fa-circle"></i><span>JASG</span>
+                            </div>
+                            <!-- <div class="rol" style="color: #7F91E9;">
+                                        <i class="fas fa-circle"></i><span>Member</span>
+                                    </div>
+                                    <div class="rol" style="color: #7F91E9;">
+                                        <i class="fas fa-circle"></i><span>Dev</span>
+                                    </div>
+                                        -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile">
+                <div class="pro-header">
+                    <div class="pro-avatar"> <img draggable="false"
+                            src="https://cdn.discordapp.com/avatars/223864389256609792/c74a24ceb8153ace07b07e5422216bdd.png?size=128"
+                            alt="avatar-username"> <span class="pro-status">
+                            <i class="fas fa-circle usr-status-online"></i></span></div>
+                    <div class="pro-username"><span class="text-username">Cat Core</span><span
+                            class="text-discrim">#9902</span></div>
+                </div>
+
+                <div class="pro-body">
+                    <div class="pro-content">
+                        <div class="title-body">ROLES</div>
+                        <div class="roles-body">
+                            <!-- roles list -->
+                            <div class="rol" style="color: var(--mtWhite);">
+                                <i class="fas fa-circle"></i><span>MTLauncherDEV</span>
+                            </div>
+                            <!-- <div class="rol" style="color: var(--dcRoleMultiEx);">
+                                        <i class="fas fa-circle"></i><span>MultiExpansion Mod</span>
+                                    </div>
+                                    <div class="rol" style="color: #7F91E9;">
+                                        <i class="fas fa-circle"></i><span>Member</span>
+                                    </div>
+                                    <div class="rol" style="color: #7F91E9;">
+                                        <i class="fas fa-circle"></i><span>Dev</span>
+                                    </div>
+                                        -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </p>
+        </div>
+
+
+
+        <div class="header-menu" id="header-games">
+            <div class="header-menu-entrys">
+                <a class="header-menu-entry" href="#main"><i data-feather="info"
+                        id="header-menu-entry-icon"></i>About</a>
+                <a class="header-menu-entry-selected" href="#header-games"><i class="fas fa-gamepad"
+                        id="header-menu-entry-icon" style="right: 28px;"></i>Games</a>
+                <a class="header-menu-entry" href="#header-minecraft"><i data-feather="box" id="header-menu-entry-icon"
+                        style="right: 40px;"></i>Minecraft</a>
+                <a class="header-menu-entry" href="#header-premium"><i class="icon-MTPremiumBadge"
+                        id="header-menu-entry-icon" style="right: 40px;"></i>Premium</a>
+                <a class="header-menu-entry" href="#header-donate"><i data-feather="gift" id="header-menu-entry-icon"
+                        style="right: 31px;"></i>Donate</a>
+                <a class="header-menu-entry" href="#header-account"><i class="fas fa-user-circle"
+                        id="header-menu-entry-icon" style="right: 37px;"></i>Account</a>
+            </div>
+        </div>
+
+        <a href="#main" class="button_nav"> <i class="fas fa-caret-up"></i> </a>
+        <a href="#header-minecraft" class="button_nav"> <i class="fas fa-caret-down"></i> </a>
+        <a href="#main" class="button_nav" style="background-color: #7F91E9;"> <i class="fas fa-caret-up"></i> </a>
+        <div class="panel" id="Games">
+            <p class="panel-title">Our Games</p>
+            <p class="panel-text">Let us introduce our games... but you might ask, how? Say no more, let us present our
+                launcher, that will let us introduce our games! Silly, huh? <br> <br> The MultiTeam Launcher will ask
+                you to sign in with your MultiTeam Account, which you can make here or after downloading and running the
+                launcher itself, if you dont have one already.</p>
+
+            <div class="panel-display">
+                <div class="panel-display-header">MultiTeam Launcher<div class="shine-effect">.</div><a
+                        class="decor-icon" id="decoico-mtlauncher"><i class="fas fa-gamepad"></i></a></div>
+                <div class="panel-display-container">
+                    <img src="res/img/icons/mt_launcher_icon.png" alt="MultiTeam launcher Icon" id="MTLicon"
+                        draggable="false">
+                    <p class="panel-display-text">Available for Linux and Windows</p>
+                    <div class="button_icon" id="icon-linux"><i class="fab fa-linux"></i></div>
+                    <div class="button_icon" id="icon-windows"><i class="fab fa-windows"></i></div>
+                </div>
+            </div>
+
+            <p class="panel-text">Now you have the place to get the games.... but, what games? Oh yeah, let me introduce
+                them! For the game's own webpage, click on the <i class="fas fa-info-circle"></i> button</p>
+
+            <div class="panel-display" style="background-color: #140c1f;">
+                <div class="panel-display-header">Just A Survival Game<div class="shine-effect">.</div><a
+                        class="decor-icon" id="decoico-jasg"><i class="fas fa-skull"></i></a></div>
+                <div class="panel-display-container">
+                    <img src="res/img/icons/game_icon_jasg.png" alt="MultiTeam launcher Icon" id="MTLicon"
+                        draggable="false">
+                    <p class="panel-display-text">Available through the Launcher</p>
+                    <a class="button_icon" id="info-ico-jasg" href="pages/games/JASG/index.html"><i
+                            class="fas fa-info-circle"></i></a>
+                </div>
+            </div>
+            <div class="panel-display" style="background-color: #4a001c;">
+                <div class="panel-display-header">Soldiers Of The Office<div class="shine-effect">.</div><a
+                        class="decor-icon" id="decoico-soto"><i class="fas fa-paperclip"></i></a></div>
+                <div class="panel-display-container">
+                    <img src="res/img/icons/game_icon_soto.png" alt="MultiTeam launcher Icon" id="MTLicon"
+                        draggable="false">
+                    <p class="panel-display-text">Available through the Launcher</p>
+                    <a class="button_icon" id="info-ico-soto" href="pages/games/SoldierOfTheOffice/index.html"><i
+                            class="fas fa-info-circle"></i></a>
+                </div>
+            </div>
+            <div class="panel-display" style="background-color: #004000;">
+                <div class="panel-display-header">Project Freedom<div class="shine-effect">.</div><a class="decor-icon"
+                        id="decoico-pf"><i data-feather="hexagon"></i></a></div>
+                <div class="panel-display-container">
+                    <img src="res/img/icons/game_icon_pf.png" alt="MultiTeam launcher Icon" id="MTLicon"
+                        draggable="false">
+                    <p class="panel-display-text">Available through the Launcher</p>
+                    <a class="button_icon" id="info-ico-pf" href="pages/games/ProjectFreedom/index.html"><i
+                            class="fas fa-info-circle"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="header-menu" id="header-minecraft">
+            <div class="header-menu-entrys">
+                <a class="header-menu-entry" href="#main"><i data-feather="info"
+                        id="header-menu-entry-icon"></i>About</a>
+                <a class="header-menu-entry" href="#header-games"><i class="fas fa-gamepad" id="header-menu-entry-icon"
+                        style="right: 28px;"></i>Games</a>
+                <a class="header-menu-entry-selected" href="#header-minecraft"><i data-feather="box"
+                        id="header-menu-entry-icon" style="right: 40px;"></i>Minecraft</a>
+                <a class="header-menu-entry" href="#header-premium"><i class="icon-MTPremiumBadge"
+                        id="header-menu-entry-icon" style="right: 40px;"></i>Premium</a>
+                <a class="header-menu-entry" href="#header-donate"><i data-feather="gift" id="header-menu-entry-icon"
+                        style="right: 31px;"></i>Donate</a>
+                <a class="header-menu-entry" href="#header-account"><i class="fas fa-user-circle"
+                        id="header-menu-entry-icon" style="right: 37px;"></i>Account</a>
+            </div>
+        </div>
+
+        <a href="#header-games" class="button_nav"> <i class="fas fa-caret-up"></i> </a>
+        <a href="#header-premium" class="button_nav"> <i class="fas fa-caret-down"></i> </a>
+        <a href="#main" class="button_nav" style="background-color: #7F91E9;"> <i class="fas fa-caret-up"></i> </a>
+
+        <div class="panel" id="Minecraft">
+            <p class="panel-title">Minecraft Mods</p>
+            <p class="panel-text">MultiTeam originally started as a Minecraft modding group, but making games does not
+                stop us continuing making mods! <br> Enough of words, let me show you our mods! <br><br> For the mod's
+                webpage click on the <i class="fas fa-info-circle"></i> button</p>
+
+            <div class="panel-display">
+                <div class="panel-display-header">MultiExpansion<div class="shine-effect">.</div>
+                </div>
+                <div class="panel-display-container" style="background-color: #0b1c56; min-height: 206px;">
+                    <img src="res/img/logos/MulitEx_logo_transparent.png" alt="MultiExpansion Logo" id="ModIcon"
+                        draggable="false">
+                    <p class="panel-display-text">Available on curseforge</p>
+                    <a class="button_icon" id="info-ico-multiex" href="pages/mods/MultiExpansion/index.html"><i
+                            class="fas fa-info-circle"></i></a>
+                    <a class="button_icon" id="info-ico-curseforge"
+                        href="https://minecraft.curseforge.com/projects/mt-multicraft"><i
+                            class="icon-CurseforgeIcon"></i></a>
+                </div>
+            </div>
+
+            <div class="panel-display">
+                <div class="panel-display-header">FactoryAutomation<div class="shine-effect">.</div>
+                </div>
+                <div class="panel-display-container" style="background-color: #535c67; min-height: 206px;">
+                    <img src="res/img/logos/FactoryA_logo_transparent.png" alt="FactoryAutomation Logo" id="ModIcon"
+                        draggable="false">
+                    <p class="panel-display-text">Available on curseforge</p>
+                    <a class="button_icon" id="info-ico-factorya" href="pages/mods/FactoryAutomation/index.html"><i
+                            class="fas fa-info-circle"></i></a>
+                    <a class="button_icon" id="info-ico-curseforge"
+                        href="https://minecraft.curseforge.com/projects/mt-factory-automation"><i
+                            class="icon-CurseforgeIcon"></i></a>
+                </div>
+            </div>
+
+            <div class="panel-display">
+                <div class="panel-display-header">StarWars<div class="shine-effect">.</div>
+                </div>
+                <div class="panel-display-container" style="background-color: #c27907; min-height: 206px;">
+                    <img src="res/img/logos/StarWars_logo_transparent.png" alt="StarWars mod Logo" id="ModIcon"
+                        draggable="false">
+                    <p class="panel-display-text">Not available....yet!</p>
+                    <!--a class="button_icon" id="info-ico-starwars" href="#"><i class="fas fa-info-circle"></i></a>
+                        <a class="button_icon" id="info-ico-curseforge" href="#"><i class="icon-CurseforgeIcon"></i></a-->
+                </div>
+            </div>
+
+            <div class="panel-display">
+                <div class="panel-display-header">GardenArsenal<div class="shine-effect">.</div>
+                </div>
+                <div class="panel-display-container" style="background-color: #2b9502; min-height: 206px;">
+                    <img src="res/img/logos/GardenArsenal_logo_transparent.png" alt="GardenArsenal Logo" id="ModIcon"
+                        draggable="false" style="max-height: 100px;">
+                    <p class="panel-display-text">Available on curseforge</p>
+                    <a class="button_icon" id="info-ico-gardena" href="pages/mods/GardenArsenal/index.html"><i
+                            class="fas fa-info-circle"></i></a>
+                    <a class="button_icon" id="info-ico-curseforge"
+                        href="https://www.curseforge.com/minecraft/mc-mods/mt-garden-arsenal"><i
+                            class="icon-CurseforgeIcon"></i></a>
+                </div>
+            </div>
+            <br><br>
+            <div class="panel-display">
+                <div class="panel-display-header">Arcadia<div class="shine-effect">.</div>
+                </div>
+                <div class="panel-display-container" style="background-color: #89affd; min-height: 206px;">
+                    <img src="res/img/logos/Arcadia_logo_transparent.png" alt="MultiExpansion Logo" id="ModIcon"
+                        draggable="false">
+                    <p class="panel-display-text" style="color: #000;">Not available....yet!</p>
+                    <!--a class="button_icon" id="info-ico-multiex" href="pages/mods/MultiExpansion/index.html"><i class="fas fa-info-circle"></i></a>
+                        <a class="button_icon" id="info-ico-curseforge" href="https://minecraft.curseforge.com/projects/mt-multicraft"><i class="icon-CurseforgeIcon"></i></a-->
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="header-menu" id="header-premium">
+            <div class="header-menu-entrys">
+                <a class="header-menu-entry" href="#main"><i data-feather="info"
+                        id="header-menu-entry-icon"></i>About</a>
+                <a class="header-menu-entry" href="#header-games"><i class="fas fa-gamepad" id="header-menu-entry-icon"
+                        style="right: 28px;"></i>Games</a>
+                <a class="header-menu-entry" href="#header-minecraft"><i data-feather="box" id="header-menu-entry-icon"
+                        style="right: 40px;"></i>Minecraft</a>
+                <a class="header-menu-entry-selected" href="#header-premium"><i class="icon-MTPremiumBadge"
+                        id="header-menu-entry-icon" style="right: 40px;"></i>Premium</a>
+                <a class="header-menu-entry" href="#header-donate"><i data-feather="gift" id="header-menu-entry-icon"
+                        style="right: 31px;"></i>Donate</a>
+                <a class="header-menu-entry" href="#header-account"><i class="fas fa-user-circle"
+                        id="header-menu-entry-icon" style="right: 37px;"></i>Account</a>
+            </div>
+        </div>
+
+        <a href="#header-minecraft" class="button_nav"> <i class="fas fa-caret-up"></i> </a>
+        <a href="#header-donate" class="button_nav"> <i class="fas fa-caret-down"></i> </a>
+        <a href="#main" class="button_nav" style="background-color: #7F91E9;"> <i class="fas fa-caret-up"></i> </a>
+
+        <div class="panel" id="Premium">
+            <p class="panel-title">MultiTeam Premium <i class="icon-MTPremiumBadge" id="title-disp-premium-badge"></i>
+            </p>
+            <p class="panel-text">Premium accounts are what you'd expect, its somewhat like discord nitro except its for
+                lifetime rather than a subscription. <br> <br> Premium users has various perks: <br> - Access premium
+                features in games (mostly skins, but there are mysteries) <br> - Get a premium role in our discord
+                server, and a premium badge on your account <br> - Participate in closed alpha tests! <br> </p>
+
+            <div class="panel-display">
+                <div class="panel-display-header">MultiTeam Premium<div class="shine-effect">.</div>
+                </div>
+                <div class="panel-display-container" style="background-color: #1128aa; min-height: 206px;">
+                    <i class="icon-MTPremiumBadge" id="premium-sell-card-badge"></i>
+                    <p class="panel-display-text">Purchase via Paypal - 20€ for lifetime</p>
+                    <a class="button_icon" id="info-ico-paypal" href="#"><i class="fab fa-paypal"></i></a>
+                </div>
+            </div>
+
+            <p class="panel-text">If you purchase premium, alongside getting perks, you help us grow and develop!</p>
+
+        </div>
+
+
+
+        <div class="header-menu" id="header-donate">
+            <div class="header-menu-entrys">
+                <a class="header-menu-entry" href="#main"><i data-feather="info"
+                        id="header-menu-entry-icon"></i>About</a>
+                <a class="header-menu-entry" href="#header-games"><i class="fas fa-gamepad" id="header-menu-entry-icon"
+                        style="right: 28px;"></i>Games</a>
+                <a class="header-menu-entry" href="#header-minecraft"><i data-feather="box" id="header-menu-entry-icon"
+                        style="right: 40px;"></i>Minecraft</a>
+                <a class="header-menu-entry" href="#header-premium"><i class="icon-MTPremiumBadge"
+                        id="header-menu-entry-icon" style="right: 40px;"></i>Premium</a>
+                <a class="header-menu-entry-selected" href="#header-donate"><i data-feather="gift"
+                        id="header-menu-entry-icon" style="right: 31px;"></i>Donate</a>
+                <a class="header-menu-entry" href="#header-account"><i class="fas fa-user-circle"
+                        id="header-menu-entry-icon" style="right: 37px;"></i>Account</a>
+            </div>
+        </div>
+
+        <a href="#header-premium" class="button_nav"> <i class="fas fa-caret-up"></i> </a>
+        <a href="#header-account" class="button_nav"> <i class="fas fa-caret-down"></i> </a>
+        <a href="#main" class="button_nav" style="background-color: #7F91E9;"> <i class="fas fa-caret-up"></i> </a>
+
+        <div class="panel" id="Donate">
+            <p class="panel-title">Donate!</p>
+            <p class="panel-text">If you like our mods and games, heres an option to donate!</p>
+
+            <div class="panel-display">
+                <div class="panel-display-header">PayPal Donation<div class="shine-effect">.</div>
+                </div>
+                <div class="panel-display-container" style="background-color: rgba(0, 48, 135, 1); min-height: 206px;">
+                    <i class="fas fa-gift" id="premium-sell-card-badge"></i>
+                    <p class="panel-display-text">Optional - Donate as many as you'd like</p>
+                    <a class="button_icon" id="info-ico-paypal" href="#"><i class="fab fa-paypal"></i></a>
+                </div>
+            </div>
+
+            <div class="panel-display">
+                <div class="panel-display-header">Patreon Donation<div class="shine-effect">.</div>
+                </div>
+                <div class="panel-display-container"
+                    style="background-color: rgba(245, 104, 84, 1); min-height: 206px;">
+                    <i class="fas fa-gift" id="premium-sell-card-badge"></i>
+                    <p class="panel-display-text">Optional - Donate as many as you'd like</p>
+                    <a class="button_icon" id="info-ico-patreon" href="#"><i class="fab fa-patreon"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="header-menu" id="header-account">
+            <div class="header-menu-entrys">
+                <a class="header-menu-entry" href="#main"><i data-feather="info"
+                        id="header-menu-entry-icon"></i>About</a>
+                <a class="header-menu-entry" href="#header-games"><i class="fas fa-gamepad" id="header-menu-entry-icon"
+                        style="right: 28px;"></i>Games</a>
+                <a class="header-menu-entry" href="#header-minecraft"><i data-feather="box" id="header-menu-entry-icon"
+                        style="right: 40px;"></i>Minecraft</a>
+                <a class="header-menu-entry" href="#header-premium"><i class="icon-MTPremiumBadge"
+                        id="header-menu-entry-icon" style="right: 40px;"></i>Premium</a>
+                <a class="header-menu-entry" href="#header-donate"><i data-feather="gift" id="header-menu-entry-icon"
+                        style="right: 31px;"></i>Donate</a>
+                <a class="header-menu-entry-selected" href="#header-account"><i class="fas fa-user-circle"
+                        id="header-menu-entry-icon" style="right: 37px;"></i>Account</a>
+            </div>
+        </div>
+
+        <a href="#header-donate" class="button_nav"> <i class="fas fa-caret-up"></i> </a>
+        <a href="#main" class="button_nav" style="background-color: #7F91E9;"> <i class="fas fa-caret-up"></i> </a>
+
+        <div class="panel" id="Account">
+            <p>Account</p>
+        </div>
+
+
+        <script src="res/js/ParticleMaker.js"></script>
+    </div>
+
+    <script>
+        feather.replace()
+    </script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDhjZEv-cPgDn9kDlb6fcN7V0eOceWCR5k",
+            authDomain: "zal1000.firebaseapp.com",
+            databaseURL: "https://zal1000.firebaseio.com",
+            projectId: "zal1000",
+            storageBucket: "zal1000.appspot.com",
+            messagingSenderId: "512279358183",
+            appId: "1:512279358183:web:11242b00eb848c11541042",
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="res/js/app.js"></script>
+
+</body>

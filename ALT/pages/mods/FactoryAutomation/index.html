@@ -1,0 +1,509 @@
+<head>
+
+	<title>FACTORY AUTOMATION</title>
+	<link href="res/css/styles.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="../../../res/css/mt/mt_colors.css">
+	<link rel="stylesheet" href="../../../res/css/mt/mt_scrollbar.css">
+	<link rel="stylesheet" href="../../../res/css/discord/discordInvite.css"/>
+	<link rel="stylesheet" href="../../../res/css/util/mod_version_badge.css"/>
+	<link rel="stylesheet" href="../../../res/css/minecraft/MinecraftGUI.css"/>
+	<script src="https://kit.fontawesome.com/ecf1eef1d8.js"></script>
+	<link rel="icon" href="res/img/items/mod_items/copper_gear.png">
+
+</head>
+
+<body>
+    <script src="../../../res/js/discordInvite.js"></script>
+	<script>
+		discordInvite.init({
+		inviteCode: '7RKKNr9',
+		title: 'Factory Automation',
+		});
+		discordInvite.render();
+	</script>
+    <script type="text/javascript">
+
+        function openPanel(PanelName) {
+            document.getElementById(PanelName).style.display = "block";
+        }
+
+        function openOrClosePanel(PanelName) {
+            if(document.getElementById(PanelName).style.display == "block"){
+                document.getElementById(PanelName).style.display = "none";
+            }else{
+                document.getElementById(PanelName).style.display = "block";
+            }
+            
+        }
+
+        function closeAllPanel() {
+            document.getElementById("tab-about").style.display = "none";
+            document.getElementById("tab-blocks").style.display = "none";
+            document.getElementById("tab-items").style.display = "none";
+            document.getElementById("tab-mobs").style.display = "none";
+            document.getElementById("tab-interface").style.display = "none";
+            document.getElementById("tab-misc").style.display = "none";
+            
+        }
+
+        function tooltipHover(tooltipId){
+            if(document.getElementById(tooltipId).style.display == "inline-block"){
+                document.getElementById(tooltipId).style.display = "none";
+            }else{
+                document.getElementById(tooltipId).style.display = "inline-block";
+            }
+        }
+
+        function nextPainting(image, imgNumber) {
+            var imgNum = parseInt(document.getElementById(imgNumber).innerHTML);
+            console.log(imgNum);
+            if (imgNum>=24) {imgNum=1;}else {imgNum++;}
+            document.querySelector(image).src = "res/img/paintings/"+imgNum+".png";
+            //document.querySelector(image) = ""+imgNum+"";
+            document.getElementById(imgNumber).innerHTML = imgNum;
+        }
+        function prevPainting(image,imgNumber) {
+            var imgNum = parseInt(document.getElementById(imgNumber).innerHTML);
+            console.log(imgNum);
+            if (imgNum<=1) {imgNum=24;}else {imgNum--;}
+            document.querySelector(image).src = "res/img/paintings/"+imgNum+".png";
+            //document.querySelector(imgNumber) = ""+imgNum+"";
+            document.getElementById(imgNumber).innerHTML = imgNum;
+        }
+
+    </script>
+    
+    <div class="page-header">
+        <img  draggable="false" class="mod-logo" src="res/img/FactoryA_logo_transparent.png" alt="">
+    </div>
+
+    <div class="page-navbar">
+        <a class="navbar-item" id="" onclick="closeAllPanel(), openPanel('tab-about')" >About</a>
+        <a class="navbar-item" id="" onclick="closeAllPanel(), openPanel('tab-blocks')" >Blocks</a>
+        <a class="navbar-item" id="" onclick="closeAllPanel(), openPanel('tab-items')" >Items</a>
+        <a class="navbar-item" id="" onclick="closeAllPanel(), openPanel('tab-mobs')" >Mobs</a>
+        <a class="navbar-item" id="" onclick="closeAllPanel(), openPanel('tab-interface')" >Interface</a>
+        <a class="navbar-item" id="" onclick="closeAllPanel(), openPanel('tab-misc')" >Misc</a>
+        <a class="navbar-item" id="" href="../../../index.html#header-minecraft">Back to Multiteam</a>
+    </div>
+
+    <div class="page-content" id="tab-about">
+        <p class="page-content-title">Welcome to the official page of FactoryAutomation!</p> <br>
+        This mod overhauls the entire game basically, by creating a new chain of progression and generally making the game progress harder. Extends the Early-Game, by replacing wooden tools with flint, making mining ores a bit different, and earning usable ingots harder.<br> <br>
+        Available for Forge <a class="mod-version-badge" style="background-color:#5223d4; color:#fff;">1.12.2</a> & <a class="mod-version-badge" style="background-color:#1f9a36; color:#000;">1.15.2</a> & <a class="mod-version-badge" style="background-color:#df5639; color:#000;">1.16.5</a>
+        <img  draggable="false" draggable="false" id="curseforeg-downloads-badge" src="https://cf.way2muchnoise.eu/full_316456_downloads.svg">
+        <a class="navbar-item" id="" href="https://www.curseforge.com/minecraft/mc-mods/mt-factory-automation">Download</a><br> 
+        Using the old versions is not recomended. The mod is still in Alpha state, so keep that in mind.
+        <br><br>
+        <div id="deviderLine" ></div>
+        <br>
+
+        <p class="page-content-title">Community/Development</p> <br>
+        To be apart of our community/development Discord server, you can find the link here: <br> <br>
+        <div id="discordInviteBox"></div> <br> <br> <br>
+        This mod is also open source! Here it is: <br> <br>
+        <a class="navbar-item" id="" href="https://github.com/boblovespi/FactoryAutomation">Github</a>
+        <br><br>
+        <div id="deviderLine" ></div>
+        <br>
+
+        <p class="page-content-title">Credits</p> <br>
+        FactoryAutomation by MultiTeam - For the mod Forge loader <br> <br>
+        - LazTheArtist [Textures - Models - Feature Concepts] <br>
+        - boblovespi [Code] <br>
+        - SajtosTekercs [Code] <br> 
+        - OroArmor [Code] <br>
+        - Max Zvyagin [Models]
+        <br>
+    </div>
+
+    <div class="page-content" id="tab-blocks">
+        <p class="page-content-title">All about the blocks</p> <br>
+        On this tab you'll find what blocks MultiExpansion adds to the game! Some are decorational, some are functional, som are just... awesome!<br> <br>
+
+        <div id="deviderLine" ></div> <br>
+        
+        <p class="page-content-title">Terracotta Bricks</p> <a class="mod-version-badge" style="background-color:#ffd131; color:#000;">1.14.4</a> <br>
+        It is just... Bricks. Because builders can never have enough bricks. And its available in all the colors, including the default uncolored one. <br>
+        <div class="mcgui-panel">
+            <div class="mcgui-title">Log Crafting</div>
+            <table class="mcgui-crafting">
+                <tr class="mcgui-crafting-row">
+                    <th class="mcgui-crafting-slot" onmouseover="tooltipHover('tooltip_014')" onmouseout="tooltipHover('tooltip_014')"><img  draggable="false" src="res/img/items/mod_items/block_terracotta.png" class="mcgui-slot-content"></th>
+                    <div class="mcgui-tooltip" id="tooltip_014" style="transform: translateX(80px);">
+                        <p class="mgui-tooltip-name">Terracotta Block</p>
+                        <p class="mgui-tooltip-id">minecraft:terracotta</p>
+                    </div>
+                    <th class="mcgui-crafting-slot" onmouseover="tooltipHover('tooltip_015')" onmouseout="tooltipHover('tooltip_015')"><img  draggable="false" src="res/img/items/mod_items/block_terracotta.png" class="mcgui-slot-content"></th>
+                    <div class="mcgui-tooltip" id="tooltip_015" style="transform: translateX(80px);">
+                        <p class="mgui-tooltip-name">Terracotta Block</p>
+                        <p class="mgui-tooltip-id">minecraft:terracotta</p>
+                    </div>
+                    <th class="mcgui-crafting-slot"></th>
+                </tr>
+                <tr class="mcgui-crafting-row">
+                    <th class="mcgui-crafting-slot" onmouseover="tooltipHover('tooltip_016')" onmouseout="tooltipHover('tooltip_016')"><img  draggable="false" src="res/img/items/mod_items/block_terracotta.png" class="mcgui-slot-content"></th>
+                    <div class="mcgui-tooltip" id="tooltip_016" style="transform: translateX(80px);">
+                        <p class="mgui-tooltip-name">Terracotta Block</p>
+                        <p class="mgui-tooltip-id">minecraft:terracotta</p>
+                    </div>
+                    <th class="mcgui-crafting-slot" onmouseover="tooltipHover('tooltip_017')" onmouseout="tooltipHover('tooltip_017')"><img  draggable="false" src="res/img/items/mod_items/block_terracotta.png" class="mcgui-slot-content"></th>
+                    <div class="mcgui-tooltip" id="tooltip_017" style="transform: translateX(80px);">
+                        <p class="mgui-tooltip-name">Terracotta Block</p>
+                        <p class="mgui-tooltip-id">minecraft:terracotta</p>
+                    </div>
+                    <th class="mcgui-crafting-slot"></th>
+                </tr>
+                <tr class="mcgui-crafting-row">
+                    <th class="mcgui-crafting-slot"></th>
+                    <th class="mcgui-crafting-slot"></th>
+                    <th class="mcgui-crafting-slot"></th>
+                </tr>
+            </table>
+            <img  draggable="false" class="mcgui-crafting-output-arrow" src="https://gamepedia.cursecdn.com/minecraft_gamepedia/8/86/Grid_layout_Arrow_%28small%29.png">
+            <divclaa5c="mcgui-crafting-output-slot" onmouseover="tooltipHover('tooltip_018')" onmouseout="tooltipHover('tooltip_018')"><img  draggable="false" src="res/img/items/mod_items/block_terracotta_brick.png" class="mcgui-slot-content"></div>
+            <div class="mcgui-tooltip" id="tooltip_018" style="transform: translateX(-5px);">
+                <p class="mgui-tooltip-name">Terracotta Bricks</p>
+                <p class="mgui-tooltip-id">multiexpansion:terracotta_bricks</p>
+            </div>
+        </div><br> <br>
+
+        <div id="deviderLine" ></div> <br>
+        
+        <p class="page-content-title">Colored Planks</p> <a class="mod-version-badge" style="background-color:#ffd131; color:#000;">1.14.4</a> <br>
+        I do know that quark adds this feature, but come one, those are so pale... These are vibrantly colored planks, because everything is vibrant since the world of color update.<br>
+        <div class="mcgui-panel">
+            <div class="mcgui-title">Log Crafting</div>
+            <table class="mcgui-crafting">
+                <tr class="mcgui-crafting-row">
+                    <th class="mcgui-crafting-slot" onmouseover="tooltipHover('tooltip_019')" onmouseout="tooltipHover('tooltip_019')"><img  draggable="false" src="res/img/items/mod_items/block_planks_oak.png" class="mcgui-slot-content"></th>
+                    <div class="mcgui-tooltip" id="tooltip_019" style="transform: translateX(80px);">
+                        <p class="mgui-tooltip-name">Oak Planks</p>
+                        <p class="mgui-tooltip-id">minecraft:oak_planks</p>
+                    </div>
+                    <th class="mcgui-crafting-slot" onmouseover="tooltipHover('tooltip_020')" onmouseout="tooltipHover('tooltip_020')"><img  draggable="false" src="res/img/items/mod_items/block_planks_oak.png" class="mcgui-slot-content"></th>
+                    <div class="mcgui-tooltip" id="tooltip_020" style="transform: translateX(80px);">
+                        <p class="mgui-tooltip-name">Oak Planks</p>
+                        <p class="mgui-tooltip-id">minecraft:oak_planks</p>
+                    </div>
+                    <th class="mcgui-crafting-slot" onmouseover="tooltipHover('tooltip_021')" onmouseout="tooltipHover('tooltip_021')"><img  draggable="false" src="res/img/items/mod_items/block_planks_oak.png" class="mcgui-slot-content"></th>
+                    <div class="mcgui-tooltip" id="tooltip_021" style="transform: translateX(120px);">
+                        <p class="mgui-tooltip-name">Oak Planks</p>
+                        <p class="mgui-tooltip-id">minecraft:oak_planks</p>
+                    </div>
+                </tr>
+                <tr class="mcgui-crafting-row">
+                    <th class="mcgui-crafting-slot" onmouseover="tooltipHover('tooltip_022')" onmouseout="tooltipHover('tooltip_022')"><img  draggable="false" src="res/img/items/mod_items/block_planks_oak.png" class="mcgui-slot-content"></th>
+                    <div class="mcgui-tooltip" id="tooltip_022" style="transform: translateX(80px);">
+                        <p class="mgui-tooltip-name">Oak Planks</p>
+                        <p class="mgui-tooltip-id">minecraft:oak_planks</p>
+                    </div><th class="mcgui-crafting-slot" onmouseover="tooltipHover('tooltip_022_')" onmouseout="tooltipHover('tooltip_022_')"><img  draggable="false" src="res/img/items/mod_items/item_dye_lime.png" class="mcgui-slot-content"></th>
+                    <div class="mcgui-tooltip" id="tooltip_022_" style="transform: translateX(80px);">
+                        <p class="mgui-tooltip-name">Lime Dye</p>
+                        <p class="mgui-tooltip-id">minecraft:lime_dye</p>
+                    </div><th class="mcgui-crafting-slot" onmouseover="tooltipHover('tooltip_023')" onmouseout="tooltipHover('tooltip_023')"><img  draggable="false" src="res/img/items/mod_items/block_planks_oak.png" class="mcgui-slot-content"></th>
+                    <div class="mcgui-tooltip" id="tooltip_023" style="transform: translateX(120px);">
+                        <p class="mgui-tooltip-name">Oak Planks</p>
+                        <p class="mgui-tooltip-id">minecraft:oak_planks</p>
+                    </div>
+                </tr>
+                <tr class="mcgui-crafting-row">
+                    <th class="mcgui-crafting-slot" onmouseover="tooltipHover('tooltip_024')" onmouseout="tooltipHover('tooltip_024')"><img  draggable="false" src="res/img/items/mod_items/block_planks_oak.png" class="mcgui-slot-content"></th>
+                    <div class="mcgui-tooltip" id="tooltip_024" style="transform: translateX(80px);">
+                        <p class="mgui-tooltip-name">Oak Planks</p>
+                        <p class="mgui-tooltip-id">minecraft:oak_planks</p>
+                    </div><th class="mcgui-crafting-slot" onmouseover="tooltipHover('tooltip_025')" onmouseout="tooltipHover('tooltip_025')"><img  draggable="false" src="res/img/items/mod_items/block_planks_oak.png" class="mcgui-slot-content"></th>
+                    <div class="mcgui-tooltip" id="tooltip_025" style="transform: translateX(80px);">
+                        <p class="mgui-tooltip-name">Oak Planks</p>
+                        <p class="mgui-tooltip-id">minecraft:oak_planks</p>
+                    </div><th class="mcgui-crafting-slot" onmouseover="tooltipHover('tooltip_026')" onmouseout="tooltipHover('tooltip_026')"><img  draggable="false" src="res/img/items/mod_items/block_planks_oak.png" class="mcgui-slot-content"></th>
+                    <div class="mcgui-tooltip" id="tooltip_026" style="transform: translateX(120px);">
+                        <p class="mgui-tooltip-name">Oak Planks</p>
+                        <p class="mgui-tooltip-id">minecraft:oak_planks</p>
+                    </div>
+                </tr>
+            </table>
+            <img  draggable="false" class="mcgui-crafting-output-arrow" src="https://gamepedia.cursecdn.com/minecraft_gamepedia/8/86/Grid_layout_Arrow_%28small%29.png">
+            <div class="mcgui-crafting-output-slot" onmouseover="tooltipHover('tooltip_027')" onmouseout="tooltipHover('tooltip_027')"><img  draggable="false" src="res/img/items/mod_items/block_planks_colored_lime.png" class="mcgui-slot-content"></div>
+            <div class="mcgui-tooltip" id="tooltip_027" style="transform: translateX(-5px);">
+                <p class="mgui-tooltip-name">Lime Planks</p>
+                <p class="mgui-tooltip-id">multiexpansion:lime_planks</p>
+            </div>
+        </div><br> <br>
+
+        <div id="deviderLine" ></div> <br>
+        
+        <p class="page-content-title">Mossy Bricks</p> <a class="mod-version-badge" style="background-color:#ffd131; color:#000;">1.14.4</a> <br>
+        We had mossy cobblestone.. we had mossy stone bricks.. why not mossy bricks?<br>
+        <div class="mcgui-panel">
+            <div class="mcgui-title">Log Crafting</div>
+            <table class="mcgui-crafting">
+                <tr class="mcgui-crafting-row">
+                    <th class="mcgui-crafting-slot" onmouseover="tooltipHover('tooltip_bricks')" onmouseout="tooltipHover('tooltip_bricks')"><img  draggable="false" src="res/img/items/mod_items/block_bricks.png" class="mcgui-slot-content"></th>
+                    <div class="mcgui-tooltip" id="tooltip_bricks" style="transform: translateX(80px);">
+                        <p class="mgui-tooltip-name">Bricks</p>
+                        <p class="mgui-tooltip-id">minecraft:bricks</p>
+                    </div>
+                    <th class="mcgui-crafting-slot" onmouseover="tooltipHover('tooltip_vines')" onmouseout="tooltipHover('tooltip_vines')"><img  draggable="false" src="res/img/items/mod_items/item_vines.png" class="mcgui-slot-content"></th>
+                    <div class="mcgui-tooltip" id="tooltip_vines" style="transform: translateX(80px);">
+                        <p class="mgui-tooltip-name">Vines</p>
+                        <p class="mgui-tooltip-id">minecraft:vines</p>
+                    </div>
+                    <th class="mcgui-crafting-slot"></th>
+                </tr>
+                <tr class="mcgui-crafting-row">
+                    <th class="mcgui-crafting-slot"></th>
+                    <th class="mcgui-crafting-slot"></th>
+                    <th class="mcgui-crafting-slot"></th>
+                </tr>
+                <tr class="mcgui-crafting-row">
+                    <th class="mcgui-crafting-slot"></th>
+                    <th class="mcgui-crafting-slot"></th>
+                    <th class="mcgui-crafting-slot"></th>
+                </tr>
+            </table>
+            <img  draggable="false" class="mcgui-crafting-output-arrow" src="https://gamepedia.cursecdn.com/minecraft_gamepedia/8/86/Grid_layout_Arrow_%28small%29.png">
+            <div class="mcgui-crafting-output-slot" onmouseover="tooltipHover('tooltip_mossy_bricks')" onmouseout="tooltipHover('tooltip_mossy_bricks')"><img  draggable="false" src="res/img/items/mod_items/block_bricks_mossy.png" class="mcgui-slot-content"></div>
+            <div class="mcgui-tooltip" id="tooltip_mossy_bricks" style="transform: translateX(-5px);">
+                <p class="mgui-tooltip-name">Mossy Bricks</p>
+                <p class="mgui-tooltip-id">multiexpansion:mossy_bricks</p>
+            </div>
+        </div> <br> <br>
+
+        <div id="deviderLine" ></div> <br>
+
+        <p class="page-content-title">Ruby</p> <a class="mod-version-badge" style="background-color:#ffd131; color:#000;">1.14.4</a> <a class="mod-version-badge" style="background-color:#df5639; color:#000;">1.16.2</a> <br>
+        Yes, the diamond and emerald is enough... for the overworld... How about being in a new dimension? Ruby can be found in the nether ceiling (Not really high, but high enough). Just like the other gems it drops one item when mined, fortune works as well, and you can craft it into block form. Traveler, keep your eyes on this shiny orb, somewhen you will find out how to use it...<br>
+        <div class="mcgui-panel">
+            <div class="mcgui-title">Inventory</div>
+            <div class="mcgui-slot" onmouseover="tooltipHover('tooltip_ruby_ore')" onmouseout="tooltipHover('tooltip_ruby_ore')">
+                <img  draggable="false" src="res/img/items/mod_items/block_ruby_ore.png" class="mcgui-slot-content">
+            </div>
+            <div class="mcgui-tooltip" id="tooltip_ruby_ore" style="transform: translateX(5px);">
+                <p class="mgui-tooltip-name">Ruby Ore</p>
+                <p class="mgui-tooltip-id">multiexpansion:ruby_ore</p>
+            </div>
+            <div class="mcgui-slot" onmouseover="tooltipHover('tooltip_ruby_item')" onmouseout="tooltipHover('tooltip_ruby_item')">
+                <img  draggable="false" src="res/img/items/mod_items/item_ruby.png" class="mcgui-slot-content">
+            </div>
+            <div class="mcgui-tooltip" id="tooltip_ruby_item" style="transform: translateX(5px);">
+                <p class="mgui-tooltip-name">Ruby</p>
+                <p class="mgui-tooltip-id">multiexpansion:ruby</p>
+            </div>
+            <div class="mcgui-slot" onmouseover="tooltipHover('tooltip_ruby_block')" onmouseout="tooltipHover('tooltip_ruby_block')">
+                <img  draggable="false" src="res/img/items/mod_items/block_ruby.png" class="mcgui-slot-content">
+            </div>
+            <div class="mcgui-tooltip" id="tooltip_ruby_block" style="transform: translateX(5px);">
+                <p class="mgui-tooltip-name">Block of Ruby</p>
+                <p class="mgui-tooltip-id">multiexpansion:ruby_block</p>
+            </div>
+        </div> <br>
+        <img draggable="false" src="res/img/ingame/ruby_gen.png" class="showcase-image-1000"> <br>
+
+    </div>
+
+    <div class="page-content" id="tab-items">
+        <p class="page-content-title">World of Items</p> <br>
+        On this tab you'll find Items that are added by MultiExpansion!<br> <br>
+        <div id="deviderLine" ></div> <br>
+        
+        <p class="page-content-title">Wooden Barks</p> <a class="mod-version-badge" style="background-color:#ffd131; color:#000;">1.14.4</a> <br>
+        Upon stripping a wood log, you get the stripped log... but, where the bark goes? Well, here we are to solve that: <br>
+        Now a log when stripped, drops 4 of its bark. These can be used to craft he stripped log back to a regular log. <br>
+        <div class="mcgui-panel">
+            <div class="mcgui-title">Inventory</div>
+            <div class="mcgui-tooltip" id="tooltip_001">
+                <p class="mgui-tooltip-name">Acacia Bark</p>
+                <p class="mgui-tooltip-id">multiexpansion:bark_acacia</p>
+            </div>
+            <div class="mcgui-slot" onmouseover="tooltipHover('tooltip_001')" onmouseout="tooltipHover('tooltip_001')">
+                <img  draggable="false" src="res/img/items/mod_items/item_bark_acacia.png" class="mcgui-slot-content">
+            </div>
+            <div class="mcgui-tooltip" id="tooltip_002">
+                <p class="mgui-tooltip-name">Birch Bark</p>
+                <p class="mgui-tooltip-id">multiexpansion:bark_birch</p>
+            </div>
+            <div class="mcgui-slot" onmouseover="tooltipHover('tooltip_002')" onmouseout="tooltipHover('tooltip_002')">
+                <img  draggable="false" src="res/img/items/mod_items/item_bark_birch.png" class="mcgui-slot-content">
+            </div>
+            <div class="mcgui-tooltip" id="tooltip_003">
+                <p class="mgui-tooltip-name">Dark Oak Bark</p>
+                <p class="mgui-tooltip-id">multiexpansion:bark_dark_oak</p>
+            </div>
+            <div class="mcgui-slot" onmouseover="tooltipHover('tooltip_003')" onmouseout="tooltipHover('tooltip_003')">
+                <img  draggable="false" src="res/img/items/mod_items/item_bark_dark_oak.png" class="mcgui-slot-content">
+            </div>
+            <div class="mcgui-tooltip" id="tooltip_004">
+                <p class="mgui-tooltip-name">Jungle Bark</p>
+                <p class="mgui-tooltip-id">multiexpansion:bark_jungle</p>
+            </div>
+            <div class="mcgui-slot" onmouseover="tooltipHover('tooltip_004')" onmouseout="tooltipHover('tooltip_004')">
+                <img  draggable="false" src="res/img/items/mod_items/item_bark_jungle.png" class="mcgui-slot-content">
+            </div>
+            <div class="mcgui-tooltip" id="tooltip_005">
+                <p class="mgui-tooltip-name">Oak Bark</p>
+                <p class="mgui-tooltip-id">multiexpansion:bark_oak</p>
+            </div>
+            <div class="mcgui-slot" onmouseover="tooltipHover('tooltip_005')" onmouseout="tooltipHover('tooltip_005')">
+                <img  draggable="false" src="res/img/items/mod_items/item_bark_oak.png" class="mcgui-slot-content">
+            </div>
+            <div class="mcgui-tooltip" id="tooltip_006">
+                <p class="mgui-tooltip-name">Spruce Bark</p>
+                <p class="mgui-tooltip-id">multiexpansion:bark_spruce</p>
+            </div>
+            <div class="mcgui-slot" onmouseover="tooltipHover('tooltip_006')" onmouseout="tooltipHover('tooltip_006')">
+                <img  draggable="false" src="res/img/items/mod_items/item_bark_spruce.png" class="mcgui-slot-content">
+            </div>
+        </div> <br>
+        <div class="mcgui-panel">
+            <div class="mcgui-title">Log Crafting</div>
+            <table class="mcgui-crafting">
+                <tr class="mcgui-crafting-row">
+                    <th class="mcgui-crafting-slot"></th>
+                    <th class="mcgui-crafting-slot" onmouseover="tooltipHover('tooltip_007')" onmouseout="tooltipHover('tooltip_007')"><img  draggable="false" src="res/img/items/mod_items/item_bark_oak.png" class="mcgui-slot-content"></th>
+                    <div class="mcgui-tooltip" id="tooltip_007" style="transform: translateX(80px);">
+                        <p class="mgui-tooltip-name">Oak Bark</p>
+                        <p class="mgui-tooltip-id">multiexpansion:bark_oak</p>
+                    </div>
+                    <th class="mcgui-crafting-slot"></th>
+                </tr>
+                <tr class="mcgui-crafting-row">
+                    <th class="mcgui-crafting-slot" onmouseover="tooltipHover('tooltip_008')" onmouseout="tooltipHover('tooltip_008')"><img  draggable="false" src="res/img/items/mod_items/item_bark_oak.png" class="mcgui-slot-content"></th>
+                    <div class="mcgui-tooltip" id="tooltip_008" style="transform: translateX(80px);">
+                        <p class="mgui-tooltip-name">Oak Bark</p>
+                        <p class="mgui-tooltip-id">multiexpansion:bark_oak</p>
+                    </div>
+                    <th class="mcgui-crafting-slot" onmouseover="tooltipHover('tooltip_009')" onmouseout="tooltipHover('tooltip_009')"><img  draggable="false" src="res/img/items/mod_items/block_log_stripped_oak.png" class="mcgui-slot-content"></th>
+                    <div class="mcgui-tooltip" id="tooltip_009" style="transform: translateX(80px);">
+                        <p class="mgui-tooltip-name">Stripped Oak Log</p>
+                        <p class="mgui-tooltip-id">minecraft:stripped_oak_log</p>
+                    </div>
+                    <th class="mcgui-crafting-slot" onmouseover="tooltipHover('tooltip_010')" onmouseout="tooltipHover('tooltip_010')"><img  draggable="false" src="res/img/items/mod_items/item_bark_oak.png" class="mcgui-slot-content"></th>
+                    <div class="mcgui-tooltip" id="tooltip_010" style="transform: translateX(80px);">
+                        <p class="mgui-tooltip-name">Oak Bark</p>
+                        <p class="mgui-tooltip-id">multiexpansion:bark_oak</p>
+                    </div>
+                </tr>
+                <tr class="mcgui-crafting-row">
+                    <th class="mcgui-crafting-slot"></th>
+                    <th class="mcgui-crafting-slot" onmouseover="tooltipHover('tooltip_011')" onmouseout="tooltipHover('tooltip_011')"><img  draggable="false" src="res/img/items/mod_items/item_bark_oak.png" class="mcgui-slot-content"></th>
+                    <div class="mcgui-tooltip" id="tooltip_011" style="transform: translateX(80px);">
+                        <p class="mgui-tooltip-name">Oak Bark</p>
+                        <p class="mgui-tooltip-id">multiexpansion:bark_oak</p>
+                    </div>
+                    <th class="mcgui-crafting-slot"></th>
+                </tr>
+            </table>
+            <img  draggable="false" class="mcgui-crafting-output-arrow" src="https://gamepedia.cursecdn.com/minecraft_gamepedia/8/86/Grid_layout_Arrow_%28small%29.png">
+            <div class="mcgui-crafting-output-slot" onmouseover="tooltipHover('tooltip_012')" onmouseout="tooltipHover('tooltip_012')"><img  draggable="false" src="res/img/items/mod_items/block_log_oak.png" class="mcgui-slot-content"></div>
+            <div class="mcgui-tooltip" id="tooltip_012" style="transform: translateX(-5px);">
+                <p class="mgui-tooltip-name">Oak Log</p>
+                <p class="mgui-tooltip-id">minecraft:oak_log</p>
+            </div>
+        </div><br> <br>
+
+        <div id="deviderLine" ></div> <br>
+        <p class="page-content-title">Blueberries</p> <a class="mod-version-badge" style="background-color:#ffd131; color:#000;">1.14.4</a> <br>
+        Sweetberry wasnt enough, we need more berries! Introducing: The Blueberries. They work the same as sweetberries, and foxes like it too. They can be found in roofed forests. <br><br>
+        <div class="mcgui-panel">
+            <div class="mcgui-title">Inventory</div>
+            <div class="mcgui-slot" onmouseover="tooltipHover('tooltip_013')" onmouseout="tooltipHover('tooltip_013')">
+                <img  draggable="false" src="res/img/items/mod_items/item_blue_berries.png" class="mcgui-slot-content">
+            </div>
+            <div class="mcgui-tooltip" id="tooltip_013" style="transform: translateX(5px);">
+                <p class="mgui-tooltip-name">Blue Berries</p>
+                <p class="mgui-tooltip-id">multiexpansion:blue_berries</p>
+            </div>
+        </div> <br>
+        <img  draggable="false" src="res/img/ingame/berryz.png" class="showcase-image-1000"> <br> <br>
+
+        <div id="deviderLine" ></div> <br>
+        <p class="page-content-title">Mob Pelts</p> <a class="mod-version-badge" style="background-color:#ffd131; color:#000;">1.14.4</a> <br>
+        Polar bears and pandas are kinda useless, they are just "ambient" creatures... And ocelots, well, with 1.14 they have became also useless. And BOOORIIING. <br> Now they drop pelts, which will have usages later on.<br>
+        <div class="mcgui-panel">
+            <div class="mcgui-title">Inventory</div>
+            <div class="mcgui-slot" onmouseover="tooltipHover('tooltip_polarbearpelt')" onmouseout="tooltipHover('tooltip_polarbearpelt')">
+                <img  draggable="false" src="res/img/items/mod_items/item_pelt_polar_bear.png" class="mcgui-slot-content">
+            </div>
+            <div class="mcgui-tooltip" id="tooltip_polarbearpelt" style="transform: translateX(5px);">
+                <p class="mgui-tooltip-name">Polar Bear Pelt</p>
+                <p class="mgui-tooltip-id">multiexpansion:polar_bear_pelt</p>
+            </div>
+            <div class="mcgui-slot" onmouseover="tooltipHover('tooltip_pandapelt')" onmouseout="tooltipHover('tooltip_pandapelt')">
+                <img  draggable="false" src="res/img/items/mod_items/item_pelt_panda.png" class="mcgui-slot-content">
+            </div>
+            <div class="mcgui-tooltip" id="tooltip_pandapelt" style="transform: translateX(5px);">
+                <p class="mgui-tooltip-name">Panda Pelt</p>
+                <p class="mgui-tooltip-id">multiexpansion:panda_pelt</p>
+            </div>
+            <div class="mcgui-slot" onmouseover="tooltipHover('tooltip_ocelotpelt')" onmouseout="tooltipHover('tooltip_ocelotpelt')">
+                <img  draggable="false" src="res/img/items/mod_items/item_pelt_ocelot.png" class="mcgui-slot-content">
+            </div>
+            <div class="mcgui-tooltip" id="tooltip_ocelotpelt" style="transform: translateX(5px);">
+                <p class="mgui-tooltip-name">Ocelot Pelt</p>
+                <p class="mgui-tooltip-id">multiexpansion:ocelot_pelt</p>
+            </div>
+        </div> <br>
+        <img  draggable="false" src="res/img/ingame/plar_and_panda_pelts.png" class="showcase-image-1000"> <br> <br>
+
+        <div id="deviderLine" ></div> <br>
+        <p class="page-content-title">Parrots and the Bats</p> <a class="mod-version-badge" style="background-color:#ffd131; color:#000;">1.14.4</a> <br>
+        Parrots and bats fall under that "Useless, Boring" cathegory, and now because of that they drop some new stuff. Parrots drop their meat that you can eat raw or cook it. Bats drop their wings, which you can use to brew some potions.<br>
+        <div class="mcgui-panel">
+            <div class="mcgui-title">Inventory</div>
+            <div class="mcgui-slot" onmouseover="tooltipHover('tooltip_parrotmeat')" onmouseout="tooltipHover('tooltip_parrotmeat')">
+                <img  draggable="false" src="res/img/items/mod_items/item_meat_raw_parrot.png" class="mcgui-slot-content">
+            </div>
+            <div class="mcgui-tooltip" id="tooltip_parrotmeat" style="transform: translateX(5px);">
+                <p class="mgui-tooltip-name">Raw Parrot Meat</p>
+                <p class="mgui-tooltip-id">multiexpansion:raw_parrot_meat</p>
+            </div>
+            <div class="mcgui-slot" onmouseover="tooltipHover('tooltip_batwing')" onmouseout="tooltipHover('tooltip_batwing')">
+                <img  draggable="false" src="res/img/items/mod_items/item_bat_wing.png" class="mcgui-slot-content">
+            </div>
+            <div class="mcgui-tooltip" id="tooltip_batwing" style="transform: translateX(5px);">
+                <p class="mgui-tooltip-name">Bat Wing</p>
+                <p class="mgui-tooltip-id">multiexpansion:bat_wing</p>
+            </div>
+        </div> <br>
+        <img  draggable="false" src="res/img/ingame/parrotz_and_the_batz.png" class="showcase-image-1000"> <br>
+
+
+    </div>
+
+    <div class="page-content" id="tab-mobs">
+        content
+    </div>
+
+    <div class="page-content" id="tab-interface">
+        content
+    </div>
+
+    <div class="page-content" id="tab-misc">
+        <p class="page-content-title">Miscellaneous features</p> <br>
+        All the features that doesnt fit to any other cathegorys, well, you can find them here! <br> <br>
+        <div id="deviderLine" ></div> <br>
+        
+        <p class="page-content-title">New Paintings!</p> <a class="mod-version-badge" style="background-color:#ffd131; color:#000;">1.14.4</a> <br>
+        There are 24 new paintings added by MultiExpansion, all available from the good old painting item. <br> <br>
+        <div class="image-showcaser">
+            <div>
+                <img  draggable="false" class="image-showcaser-display" id="image-showcaser-display-001" src="res/img/paintings/1.png">
+            </div>
+            <div class="image-showcaser-footer">
+                <a class="navbar-item" onclick="prevPainting('#image-showcaser-display-001', 'image-showcaser-footer-numdisplay-001')" style="text-align:left;"><i class="fas fa-chevron-left"></i></a>
+                <a class="navbar-item" onclick="nextPainting('#image-showcaser-display-001', 'image-showcaser-footer-numdisplay-001')" style="text-align:right;"><i class="fas fa-chevron-right"></i></a>
+                <p class="display-inline-block" id="image-showcaser-footer-numdisplay-001">1</p>
+            </div>
+        </div> <br> <br>
+
+
+        
+
+    </div>
+
+    <div class="page-footer">
+        2017 - 2020 © MultiTeam Development Group
+    </div>
+
+</body>

@@ -1,0 +1,771 @@
+<head>
+
+	<title>MULTI EXPANSION</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="../../../res/css/mt/mt_colors.css">
+	<link rel="stylesheet" href="../../../res/css/mt/mt_scrollbar.css">
+	<script src="https://kit.fontawesome.com/ecf1eef1d8.js"></script>
+	<link rel="icon" href="https://i.imgur.com/1LzLTq1.png">
+</head>
+
+<body background="images/panorama/2.png">
+
+		<script>
+			var a=2;
+			function nextBackground() {
+			if (a>=14) {a=1;}else {a=a+1;}
+			document.body.style.backgroundImage = "url('images/panorama/"+a+".png')";
+			}
+		
+			var b=1;
+			function nextPainting() {
+			if (b>=24) {b=1;}else {b=b+1;}
+			document.querySelector("#painting").src = "images/items/paintings/"+b+".png"
+			document.querySelector("#paintingname") = ""+b+""
+			}
+			function prevPainting() {
+			if (b<=1) {b=24;}else {b=b-1;}
+			document.querySelector("#painting").src = "images/items/paintings/"+b+".png"
+			document.querySelector("#paintingname") = ""+b+""
+			}
+			
+			//splash:
+			
+			window.onload = function() {
+			var doMinecraftSplashes = true;
+			var randUnicode = String.fromCharCode(0x0000 + Math.random() * (0xFFFF - 0x0000 + 1));
+			for (var i = 0; i <= 127; i++) {
+				randUnicode = randUnicode.concat(String.fromCharCode(0x0000 + Math.random() * (0xFFFF - 0x0000 + 1)));
+				}
+			randUnicode = randUnicode.concat("!");
+			var splashes = [randUnicode, "Multi Expansion by Multiteam!"];
+			var mcSplashes = ["As seen on TV!", "Awesome!", "100% pure!", "May contain nuts!", "Better than Prey!", "More polygons!", "Sexy!", "Limited edition!", "Flashing letters!", "Made by Notch!", "It's here!", "Best in class!", "It's finished!", "Kind of dragon free!", "Excitement!", "More than 500 sold!", "One of a kind!", "Heaps of hits on YouTube!", "Indev!", "Spiders everywhere!", "Check it out!", "Holy cow, man!", "It's a game!", "Made in Sweden!", "Uses LWJGL!", "Reticulating splines!", "Minecraft!", "Yaaay!", "Singleplayer!", "Keyboard compatible!", "Undocumented!", "Ingots!", "Exploding creepers!", "That's no moon!", "l33t!", "Create!", "Survive!", "Dungeon!", "Exclusive!", "The bee's knees!", "Down with O.P.P.!", "Closed source!", "Classy!", "Wow!", "Not on steam!", "Oh man!", "Awesome community!", "Pixels!", "Teetsuuuuoooo!", "Kaaneeeedaaaa!", "Now with difficulty!", "Enhanced!", "90% bug free!", "Pretty!", "12 herbs and spices!", "Fat free!", "Absolutely no memes!", "Free dental!", "Ask your doctor!", "Minors welcome!", "Cloud computing!", "Legal in Finland!", "Hard to label!", "Technically good!", "Bringing home the bacon!", "Indie!", "GOTY!", "Ceci n'est pas une title screen!", "Euclidian!", "Now in 3D!", "Inspirational!", "Herregud!", "Complex cellular automata!", "Yes, sir!", "Played by cowboys!", "OpenGL 1.2!", "Thousands of colors!", "Try it!", "Age of Wonders is better!", "Try the mushroom stew!", "Sensational!", "Hot tamale, hot hot tamale!", "Play him off, keyboard cat!", "Guaranteed!", "Macroscopic!", "Bring it on!", "Random splash!", "Call your mother!", "Monster infighting!", "Loved by millions!", "Ultimate edition!", "Freaky!", "You've got a brand new key!", "Water proof!", "Uninflammable!", "Whoa, dude!", "All inclusive!", "Tell your friends!", "NP is not in P!", "Notch <3 ez!", "Music by C418!", "Livestreamed!", "Haunted!", "Polynomial!", "Terrestrial!", "All is full of love!", "Full of stars!", "Scientific!", "Cooler than Spock!", "Collaborate and listen!", "Never dig down!", "Take frequent breaks!", "Not linear!", "Han shot first!", "Nice to meet you!", "Buckets of lava!", "Ride the pig!", "Larger than Earth!", "sqrt(-1) love you!", "Phobos anomaly!", "Punching wood!", "Falling off cliffs!", "0% sugar!", "150% hyperbole!", "Synecdoche!", "Let's danec!", "Seecret Friday update!", "Reference implementation!", "Lewd with two dudes with food!", "Kiss the sky!", "20 GOTO 10!", "Verlet intregration!", "Peter Griffin!", "do not distribute!", "Cogito ergo sum!", "D + E", "4815162342 lines of code!", "A skeleton popped out!", "The Work of Notch!", "The sum of its parts!", "BTAF used to be good!", "I miss ADOM!", "umop-apisdn!", "OICU812!", "Bring me Ray Cokes!", "Finger-licking!", "Thematic!", "Pneumatic!", "Sublime!", "Octagonal!", "Une baguette!", "Gargamel plays it!", "Rita is the new top dog!", "SWM forever!", "Representing Edsbyn!", "Matt Damon!", "Supercalifragilisticexpialidocious!", "Consummate V's!", "Cow Tools!", "Double buffered!", "Fan fiction!", "Flaxkikare!", "Jason! Jason! Jason!", "Hotter than the sun!", "Internet enabled!", "Autonomous!", "Engage!", "Fantasy!", "DRR! DRR! DRR!", "Kick it root down!", "Regional resources!", "Woo, facepunch!", "Woo, somethingawful!", "Woo, /v/!", "Woo, tigsource!", "Woo, minecraftforum!", "Woo, worldofminecraft!", "Woo, reddit!", "Woo, 2pp!", "Google anlyticsed!", "Now supports åäö!", "Give us Gordon!", "Tip your waiter!", "Very fun!", "12345 is a bad password!", "Vote for net neutrality!", "Lives in a pineapple under the sea!", "MAP11 has two names!", "Omnipotent!", "Gasp!", "...!", "Bees, bees, bees, bees!", "Jag känner en bot!", "This text is hard to read if you play the game at the default resolution, but at 1080p it's fine!", "Haha, LOL!", "Hampsterdance!", "Switches and ores!", "Menger sponge!", "idspispopd!", "Eple (original edit)!", "So fresh, so clean!", "Slow acting portals!", "Try the Nether!", "Don't look directly at the bugs!", "Oh, ok, Pigmen!", "Finally with ladders!", "Scary!", "Play Minecraft, Watch Topgear, Get Pig!", "Twittered about!", "Jump up, jump up, and get down!", "Joel is neat!", "A riddle, wrapped in a mystery!", "Huge tracts of land!", "Welcome to your Doom!", "Stay a while, stay forever!", "Stay a while and listen!", "Treatment for your rash!", '"Autological" is!', "Information wants to be free!", '"Almost never" is an interesting concept!', "Lots of truthiness!", "The creeper is a spy!", "Turing complete!", "It's groundbreaking!", "Let our battle's begin!", "The sky is the limit!", "Jeb has amazing hair!", "Casual gaming!", "Undefeated!", "Kinda like Lemmings!", "Follow the train, CJ!", "Leveraging synergy!", "This message will never appear on the splash screen, isn't that weird?", "DungeonQuest is unfair!", "110813!", "90210!", "Check out the far lands!", "Tyrion would love it!", "Also try VVVVVV!", "Also try Super Meat Boy!", "Also try Terraria!", "Also try Mount And Blade!", "Also try Project Zomboid!", "Also try World of Goo!", "Also try Limbo!", "Also try Pixeljunk Shooter!", "Also try Braid!", "That's super!", "Bread is pain!", "Read more books!", "Khaaaaaaaaan!", "Less addictive than TV Tropes!", "More addictive than lemonade!", "Bigger than a bread box!", "Millions of peaches!", "Fnord!", "This is my true form!", "Totally forgot about Dre!", "Don't bother with the clones!", "Pumpkinhead!", "Hobo humping slobo babe!", "Made by Jeb!", "Has an ending!", "Finally complete!", "Feature packed!", "Boots with the fur!", "Stop, hammertime!", "Testificates!", "Conventional!", "Homeomorphic to a 3-sphere!", "Doesn't avoid double negatives!", "Place ALL the blocks!", "Does barrel rolls!", "Meeting expectations!", "PC gaming since 1873!", "Ghoughpteighbteau tchoghs!", "Déjà vu!", "Déjà vu!", "Got your nose!", "Haley loves Elan!", "Afraid of the big, black bat!", "Doesn't use the U-word!", "Child's play!", "See you next Friday or so!", "From the streets of Södermalm!", "150 bpm for 400000 minutes!", "Technologic!", "Funk soul brother!", "Pumpa kungen!", "日本ハロー！", "한국 안녕하세요!", "Helo Cymru!", "Cześć Polska!", "你好中国!", "Привет Россия!", "Γεια σου ελλάδα!", "My life for Aiur!", "Lennart lennart = new Lennart();", "I see your vocabulary has improved!", "Who put it there?", "You can't explain that!", "if not ok then return end", "§1C§2o§3l§4o§5r§6m§7a§8t§9i§ac", "§kFUNKY LOL", "SOPA means LOSER in Swedish"]; 
+			if (Math.floor(Math.random() * 2.25) === 0 && doMinecraftSplashes === true) {
+				var lengthSplashes = mcSplashes.length;
+				var randSplashId = Math.floor(Math.random() * lengthSplashes);
+				document.getElementById("splash").innerHTML = mcSplashes[randSplashId];
+			} else {
+				var lengthSplashes = mcSplashes.length;
+				var randSplashId = Math.floor(Math.random() * lengthSplashes);
+				document.getElementById("splash").innerHTML = mcSplashes[randSplashId];
+				}
+			}
+		</script>
+		<!--script src="js/splashes.js" type="text/javascript"></script!-->
+		<script type="text/javascript" src="jquery.js"></script>
+		
+		
+		<br><br><br>
+		<div class="splashdiv">
+			<a id="splash"></a>
+		</div>
+		
+		<div class="mainstuff">
+		
+			<div class="container2">
+				
+				<br>
+					<div id="logo">
+						<img alt="Logo of Multi Expansion" draggable="false" src="images/MulitEx_logo_transparent.png" style="width:300px;height:85px;">
+						<br><br>
+						<a id="version_badge-114">1.14.4</a> and soon <a id="version_badge-116">1.16.1</a>
+						<br><br>
+							<button onclick="nextBackground()" class="btn-smol" >Next background</button>
+						<br><br>
+						<a href="../../../index.html#header-minecraft" class="btn-smol">Back to MultiTeam page</a>
+						<br><br>
+					</div>
+			</div>
+		</div>
+		<br><br><br>
+	
+		<div class="container">
+			<br>
+				Multi Expansion adds the things we've been missing from Minecraft for a long time, and even some new exciting features!
+				<br><br>
+				This mod was originally called MultiCraft, but for copyright reasons got renamed.
+			<!--br><a href="index.html" id="b_common_blue"> <img src="https://i.imgur.com/1LzLTq1.png"> Multi Expansion</a-->
+			<br><br>
+				Last public release: 2020.01.02  [year.month.day]
+			
+			<br><br>
+			
+				<a href="https://www.curseforge.com/minecraft/mc-mods/mt-multiex" class="btn-norm"> <i class="fas fa-file-download"></i> Download</a><br><br>
+				<img draggable="false" src="https://cf.way2muchnoise.eu/full_285334_downloads.svg">
+			<br><br><h3>Credits:</h3>-Rellit: Coding<br>-MaroonShaded: Coding<br>-IAmGama: Textures<br>-[Laz The Artist]: Textures/Models/ideas
+			<br><br>
+			<h3>DISCORD</h3>
+				If you want to see the development, or just to see the plans, i recomend you to join our <div class="tooltipDC"><a class="DClink" href="http://discord.gg/sTdenHy">discord</a><span class="tooltiptextDC">CLICK TO JOIN!!!</span></div> server!
+			<br><br><br><br>
+			
+				<h3>You can find the features here:</h3>
+			<br><br>
+			
+			
+			
+			<div class="tab">
+				<button class="tablinks" onclick="openCity(event, 'ExpandingVanilla')">Expanding Vanilla</button>
+				<button class="tablinks" onclick="openCity(event, 'VanillaRepair')">Repaired Vanilla</button>
+				<button class="tablinks" onclick="openCity(event, 'PlansTab')">Plans</button>
+				<button class="tablinks" onclick="openCity(event, 'BuzzyerPlans')">Plans: Bee edition</button>
+				<button class="tablinks" onclick="openCity(event, 'NetherUpdate')">Plans: Nether Update</button>
+				<button class="tablinks" onclick="openCity(event, 'Fifth')">-</button>
+			</div>
+
+			<div id="ExpandingVanilla" class="tabcontent">
+				<h3>Vanilla Expansion</h3>
+					<p>In this tab you will find all the features added by MultiExpansion that aims on "expanding the vanilla game".</p>
+				<br><br>
+				<h3>Wooden Bark</h3>
+				<a id="version_badge-114">1.14.4</a>
+					<p>The bark item is coming from logs. It just drops from the log when you strip it with your axe. Exactly 4 pieces of them, now you can use it to craft the stripped logs back to normal logs</p>
+					<span class="mcui">
+					<span class="invslot"> <div class="mcui_itemtooltip">	<img id="mc_item" draggable="false" src="images/items/item_bark_acacia.png">	<span class="mcui_itemtooltip_text">Acacia bark</span></div></span>
+					<span class="invslot"> <div class="mcui_itemtooltip">	<img id="mc_item" draggable="false" src="images/items/item_bark_birch.png">		<span class="mcui_itemtooltip_text">Birch bark</span></div></span>
+					<span class="invslot"> <div class="mcui_itemtooltip">	<img id="mc_item" draggable="false" src="images/items/item_bark_darkoak.png">	<span class="mcui_itemtooltip_text">Dark oak bark</span></div></span>
+					<span class="invslot"> <div class="mcui_itemtooltip">	<img id="mc_item" draggable="false" src="images/items/item_bark_jungle.png">	<span class="mcui_itemtooltip_text">Jungle bark</span></div></span>
+					<span class="invslot"> <div class="mcui_itemtooltip">	<img id="mc_item" draggable="false" src="images/items/item_bark_oak.png">	<span class="mcui_itemtooltip_text">Oak bark</span></div></span>
+					<span class="invslot"> <div class="mcui_itemtooltip">	<img id="mc_item" draggable="false" src="images/items/item_bark_spruce.png">	<span class="mcui_itemtooltip_text">Spruce bark</span></div></span>
+					</span>
+					
+					<br>Log Crafting:<br>
+					<span class="mcui">
+					<table>
+					<tr>
+						<th><span class="mcui-input">
+						
+							<span class="mcui-row">
+								<span class="invslot"></span><span class="invslot"> <div class="mcui_itemtooltip"> <img id="mc_item" draggable="false" src="images/items/item_bark_oak.png"> <span class="mcui_itemtooltip_text">Oak bark</span></div></span><span class="invslot"></span><br>
+							</span>
+							<span class="mcui-row">
+								<span class="invslot"> <div class="mcui_itemtooltip"> <img id="mc_item" draggable="false" src="images/items/item_bark_oak.png"><span class="mcui_itemtooltip_text">Oak bark</span></div></span><span class="invslot"> <div class="mcui_itemtooltip"> <img draggable="false" id="mc_item" src="images/items/block_log_stripped_oak.png"><span class="mcui_itemtooltip_text">Stripped oak log</span></div></span><span class="invslot"> <div class="mcui_itemtooltip"> <img id="mc_item" draggable="false" src="images/items/item_bark_oak.png"><span class="mcui_itemtooltip_text">Oak bark</span></div></span><br>
+							</span>
+							<span class="mcui-row">
+								<span class="invslot"></span><span class="invslot"> <div class="mcui_itemtooltip"> <img id="mc_item" draggable="false" src="images/items/item_bark_oak.png"><span class="mcui_itemtooltip_text">Oak bark</span></div></span><span class="invslot"></span>
+							</span>
+							
+						</span></th>
+						<th><span class="mcui-output">
+							 <span class="mcui-arrow"><img src="https://gamepedia.cursecdn.com/minecraft_gamepedia/8/86/Grid_layout_Arrow_%28small%29.png"></span>
+						</span>
+						
+						<span class="mcui-output">
+							<span class="invslot-large"><div class="mcui_itemtooltip"><img id="mc_item" src="images/items/block_log_oak.png"><span class="mcui_itemtooltip_text">Oak log</span></div></span>
+						</span></th>
+					</tr>
+				
+					</table>
+				</span>
+						
+					
+				<br><br><br>
+				<h3>New Paintings</h3>
+				<a id="version_badge-114">1.14.4</a>
+					<p>Yes, finally! New paintings! They are being made by IAmGama, Rellit, StaboVexo and [LazTheArtist]. Also you can place them with your regular old painting item. You can see all the 24 of them here:</p>
+				<br>
+					<img draggable="false" id="painting" src="images/items/paintings/1.png"><br><br>
+					<button onclick="prevPainting()" id="b_common_smol_blue"><i class="fas fa-arrow-left"></i></button>
+					<button onclick="nextPainting()" id="b_common_smol_blue"><i class="fas fa-arrow-right"></i></button>
+				<br><br><br>
+				
+				<h3>Blue berries</h3>
+				<a id="version_badge-114">1.14.4</a>
+					<p>An alternative for the Sweet berries... and its blue! Also they generates in the Roofed Forest biomes.</p>
+					<span class="mcui">
+						<span class="invslot"><div class="mcui_itemtooltip"><img id="mc_item" draggable="false" src="images/items/item_blue_berries.png"><span class="mcui_itemtooltip_text">Blue berries</span></div></span>
+					</span>
+				<br>
+					<img draggable="false" id="content_image" src="images/game/berryz.png">
+				<br><br><br>
+				<!--h3>Berries in flower pots</h3>
+					<p>Following the berry theme, now you can place berry bushes in flower pots! Also they will grow berries and you can harvest them.</p>
+					<img draggable="false" id="content_image" src="images/game/pottable_berryz.png">
+				<br><br><br-->
+				<h3>Terracotta Bricks</h3>
+				<a id="version_badge-114">1.14.4</a>
+					<p>We had the colorful update in 1.12, but we didint get these... The terracotta bricks. These bricks are same as the normal ones, but they are made out of terracotta.</p>
+					Brick Crafting: (this recipe gives 4 bricks)<br>
+						<span class="mcui">
+						<table>
+						<tr>
+							<th><span class="mcui-input">
+						
+								<span class="mcui-row">
+									<span class="invslot"><div class="mcui_itemtooltip"><img id="mc_item" draggable="false" src="images/items/block_terracotta.png"><span class="mcui_itemtooltip_text">Terracotta</span></div></span><span class="invslot"><div class="mcui_itemtooltip"><img id="mc_item" draggable="false" src="images/items/block_terracotta.png"><span class="mcui_itemtooltip_text">Terracotta</span></div></span><span class="invslot"></span><br>
+								</span>
+								<span class="mcui-row">
+									<span class="invslot"><div class="mcui_itemtooltip"><img id="mc_item" draggable="false" src="images/items/block_terracotta.png"><span class="mcui_itemtooltip_text">Terracotta</span></div></span><span class="invslot"><div class="mcui_itemtooltip"><img id="mc_item" draggable="false" src="images/items/block_terracotta.png"><span class="mcui_itemtooltip_text">Terracotta</span></div></span><span class="invslot"></span><br>
+								</span>
+								<span class="mcui-row">
+									<span class="invslot"></span><span class="invslot"></span><span class="invslot"></span>
+								</span>
+							
+							</span></th>
+							<th><span class="mcui-output">
+							 <span class="mcui-arrow"><img src="https://gamepedia.cursecdn.com/minecraft_gamepedia/8/86/Grid_layout_Arrow_%28small%29.png"></span>
+							</span>
+						
+							<span class="mcui-output">
+								<span class="invslot-large"><div class="mcui_itemtooltip"><img id="mc_item" draggable="false" src="images/items/block_terracotta_brick.png"><span class="mcui_itemtooltip_text">Terracotta Bricks</span></div></span>
+							</span></th>
+						</tr>
+				
+						</table>
+						</span><br><br>
+						<img draggable="false" id="content_image2" src="images/game/terracotta_bricks.png">
+					<br><br><br><br><br>
+					<h3>Colored planks</h3>
+				<a id="version_badge-114">1.14.4</a>
+					<p>Continuing on the Colorful update... by the way, notch planned to add colored planks to the game back then, so... here you go. we did it. You can craft them with any type of planks.</p>
+					Coloring the planks: (this recipe gives 8 planks)<br>
+						<span class="mcui">
+						<table>
+						<tr>
+							<th><span class="mcui-input">
+						
+								<span class="mcui-row">
+									<span class="invslot"><div class="mcui_itemtooltip">  <img id="mc_item" draggable="false" src="images/items/block_planks_oak.png">  <span class="mcui_itemtooltip_text">  Oak planks  </span></div></span><span class="invslot">  <div class="mcui_itemtooltip"><img id="mc_item" draggable="false" src="images/items/block_planks_oak.png">  <span class="mcui_itemtooltip_text">  Oak planks  </span></div></span><span class="invslot">  <div class="mcui_itemtooltip"><img id="mc_item" draggable="false" src="images/items/block_planks_oak.png"><span class="mcui_itemtooltip_text">  Oak planks  </span></div></span><br>
+								</span>
+								<span class="mcui-row">
+									<span class="invslot"><div class="mcui_itemtooltip">  <img id="mc_item" draggable="false" src="images/items/block_planks_oak.png">  <span class="mcui_itemtooltip_text">  Oak planks  </span></div></span><span class="invslot">  <div class="mcui_itemtooltip"><img id="mc_item" draggable="false" src="images/items/item_dye_lime.png">  <span class="mcui_itemtooltip_text">  Lime dye </span></div></span><span class="invslot">  <div class="mcui_itemtooltip"><img id="mc_item" draggable="false" src="images/items/block_planks_oak.png"><span class="mcui_itemtooltip_text">  Oak planks  </span></div></span><br>
+								</span>
+								<span class="mcui-row">
+									<span class="invslot"><div class="mcui_itemtooltip">  <img id="mc_item" draggable="false" src="images/items/block_planks_oak.png">  <span class="mcui_itemtooltip_text">  Oak planks  </span></div></span><span class="invslot">  <div class="mcui_itemtooltip"><img id="mc_item" draggable="false" src="images/items/block_planks_oak.png">  <span class="mcui_itemtooltip_text">  Oak planks  </span></div></span><span class="invslot">  <div class="mcui_itemtooltip"><img id="mc_item" draggable="false" src="images/items/block_planks_oak.png"><span class="mcui_itemtooltip_text">  Oak planks  </span></div></span>
+								</span>
+							
+							</span></th>
+							<th><span class="mcui-output">
+							 <span class="mcui-arrow"><img src="https://gamepedia.cursecdn.com/minecraft_gamepedia/8/86/Grid_layout_Arrow_%28small%29.png"></span>
+							</span>
+						
+							<span class="mcui-output">
+								<span class="invslot-large"><div class="mcui_itemtooltip"><img id="mc_item" draggable="false" src="images/items/block_planks_colored_lime.png"><span class="mcui_itemtooltip_text">  Lime planks  </span></div></span>
+							</span></th>
+						</tr>
+				
+						</table>
+						</span><br><br>
+						<img draggable="false" id="content_image2" src="images/game/colored_planks.png">
+					<br><br><br>
+					<h3>Mossy Bricks</h3>
+				<a id="version_badge-114">1.14.4</a>
+					<p>Hey, mossy cobblestone exists! And even mossy stone bricks are a thing, then why we dont have mossy version for the normal bricks? (slabs, walls and stairs coming soon)</p>
+					Mossing the bricks:<br>
+					<span class="mcui">
+						<table>
+						<tr>
+							<th><span class="mcui-input">
+						
+								<span class="mcui-row">
+									<span class="invslot"><div class="mcui_itemtooltip">  <img id="mc_item" draggable="false" src="images/items/block_bricks.png"><span class="mcui_itemtooltip_text">  Bricks  </span></div></span><span class="invslot"><div class="mcui_itemtooltip">  <img id="mc_item" draggable="false" src="images/items/item_vines.png"><span class="mcui_itemtooltip_text">  Vines  </span></div></span><span class="invslot"></span><br>
+								</span>
+								<span class="mcui-row">
+									<span class="invslot"></span><span class="invslot"></span><span class="invslot"></span><br>
+								</span>
+								<span class="mcui-row">
+									<span class="invslot"></span><span class="invslot"></span><span class="invslot"></span>
+								</span>
+							
+							</span></th>
+							<th><span class="mcui-output">
+							 <span class="mcui-arrow"><img src="https://gamepedia.cursecdn.com/minecraft_gamepedia/8/86/Grid_layout_Arrow_%28small%29.png"></span>
+							</span>
+						
+							<span class="mcui-output">
+								<span class="invslot-large"><div class="mcui_itemtooltip"><img id="mc_item" draggable="false" src="images/items/block_bricks_mossy.png"><span class="mcui_itemtooltip_text">  Mossy Bricks  </span></div></span>
+							</span></th>
+						</tr>
+				
+						</table>
+						</span><br>
+				<br>
+					<img draggable="false" id="content_image" src="images/game/mossy_bricks.png">
+				<br><br><br>
+				<h3>Polar bear & Panda pelt</h3>
+				<a id="version_badge-114">1.14.4</a>
+					<p>Polar bears an pandas... they are boring. Even if you kill them, they drop xp. Except polar bears drop fish, but still. And here comes MultiExpansion! Now they will drop their pelts! Also you can use that pelt to craft some normal leather, to be exact one pelt gives you 2 leathers.</p><br>
+					<span class="mcui">
+					<span class="invslot"><div class="mcui_itemtooltip"><img id="mc_item" draggable="false" src="images/items/item_pelt_polar.png"><span class="mcui_itemtooltip_text">  Polar bear pelt  </span></div></span>
+					<span class="invslot"><div class="mcui_itemtooltip"><img id="mc_item" draggable="false" src="images/items/item_pelt_panda.png"><span class="mcui_itemtooltip_text">  Panda pelt  </span></div></span>
+					</span>
+					<br>
+				<br>
+					<img draggable="false" id="content_image" src="images/game/plar_and_panda_pelts.png">
+					
+				<br><br><br>
+				
+				<div class="ALERT"><h3>Warning!</h3><br>These features below from here are not contained by any public release of MultiExpansion.<br>They will be available in the next update.<br><br></div>
+				
+				<br><br><br>
+				<h3>Ocelot pelt</h3>
+				<a id="version_badge-114">1.14.4</a>
+					<p>Ocelots, well they are boring since the village and pillage update made them useless. Now they drop you something: Their pelts. Just like with bear pelts, you can craft them to normal leather, but this time you will need 2 pelts to craft 1 leather.</p><br>
+					<span class="mcui">
+					<span class="invslot"><div class="mcui_itemtooltip"><img id="mc_item" draggable="false" src="images/items/item_pelt_ocelot.png"><span class="mcui_itemtooltip_text">  Ocelot pelt  </span></div></span>
+					</span>
+					<br>
+				<br>
+					<img draggable="false" id="content_image" src="images/game/ocelot_pelt.png">
+				<br><br>
+				
+				<br><br><br>
+				<h3>Ruby</h3>
+				<a id="version_badge-114">1.14.4</a>
+					<p>Yes, the diamond and emerald is enough... for the overworld... How about being in a new dimension? Ruby can be found in the nether ceiling (Not really high, but high enough). Just like the other gems it drops one item when mined, fortune works as well, and you can craft it into block form. Traveler, keep your eyes on this shiny orb, somewhen you will find out how to use it...</p><br>
+					<span class="mcui">
+					<span class="invslot"><div class="mcui_itemtooltip"><img id="mc_item" draggable="false" src="images/items/block_ruby_ore.png" style="max-width:32px;max-height:32px;"><span class="mcui_itemtooltip_text">  Ruby ore </span></div></span>
+					<span class="invslot"><div class="mcui_itemtooltip"><img id="mc_item" draggable="false" src="images/items/item_ruby.png"><span class="mcui_itemtooltip_text">  Ruby  </span></div></span>
+					<span class="invslot"><div class="mcui_itemtooltip"><img id="mc_item" draggable="false" src="images/items/block_ruby.png" style="max-width:32px;max-height:32px;"><span class="mcui_itemtooltip_text">  Ruby block </span></div></span>
+					</span>
+					<br>
+				<br>
+					<img draggable="false" id="content_image" src="images/game/ruby_gen.png">
+				<br><br>
+				
+				<br><br><br>
+				<h3>Parrots And The Bats!</h3>
+				<a id="version_badge-114">1.14.4</a>
+					<p>No, not the advancement... They now will drop something, you probably need. So what they drop? Parrots now will give you their meat, wich you can cook and eat! The bats will give you their wings, wich you will be able to use for brewing a levitation potion in the newar future.</p><br>
+					<span class="mcui">
+					<span class="invslot"><div class="mcui_itemtooltip"><img id="mc_item" draggable="false" src="images/items/item_parrot_meat.png"><span class="mcui_itemtooltip_text">  Raw parrot  </span></div></span>
+					<span class="invslot"><div class="mcui_itemtooltip"><img id="mc_item" draggable="false" src="images/items/item_bat_wing.png"><span class="mcui_itemtooltip_text">  Bat wing  </span></div></span>
+					</span>
+					<br>
+				<br>
+					<img draggable="false" id="content_image" src="images/game/parrotz_and_the_batz.png">
+				<br><br>
+			</div>
+			
+			
+			
+			
+			
+			
+			<div id="VanillaRepair" class="tabcontent">
+			<h3>"Repairing minecraft 101"</h3>
+					<p>Int this section of the webpage, you will find features of MultiExpansion that aims on fixing and/or changing some stuff around the base game instead of adding new content. So here will be some terrain generation tweaks, bug-fixes, and maybe even sugar cane will actually grow faster ons sand</p>
+				<br><br>
+				
+			</div>
+			
+			
+			
+			
+			
+			
+			<div id="PlansTab" class="tabcontent">
+			<h3>Plans and Upcoming features of Multi Expansion</h3>
+					<p>Yes, you heared right. Instead of inviting you to our discord server (again), we list our plans here.</p>
+				<br><br><br>
+			<h3>Emerald Apple</h3>
+					<p>the emerald apple. this item was made into the mod, so lets implement it here. When you eat this apple. it gives you a xp levelup. no matters what leve you are on. like, you have 34 levels, eat the apple, and now you have 35. but if you just have 1 level, and eat it, you will have 2 levels. its being crafted like golden apple, but with emeralds.</p><br><br>
+					<img draggable="false" id="content_image" src="images/plans/emerald_apple.png">
+				<br><br><br>
+			<h3>Wither Bone</h3>
+					<p>the wither bone and wither bone meal.<br>
+						-wither skeletons drop wither bones when they die.<br>
+						-the wither bone meal crafted from the wither bone, just like normal bones.<br>
+						-and a new thing to it: if you combine the wither bone meal with awkward potion in the brewing stand, you will get wither II potion<br>
+						-the wither bonemeal used to speed up the growth of nether warts (like normal bone meal do with normal plants)</p><br><br>
+					<img draggable="false" id="content_image" src="images/plans/witherbone.png">
+				<br><br><br>
+			<h3>Ender Pearl Shard</h3>
+					<p>the ender pearl shard. dropped by ender mites, only when the player kills it. always drop 1.</p><br><br>
+					<img draggable="false" id="content_image" src="images/plans/pearlshard.png">
+				<br><br><br>
+			<h3>Chese</h3>
+					<p>the chese. crafted with 1 milk bucket. you get back the empty bucket after crafting. and it restores 2 and a half food bars</p><br><br>
+					<img draggable="false" id="content_image" src="images/plans/chese.png">
+				<br><br><br>
+			<h3>Chain</h3>
+					<p>the chain item. planned functions for it:<br>
+						-used to craft chain armor<br>
+						-placeable item, for extending lanterns and such<br>
+						-you can connect minecarts with this item. right click on the first and then on the second cart, and the link is created</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/chain.png"><br><br>
+					<img draggable="false" id="content_image" src="images/plans/lantern.png">
+				<br><br><br>
+			<h3>Basalt</h3>
+					<p>previously called volcanic stone, now its called basalt<br>
+						-generates in large amounts around lava lakes in the overworld.</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/basalt.png">
+				<br><br><br>
+			<h3>Rotten Food</h3>
+					<p>the rotten/poisonous variants of plants! (just like with potato) when you use the wither bone meal on a plant instead of the normal one, for first look it does nothing, but when the grown to full, and you harvest them, you will only get the rotten item. with the melon, the next block what grows, will be normal.
+						<br>-all the poisonous items have 100% chance to compost (in the composter)</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/rottenfood.png" style="max-width:700px;height:100px;">
+				<br><br><br>
+			<h3>Glowstone feeding</h3>
+					<p>the glowstone force-feeding! you can right click with glowstone on any entity to apply 15 seconds of glowing effect on them.</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/glowfeed.png"><br><br>
+					<img draggable="false" id="content_image" src="images/plans/moreglow.png" style="max-width:700px;height:100px;">
+				<br><br><br>
+			<h3>Nether rod</h3>
+					<p>the nether rods. they work same as the end rods.</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/netherrod.png">
+				<br><br><br>
+			<h3>Fox pelts</h3>
+					<p>The Fox Pelt. red fox and snow fox drop, with a chance to get 0 or 1. just like rabbit hide, you can use this to make normal leather. but instead of 4, you will need only 2, because foxes are larger than rabbits.</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/foxpelt.png">
+				<br><br><br>
+			<h3>Dolphin fin</h3>
+					<p>"Dolphin Fin", dropped by dolphins. have a 35% chance to drop this item.<br>
+						-you can eat it, restore :mc_half_food: , and you get nausea<br>
+						-you can brew potion from it, just add it to an awkward potion, and you will get a "dolphins grace potion" (this is an existing vanilla effect)</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/dol_fin.png">
+				<br><br><br>
+			<h3>Llama fur</h3>
+					<p>the llama fur was an old item, but now evolved. have types for all the llama types. 0-1 drop rate. (from left to right: brown, creamy, gray, white)
+						<br>-they can be turned into leather as well. but here is fur = 1 leather. just drop it into the crafting grid</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/lamafur.png" style="max-width:700px;height:100px;">
+				<br><br><br>
+			<h3>Trident rework</h3>
+					<p>an item called guardian spike, dropped by the elder guardians with 100% chance. why is it good? you need for tridents. And remove the trident from the drowneds.</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/tridentstuff.png">
+				<br><br><br>
+			<h3>Quartz tools</h3>
+					<p>the quartz tools. they are crafted the same way as normal tools, but instead of stick use nether brick(items) and the material is quartz
+							<br>-all of them have same durability as iron
+							<br>-they deal damage to normal mobs same as stone tools
+							<br>-they deal damage to nether mobs same as diamond tools</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/quartztools.png" style="max-width:700px;height:100px;">
+				<br><br><br>
+			<h3>Berry pies</h3>
+					<p>and the berry pies! they restore 8 food points (:mc_food: :mc_food: :mc_food: :mc_food:)
+						<br>-can be crafted from sweet berry or blue berry</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/berrypie.png">
+				<br><br><br>
+			<h3>Pyro table</h3>
+					<p>a workstation of a new villager, the pyrotechnist stable.
+					<br>-it's villager will come later
+					<br>-used to craft fireworks
+					<br>-it's gui will come later (before the villager)</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/pyrotable.png">
+				<br><br><br>
+			<h3>Pyro table functionality</h3>
+					<p>introducing the gui of the pyrotechnist table.
+						<br>the numbers:
+						<br>1-first set of input slot "input markers"
+						<br>2-second set of input slot "input markers"
+						<br>3-input set changing buttons
+						<br>4-input slots
+						<br>5-type selector board (like in the loom)
+						<br>6-output slot
+						<br>7-type buttons (like in the loom)
+						<br>How it will work:
+						the input set changing buttons will be above the input slots. click on one of them to switch between modes (sets)
+						first set:
+						if the player place a gunpowder into the first input slot, the "type buttons" will show up, and will display all possible fireworkcharge item in the game. you can hover over it, and will display the charge's infos in a form of a tooltip. and if you click on one of them, it will place the required items into the slots, if you have missing items, it will place the items in you have, but it will mark the missing items with red. like when you using the recipe book in crafting, but you have missing items.
+						second set:
+						you only need to place in the charge, a paper, and minimum 1 gunpowder. the other 2 is optional.
+						In this "mode", there will be no "type buttons"</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/pyrofunc.png">
+				<br><br><br>
+			<h3>More Armorstands</h3>
+					<p>more type of armor stands.(from left to right: the vanilla wooden one, bamboo, bone, iron bars, blaze rod)
+						<br>-they work the same as normal armor stands
+						<br>-(can be positioned with commands)
+						<br>the crafting recipe is the same for all, but instead of sticks, use the matching material</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/standies.png" style="max-width:700px;height:100px;"><br><br>
+					<img draggable="false" id="content_image" src="images/plans/item_standies.png">
+				<br><br><br>
+			<h3>Villager hats for players</h3>
+					<p>Villager hats now will be wearable by the player. You can get them by trading, from the villager that is on max level (villager with diamond badge). these are only cosmetics. they dont have durability, and have 1 armor point (:mc_half_armor:) (only for the head slot)
+						<br>image: (from left to right, in rows)
+						<br>Armorer, Butcher, Cartographer, Farmer, Fisher, Fletcher, Librarian, Shepherd, Weaponsmith</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/villihats.png">
+				<br><br><br>
+			<h3>Bamboo flute</h3>
+					<p>The bamboo flute. with a nice 3d model. it uses the flute sound that can be made with noteblocks
+						<br>-hold right click to make "music" (when holding, position the player's hands to make it look its being used, and summon some noteblock particles)
+						<br>-shift right click to load an arrow into it. IMPORTANT: you can only load posion arrows into it. (cant "store" arrows like crossbows)
+						<br>-2 times slower than normal bows</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/bamflut.png">
+				<br><br><br>
+			<h3>Better Sheep coloring</h3>
+					<p>an old feature comes back: better sheep coloring. just like in bedrock edition, when you shears a sheep's wool, the leftover wool on the sheep stays colored.</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/sheepcolor.png">
+				<br><br><br>
+			<h3>Model for the Hook</h3>
+					<p>3D fishing hook. just like in bedrock edition. just a cosmetic feature</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/3dhook.png">
+				<br><br><br>
+			<h3>Item descriptions on the hud</h3>
+					<p>from bedrock edition:
+					<br>item descriptions and enchantments show up below the items name on the hud.(descriptions shows up, but not durabiliti or attack speed/attack damage)
+					<br>-if the advanced tooltips are enabled (F3+H), the id will show up too</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/descriptionbrick.png">
+				<br><br><br>
+			<h3>Bricks and stonebricks</h3>
+					<p>a set of new block variants
+					<br>-mossy bricks: just a mossy version of the normal bricks. good for decorations
+					<br>-mycelic blocks: cobblestone, srone bricks and normal bricks. (mycelic? what dose that mean? they are infected with mycelium.) you can place mushroom on the mycelic blocks.
+					<br>Crafting:
+					<br>-the mossy brcik is a shapeless recipe, just 1 vine and a brick.
+					<br>-the mycelic blocks are not being crafted. if you place a cobblestone/stonebrick/brick on the mycelium, after 6-10 seconds, it will turn into the mycelic version. if its happening in rain, it will take only 5 seconds (no more or less).</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/bricksnstuff.png">
+				<br><br><br>
+			<h3>More Villagers</h3>
+					<p>3 new villager type!
+					<br>from left to right:
+					<br>-sushi chef: Not workstation block currently, will come in the future; It will trade kelp, fishes, and sushi (a future item)
+					<br>-pyrotechnist: Pyrotechnist table as a workstation; It will trade gunpowder, paper, fire charge, on higher levels firework stars, on the highest level expensive fireworks
+					<br>-tinkerer: Not workstation block currently, will come in the future; It will trade redstone related item such as redstone, repeaters, comparators, dispensers, observers and more (but not doors,trapdoors,buttons or pressure plates).</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/villagers.png">
+				<br><br><br>
+			<h3>Redstone engineering table</h3>
+					<p>The new tinkerer table for the new tinkerer villager. functionality coming soon.</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/engietable.png">
+				<br><br><br>
+			<h3>Sushi table</h3>
+					<p>and the sushi table. functionality coming soon</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/susstable.png">
+				<br><br><br>
+			<h3>Rice</h3>
+					<p>rice. an edible item, restores 2 food point ( :mc_food: ) grows on crop, the crop drops 4-5 rice item upon harvesting. it have same growing time as wheat. can be cooked, the cooked version restores 2.5 food point ( :mc_food: :mc_half_food: )</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/rizsa.png">
+				<br><br><br>
+			<h3>Sushi</h3>
+					<p>sushi items!
+					<br>-they will be crafted in the sushi table, when the functionality is coming.
+					<br>-maki roll (right) restores 5 food point ( :mc_food: :mc_food: :mc_half_food: ); and nigiri (left) restores 5.5 food point ( :mc_food: :mc_food: :mc_food: )</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/suss.png">
+				<br><br><br>
+			<h3>Debug-gui</h3>
+					<p>this was shown at the minecon, and i need it as a feature:
+					<br>-debug stick gui. its pretty self-explanatory. instead of always trying to figure out the controls of the stick, you can just simply right-click on a block that has stuff to change on it, and the gui opens.
+					<br>(this image is from the live show, and iirc the fotage they showed is on bedrock, thats why the buttons looks like this. we will use the standard buttons)</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/debuggui.png">
+				<br><br><br>
+			<h3>Nether planting</h3>
+					<p>Now using a golden hoe (only gold, others wont work) on soulsand creates soulsand framland. it will use lava to hydrate the farmland, and you can plant (later on the other new plants) the nether warts on it. from now, nether warts cant be placed on normal soul sand.
+						lava hydrates the soulsand in a radius of 4 blocks, but only in the nether.
+						in the overworld the radius decreses to 2 block
+						additional: if you walk on the hydrated farmland, you get damaged. if you crouch you wont be damaged. just like magma blocks
+
+						(the textures of the soulsand farmland block: there is only a new texture for the top. just like the normal farmland, the sides and the bottom will use the "source material" aka the soulsand texture)
+
+						:ghost_pepper_addition: :exclamation_MT: [#0065b]
+						If the ghost pepper mod is present, the pepper will only be plantable on the soulsand farmland</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/netherplanting.png">
+				<br><br><br>
+			<h3>Ghast plant</h3>
+					<p>a very creepy plant, the ghastoid. its the "block version" of the Ghast tear seed.
+					takes 8 minecraft days to grow fully (from stage 1 to stage 8)
+					<br>Every stage has its drop:
+					<br>stage 1: drops the seed back
+					<br>stage 2: same
+					<br>stage 3: it wont drop the seed back, so you just loose it.
+					<br>stage 4-5: still dropps nothing
+					<br>stage 6: when you broke it, it will spawn a ghast.
+					<br>stage 7: drops (always) 1 ghast tear.
+					<br>Stage 8 is a kind of corrupted form. the plant will become a ghast spawner. but these ghast will not drop tears or gunpowder, only some xp. if you break it, it will drop a seed with a chance of 20%.</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/ghatsplant.png" style="max-width:700px;height:100px;">
+				<br><br><br>
+			<h3>Egg (semi)rework</h3>
+					<p>Placeable eggs. from now, instead of throwing the eggs when you right click ,they should be placed as a block. this "new block" works like the sea pickles. its "stacks" in that block. (up to 4 eggs)
+						they going to hatch in 20 minutes with 50% chance for a little chicken from each egg (each = if you have 3 eggs placed at once, each egg has a 90% chance to spawn a chicken when hatching)
+						more behavior: adult chickens targets these placed eggs, and they going to stand "in the block" (they clip trough the block, like how the player does with the plants). if the player stands on them, they crack instantly (=vanish). If a adult chicken is "sitting" on the eggs, the birth chance increases to 80%/each egg
+
+						This feature does not overwrites how the chickens lays their eggs. they still "dropps them on the ground"</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/eggz.png" style="max-width:700px;height:100px;">
+				<br><br><br>
+				<h3>Roses</h3>
+					<p>the alpha release gave it, and then the 1.7 revoke it.... guess what it is: The rose. once upon a time, there was a release back then, and removed the rose, and replaced it with poppys... no its not a revenge, poppy stays. we just add the rose back alongside the poppy. and forget the phrase "roses are red, violets are blue", because they are coming in 6 variants, red, pink, blue, yellow, purple and white.
+
+					<br>Generation:
+					<br>-all of them: mixed in the flower forest biome
+					<br>-red,pink,yellow: plains, forests
+					<br>-blue, purple, white: cold biomes, like: taiga, mega taiga, snowy taiga, mountains</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/rozezarered.png" style="max-width:700px;height:100px;">
+				<br><br><br>
+				<h3>Ender-Trip</h3>
+					<p>The idea of a thing called Ender trip come into my mind around 2018. but i never made a plan or concept for it, so it never had a chance to become a thing.
+					<br>but now, i got bored and i made a concept. so whats this, and how it works:
+					<br>There is a chance for it to happen: when its dark, and there is no light around you, the 3 block tall space is present (u know, endermen.) it just happens. as shown in the video, an enderman will grab you, and then "teleport". yes this veird tunnel thingy is what endermen usually see when they teleport. also the end island is just a visual, they never will place you down there. the tunnel i think could be done via shaders. The tunnel is kinda a semi-dimension, because it not happens in the overworld, but i dont really know how it really works. when traveling, the player takes damage. not much, same damage comes from the tunnel as from cactuses. IF the player dies here, its inventory's contents spread between the start point (where the enderman grabbed the player) and the end point (where the endermen started to teleport. wich could be 2 block away, or anywhere within the vanilla teleport range, wich is as i... or the wiki remembers is 32 blocks) have fun finding your stuff, steve!
+					<br>in the video, it shows the enderman from a thrid person look. you can go to third person while teleporting, but default is first person. the video dosent shows the arriving, but you can imagine. just like it teleported there.</p>
+						<br><br>
+					<video width="600" height="340" controls>
+						<source src="clips/endertrip_final.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				<br><br><br>
+				
+			</div>
+			
+			
+			
+			
+			
+			
+			<div id="BuzzyerPlans" class="tabcontent">
+			<h3>Plans and Upcoming features of Multi Expansion: Bee edition</h3>
+					<p>Bee edition? Well, yes, this page will cover up all the plans for Multi Expansion 1.15.x<br>NOTE: only new features will be listed here.<br>All the current/planned features for 1.14.4 are going to be ported.</p>
+				<br><br><br>
+				<h3>Beehive Gui</h3>
+				<a id="version_badge-115">1.15.2</a>
+						<p>The beehive gui.
+						<br>-it show the honey level in it, and you can take it when its full
+						<br>-Shows the bees. exactyl:
+						<br>there is 3 bee slots. the bee icon shows up when that slot is occupied (the icons are those big cute bee "heads").
+						<br>next to them, you can see informations about the bees. i will go from top to bottom and left to right with explanation:
+						<br>so one bee has 2 icons. the left one is always changing. if a bee is wandering and just does nothing, it shows no icon. if a bee hading towards a flower, it shows that "> Flower " icon. its a cornflower because thats my favorite flower. if a bee is being pollenated, and hading towards the hive, it shows that "< Flower" icon. the next one i explain is the right one. its a hive icon with either an X mark or a checkmark. it show when that be is being in the hive or flying outside. (checkmar=bee in, X=bee out).
+						<br>and the last icon really depends on the previous: the honey comb icon. it appears almost everytime when a bee is inside the hive, and marks that the bee is making honey currently.
+						<br>there should be a lock icon on the bottle input until there's a campfire under the hive so the player doesn't accidentally shift-click and get a bunch of bees following them.</p>
+						<br><br>
+					<img draggable="false" id="content_image" src="images/plans/1_15/beegui.png">
+				<br><br><br>
+				<h3>Beehive and nestst Honey levels</h3>
+						<p>So... the hives and nests alredy has honey level, huh? Indeed, but the plan is that all the five levels should have its texture.<br>Credits for the texture: IAmGama</p>
+						<br><br>
+					
+					<img draggable="false" id="content_image" src="images/plans/1_15/honey_level_anim.gif">
+				<br><br><br>
+				<h3>Enchanting book</h3>
+						<p>This new item is a book. and it does nothing when right clicked with or anything else. just exists.
+						<br>-it randomly generates in witch huts (if there is no chest in the witch huts, then place one in) with a quantity of 2-3
+						<br>-its being required to craft enchantment tables. this item replaces the normal book in the recipe of the enchanting table. from now on, its a bit more harder to make one.</p>
+						<br><br>
+					
+					<img draggable="false" id="content_image" src="images/plans/1_15/ench_book.png">
+				<br><br><br>
+				<h3>Wrench</h3>
+						<p>Here is the introduction of the wrench. i was thinking on a wrench like tool since MultiExpansion 1.12, but i couldn't find any use for it until now. first i put here the wrench item, those awesome features will come later.it will somewhat function like a survival-compatible-debugstick</p>
+						<br><br>
+					
+					<img draggable="false" id="content_image" src="images/plans/1_15/wrench.png">
+				<br><br><br>
+			
+			</div>
+			
+			
+			<div id="NetherUpdate" class="tabcontent">
+			<h3>These plans will come in the 1.16 version of MultiExpansion! image examples coming soon.</h3>
+					<p></p>
+				<br><br>
+				<h3>Soul Sprout and Wisping soul!</h3>
+						<p>On this image, on the left side of the arrow, thats called a Soul Sprout. on the right side, thats the wisping soul.
+Soul Sprout: This deadbush-like sprout will be generating in soul sand valleys, there is always 1 chunk distance between 2 of these bushes. The new "soul" particle should spawn randomly above the sprout. 
+Wisping Soul: You can get this by right clicking with an empty bottle on the Soul sprout. Upon doing that, the soul sprout will break, so this means its a finite source.</p>
+						<br><br>
+					
+					<img draggable="false" id="content_image" src="images/plans/1_16/wisping_sprout.png">
+				<br><br><br>
+				<h3>More Phantoms!</h3>
+						<p>2 new type of phantom, native to the end and nether dimensions. The nether variant will spawn and function like the default phantoms, but the end one will be spawning like endermans in the end.</p>
+						<br><br>
+					
+					<img draggable="false" id="content_image" src="images/plans/1_16/.png">
+				<br><br><br>
+				<h3>Bottled obsidian tears</h3>
+						<p>If you came across some crying obsidian, you are lucky! Now grab a bottle and harvest those tears. This new liquid will be used for some potions, and recipes in the new cauldron brewing game-mechanic.</p>
+						<br><br>
+					
+					<img draggable="false" id="content_image" src="images/plans/1_16/obsidian_tears.png">
+				<br><br><br>
+				<h3>Cauldron Brewing</h3>
+						<p>If you put fire or a campfire under a cauldron and fill it up with water, you can brew new things in it! recipes coming soon.</p>
+						<br><br>
+					
+					<img draggable="false" id="content_image" src="images/plans/1_16/.png">
+				<br><br><br>
+				<h3>Mushroom Expansion and rework</h3>
+						<p>All mushrooms will be edible, some may poison you, so be careful.<br>New mushrooms:<br>-Green mushroom: will be generated in swamps, and inside woodland mansions.<br>-White mushroom: will be generated in birch forests.<br>-Galactic mushrrom: If you geather some mycelium, and put it next to an end portal, then plant a warped mushroom on it, when it spreads, it can spread to the portal and become a galactic mushroom.<br>New use cases, like making more soup and potions will come later.</p>
+						<br><br>
+					
+					<img draggable="false" id="content_image" src="images/plans/1_16/.png">
+				<br><br><br>
+				
+			</div>
+			
+			
+			
+			
+			
+			<script>
+			function openCity(evt, cityName) {
+			var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+						}
+					tablinks = document.getElementsByClassName("tablinks");
+					for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" active", "");
+						}
+				document.getElementById(cityName).style.display = "block";
+				evt.currentTarget.className += " active";
+			}
+			</script>
+			
+			
+			
+			
+				<br><br>
+				<!--<span class="mcui">
+					<table>
+					<tr>
+						<th><span class="mcui-input">
+						
+							<span class="mcui-row">
+								<span class="invslot"></span><span class="invslot"></span><span class="invslot"></span><br>
+							</span>
+							<span class="mcui-row">
+								<span class="invslot"></span><span class="invslot"><img class="craft_item" src="images/items/block_log_stripped_oak.png"></span><span class="invslot"></span><br>
+							</span>
+							<span class="mcui-row">
+								<span class="invslot"></span><span class="invslot"></span><span class="invslot"></span>
+							</span>
+							
+						</span></th>
+						<th><span class="mcui-output">
+							 <span><img src="https://gamepedia.cursecdn.com/minecraft_gamepedia/8/86/Grid_layout_Arrow_%28small%29.png"></span>
+						</span>
+						
+						<span class="mcui-output">
+							<span class="invslot-large"></span>
+						</span></th>
+					</tr>
+				
+					</table>
+				</span>-->	
+			<br><br><br><br><br><br>
+		</div>
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		
+	<div class="copyright">
+		<br><br>
+			2017-2020 © MultiTeam Minecraft-Modding Group
+		<br><br><br>
+	</div>
+</body>

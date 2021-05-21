@@ -1,0 +1,674 @@
+body {
+	background-image: url("../images/bg/ga_bg_1080p.png");
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+	font-family: "Trebuchet MS";
+	color: #e1e1e1;
+	transition: background-image 1s;
+	user-select: none;
+}
+div{
+	display: block;
+}
+
+#logo {
+	cursor: context-menu;
+}
+.container {
+	width: 100rem;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);
+	position: relative;
+	background: inherit;
+	overflow: hidden;
+	border-radius: 5px;
+	z-index: 1;
+	text-align: center;
+	margin: auto;
+}
+.container:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px rgba( 0, 0, 0, .5);
+	filter: blur(10px);
+	margin: -20px;
+	z-index: -1;
+}
+.container2 {
+	width: 50rem;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .7);
+	position: relative;
+	background: inherit;
+	overflow: hidden;
+	border-radius: 5px;
+	z-index: 1;
+	text-align: center;
+	margin: auto;
+	
+}
+.container2:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px rgba( 0, 0, 0, .5);
+	filter: blur(10px);
+	margin: -20px;
+	z-index: -1;
+}
+
+#b_common_blue{outline:0;border-radius: 5px; height: 42px; background: rgba(45,45,45,1); border: 8px solid rgba(0,0,0,0);font-size:17px;color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;transition: .5s ease;}
+#b_common_blue:hover{cursor: pointer;outline:0; height: 42px; background: #2d2d2d; border: 8px solid #0042ad; font-size:17px; color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;background: #0042ad;text-shadow: 0 0 5px #ffff;box-shadow: 0 0 10px #0042ad;transition: .5s ease;}
+#b_common_blue:active{cursor: pointer;outline:0; height: 42px;background:rgba(44, 111, 219,1); border: 8px solid rgba(44, 111, 219,1); font-size:17px; color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;text-shadow: 0 0 20px #ffff;box-shadow: 0 0 30px #0042ad;transition: .01s ease;}
+
+#b_selective_yellow{outline:0;border-radius: 5px; height: 42px; background: rgba(45,45,45,1); border: 8px solid rgba(0,0,0,0);font-size:17px;color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;transition: .5s ease;}
+#b_selective_yellow:hover{cursor: pointer;outline:0; height: 42px; background: rgba(255,209,49,1); border: 8px solid rgba(255,209,49,1); font-size:17px; color: #000; text-align: center;font-family:"Trebuchet MS";text-decoration: none;text-shadow: 0 0 5px #000;box-shadow: 0 0 10px rgba(255,209,49,1);transition: .5s ease;}
+
+#b_common_smol_blue{outline:0;border-radius: 5px; height: 30px; background: rgba(45,45,45,1); border: 6px solid rgba(0,0,0,0);font-size:10px;color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;transition: .5s ease;}
+#b_common_smol_blue:hover{cursor: pointer;outline:0; height: 30px; border: 6px solid #0042ad; font-size:10px; color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;background: #0042ad;text-shadow: 0 0 5px #ffff;box-shadow: 0 0 10px #0042ad;transition: .5s ease;}
+#b_common_smol_blue:active{cursor: pointer;outline:0; height: 30px;background:rgba(44, 111, 219,1); border: 6px solid rgba(44, 111, 219,1); font-size:10px; color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;text-shadow: 0 0 5px #ffff;box-shadow: 0 0 10px #0042ad;transition: .01s ease;}
+
+.invslot {
+	cursor: context-menu;
+    position: relative;
+    display: inline-block;
+    background: #8B8B8B no-repeat center center / 32px 32px;
+    border: 2px solid;
+    border-color: #373737 #FFF #FFF #373737;
+    width: 32px;
+    height: 32px;
+    text-align: left;
+    vertical-align: bottom;
+}
+.invslot:hover {
+background: rgba(196,196,196,1) no-repeat center center / 32px 32px;
+}
+
+.invslot-large {
+	cursor: context-menu;
+    padding: 8px;
+	position: relative;
+    display: inline-block;
+    background: #8B8B8B no-repeat center center / 32px 32px;
+    border: 2px solid;
+    border-color: #373737 #FFF #FFF #373737;
+    width: 32px;
+    height: 32px;
+    line-height: 1;
+    text-align: left;
+    vertical-align: bottom;
+}
+.invslot-large:hover {
+background: rgba(196,196,196,1) no-repeat center center / 32px 32px;
+}
+
+.mcui {
+	margin-top:6px;
+	margin-bottom:6px;
+	cursor: context-menu;
+    display: inline-block;
+    position: relative;
+    background-color: #C6C6C6;
+    border: 2px solid;
+    border-color: #DBDBDB #5B5B5B #5B5B5B #DBDBDB;
+	padding: 6px 6px;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: bottom;
+	image-rendering:pixelated;
+}
+
+
+.mcui-output {
+	cursor: context-menu;
+    margin-top: 28px;
+}
+
+.mcui-arrow {
+	cursor: context-menu;
+    background-image: url('https://minecraft.gamepedia.com/media/8/86/Grid_layout_Arrow_%28small%29.png') no-repeat;
+    width: 32px;
+    height: 26px;
+    margin: 40px 4px 0;
+	bottom:7px;
+	position:relative;
+}
+
+#craft_item {
+	
+}
+
+#mc_item{
+	image-rendering:pixelated;
+}
+
+.crossbow_icon {
+	background-image: url("images/items/item_crossbow_0.png");
+	width: 20px;
+	height: 20px;
+}
+.crossbow_icon:hover {
+	animation:crossbowpullup 5s ease-in-out 0s;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: rgba(44, 111, 219,0.1);
+}
+
+/* Style the buttons inside the tab */
+.tab button {outline:0;height: 42px; background: rgba(45,45,45,1); border: 8px solid rgba(0,0,0,0);font-size:17px;color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;transition: .5s ease;}
+
+/* Change background color of buttons on hover */
+.tab button:hover {cursor: pointer;outline:0; height: 42px; background: #2d2d2d; border: 8px solid #0042ad; font-size:17px; color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;background: #0042ad;text-shadow: 0 0 5px #ffff;box-shadow: 0 0 10px #0042ad;transition: .5s ease;}
+
+/* Create an active/current tablink class */
+.tab button.active {cursor: pointer;outline:0; height: 42px;background:rgba(44, 111, 219,1); border: 8px solid rgba(44, 111, 219,1); font-size:17px; color: #fff; text-align: center;font-family:"Trebuchet MS";text-decoration: none;text-shadow: 0 0 20px #ffff;box-shadow: 0 0 30px #0042ad;transition: .01s ease;}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: rgba(44, 111, 219,0.1);
+}
+
+
+table{
+	-webkit-appearance: none;
+}
+tr{
+	-webkit-appearance: none;
+}
+th{
+	-webkit-appearance: none;
+}
+tbody{
+	-webkit-appearance: none;
+}
+
+.copyright {
+	width: 100rem;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);
+	position: relative;
+	background: inherit;
+	overflow: hidden;
+	border-radius: 5px;
+	z-index: 1;
+	text-align: center;
+	margin: auto;
+}
+.copyright:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px rgba( 0, 0, 0, .5);
+	filter: blur(10px);
+	margin: -20px;
+	z-index: -1;
+}
+
+#painting{
+	height:300px;
+	max-height:300px;
+	image-rendering: pixelated;
+	transition: opacity 1s ease-in-out;
+	transition-timing-function: ease-in-out;
+	box-shadow: 0 0 10px rgba(0,0,0,1)
+}
+
+#content_image{
+	height:300px;
+	max-height:300px;
+	image-rendering: pixelated;
+	transition: opacity 1s ease-in-out;
+	box-shadow: 0 0 10px rgba(0,0,0,1)
+}
+#content_image2{
+	max-width:700;
+	max-height:300px;
+	image-rendering: pixelated;
+	transition: opacity 1s ease-in-out;
+	box-shadow: 0 0 10px rgba(0,0,0,1)
+}
+
+@font-face {
+  font-family: Minecraftchat;
+  src: url(Minecraft.ttf);
+}
+
+
+#gp_logo{
+	max-width:99px;
+	max-height:28px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  user-select: text;
+  
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(45,45,45,1);
+  color: #fff;
+  text-align: center;
+  text-decoration:none;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 3;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(45,45,45,1) transparent transparent transparent;
+}
+
+.tooltipDC {
+  position: relative;
+  display: inline-block;
+  user-select: text;
+  
+}
+
+.tooltipDC .tooltiptextDC {
+  visibility: hidden;
+  width: 120px;
+  background-color: #7289DA;
+  color: #fff;
+  text-align: center;
+  text-decoration:none;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 3;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltipDC:hover .tooltiptextDC {
+  visibility: visible;
+}
+
+.tooltipDC .tooltiptextDC::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #7289DA transparent transparent transparent;
+}
+
+.DClink{
+	text-decoration:none;
+	color:#7289DA;
+}
+.DClink:hover{
+	text-decoration:none;
+	color:#7289DA;
+	text-shadow: 0 0 5px #7289DA;
+}
+
+.ALERT{
+	background-color: rgba(255, 0, 0,0.4);
+	z-index:500;
+	border: 3px solid #a60505;
+	border-radius:5px;
+}
+
+#splash{
+	float:left;
+	position:absolute;
+	left:480px;
+	top:80px;
+	text-align:center;
+	z-index:100;
+	transform: rotate(-20deg);
+	font-family: CustomMCFont;
+	color:#fffd00;
+	animation: splashISsplashing 0.7s infinite;
+	overflow: visible;
+	transform-origin: 50% 50%;
+	overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@font-face {
+  font-family: "CustomMCFont";
+  src: url('../fonts/Custom_Minecraft_font.ttf');
+  image-rendering:pixelated;
+}
+
+
+@keyframes splashISsplashing {
+    0% {
+		font-size:17px;
+	}
+    50% {
+		font-size:19px;
+	}
+    100% {
+		font-size:17px;
+	}
+}
+
+.mainstuff{
+	text-align: center;
+	margin: auto;
+	position: relative;
+	
+	max-width:50rem;
+}
+.mainstuff:before{
+position: absolute;}
+
+
+
+.mcui_itemtooltip {
+  position: relative;
+  display: inline-block;
+  user-select: none;
+  
+}
+.mcui_itemtooltip_text{
+	
+}
+.mcui_itemtooltip .mcui_itemtooltip_text {
+	visibility: hidden;
+	min-height:30px;
+	min-width: 120px;
+	color: #fff;
+	text-align: center;
+	text-decoration:none;
+	border-radius: 6px;
+	padding: 7px;
+	background-image: url("../images/mc_tooltip.svg");
+	background-size: cover;
+	/*background-size: 80px 0px; width,height*/
+	background-repeat: no-repeat;
+	font-family: CustomMCFont;
+	padding-top:15px;
+	padding-bottom:10px;
+	font-size:18px;
+  
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 3;
+	bottom: 150%;
+	left: 50%;
+	margin-left: -60px;
+}
+
+.mcui_itemtooltip:hover .mcui_itemtooltip_text {
+  visibility: visible;
+}
+
+.mcui_itemtooltip .mcui_itemtooltip_text::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0,0,0,0) transparent transparent transparent;
+}
+#btn-custom {
+	font-family: 'Montserrat', sans-serif;
+	color: #e0e0e0;
+	background-color: #222;
+	border: 2px solid #222;
+	padding: 14px 20px;
+	margin: auto;
+	font-size: 14px;
+	text-decoration: none;
+	border-radius: 0;
+	transition: all 0.5s;
+	display: block;
+}#btn-custom:hover {
+	color: #e0e0e0;
+	background-color: #393939;
+	border: 2px solid #393939;
+}
+#btn-custom2 {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	color: #e0e0e0;
+	background-color: #222;
+	border: 2px solid #222;
+	padding: 14px 20px;
+	margin: 20px;
+	font-size: 14px;
+	text-decoration: none;
+	border-radius: 0;
+	transition: all 0.5s;
+}
+#btn-custom2:hover {
+	color: #222;
+	background-color: #e0e0e0;
+	border: 2px solid #e0e0e0;
+}
+#btn-custom3 {
+	position: static;
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	color: #e0e0e0;
+	background-color: #222;
+	border: 2px solid #222;
+	border-radius: 3px;
+	padding: 14px 20px;
+	margin: 20px;
+	font-size: 14px;
+	text-decoration: none;
+	transition: all 0.5s;
+}
+#btn-custom3:hover {
+	color: #222;
+	background-color: #ef801d;
+	border: 2px solid #ef801d;
+	transform: scale(1.2);
+}
+#btn-custom:hover #panel-content {
+	
+	transition: all 0.5s;
+}
+
+#panel-content {
+	display:none;
+}
+
+#ModelFrame{
+	margin-left:5rem;
+	background-color:#222;
+	float:left;
+	display:inline-block;
+	margin-right:2rem;
+}
+
+#deviderLine{
+	height:5px;
+	width: 90rem;
+	background-color: #f28c0e;
+	border-radius: 90px;
+	align:center;
+	margin-left:5rem;
+	margin-bottom:1rem;
+	margin-top:1rem;
+}
+
+#info{
+	text-align:left;
+}
+
+#pixelatedrender{
+	image-rendering: pixelated;
+}
+
+#rarity_badge-common{
+	background-color:#fff;
+	border-radius:20px;
+	color:#000000;
+	width:relative;
+	padding-left:7px;
+	padding-right:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+#rarity_badge-uncommon{
+	background-color:#1f870f;
+	border-radius:20px;
+	color:#fff;
+	width:relative;
+	padding-left:7px;
+	padding-right:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+#rarity_badge-rare{
+	background-color:#2c64fa;
+	border-radius:20px;
+	color:#fff;
+	width:relative;
+	padding-left:7px;
+	padding-right:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+#rarity_badge-epic{
+	background-color:#964bfa;
+	border-radius:20px;
+	color:#fff;
+	width:relative;
+	padding-left:7px;
+	padding-right:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+#rarity_badge-legendary{
+	background-color:#d929ff;
+	border-radius:20px;
+	color:#fff;
+	width:relative;
+	padding-left:7px;
+	padding-right:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+#rarity_badge-mythical{
+	background-color:#fa2409;
+	border-radius:20px;
+	color:#000000;
+	width:relative;
+	padding-left:7px;
+	padding-right:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+#rarity_badge-camo{
+	background-image:url("../images/badges_etc/camo_overlay.png");
+	overflow: hidden;
+	border-radius:20px;
+	color:#ffff;
+	width:relative;
+	padding-left:7px;
+	padding-right:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+#rarity_badge-metalic{
+	background-image:url("../images/badges_etc/metalic_overlay.png");
+	overflow: hidden;
+	border-radius:20px;
+	color:#000000;
+	width:relative;
+	padding-left:7px;
+	padding-right:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+#rarity_badge-seasonal{
+	background-image:url("../images/badges_etc/seasonal_overlay.png");
+	overflow: hidden;
+	border-radius:20px;
+	color:#000000;
+	width:relative;
+	padding-left:7px;
+	padding-right:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+#rarity_badge-special{
+	background-color:#001437;
+	border-radius:20px;
+	border: 3px solid #01FFC3;
+	color:#01FFC3;
+	width:relative;
+	padding-left:7px;
+	padding-right:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+#rarity_badge-teams{
+	background-color:#fff;
+	border-radius:20px;
+	color:#000000;
+	width:relative;
+	padding-left:7px;
+	padding-right:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+#pls{
+	font-size:10px;
+}
+
+
+
+
+
+
+
+
+
+

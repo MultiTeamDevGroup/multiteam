@@ -1,0 +1,173 @@
+<head>
+	<title>Soldiers of the Office</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<script src="https://kit.fontawesome.com/ecf1eef1d8.js"></script>
+	<link rel="icon" href="images/logo_icon.png">
+	<script src="https://kit.fontawesome.com/8609b0ec82.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/discordInvite.css"/>
+	
+</head>
+<body>
+	
+	<script type="text/javascript" src="jquery.js"></script>
+	<script>
+		//dropdown function
+			function openCity(evt, cityName) {
+			var i, tabcontent, headlineItem;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+						}
+					headlineItem = document.getElementsByClassName("headlineItem");
+					for (i = 0; i < headlineItem.length; i++) {
+					headlineItem[i].className = headlineItem[i].className.replace(" active", "");
+						}
+				document.getElementById(cityName).style.display = "block";
+				evt.currentTarget.className += " active";
+			}
+			
+			
+		//secondary dropdown function
+			function openTab(element) {
+			try {
+			if (element.childNodes[1].style.display == "block")
+				element.childNodes[1].style.display = "none";
+			else
+				element.childNodes[1].style.display = "block";
+			}catch(error) {
+				element.childNodes[1].style.display = "block";
+				}
+			}
+	</script>
+
+
+	<script src="js/discordInvite.js"></script>
+	<script>
+		discordInvite.init({
+		inviteCode: 'KtKgz4T',
+		title: 'Soldiers of the Office',
+		});
+		discordInvite.render();
+	</script>
+	
+	<div class="headline">
+		<img class="headlineImageLogo" src="images/SOTO_logo_transparent.png">
+		<!--a class="headlineText">Soldier of The Office</a-->
+		<a class="headlineItem" onclick="openCity(event, 'MainTab')">Main</a>
+		<a class="headlineItem" onclick="openCity(event, 'Devlogs')">Devlogs</a>
+		<a class="headlineItem" onclick="openCity(event, 'AnnouncedFeatures')">Feature Plans</a>
+		<a class="headlineItem" onclick="openCity(event, 'Discord')">Discord</a>
+		<div id="random_badge_outer"><div id="random_badge_inner">Version</div>     0.0.1</div>
+		<div id="random_badge_outer"style="width: 10rem;"><div id="random_badge_inner" style="width:5rem;">Available</div>     not yet</div>
+	</div>
+	
+	<div class="container-left" >
+		<a id="Title">Soldier of the Office is a 2D platformer game, about a soldier who fights with various crazy weapons and enemys.</a><br><br>
+		<a id="devlog-link">To open the tabs, use the buttons in the header</a>
+		<div class="tabcontent" id="MainTab">
+			<br><a id="#">This game is being developed on Unity (2020.1), by Multiteam: LazTheArtist [Code/Art], and many ideas given by @ZoLeY#4832 and @DragonsMoon3#2285.<br><br>
+			<img src="images/SOTO_logo_transparent.png" style="width:30%;"><br></a>
+		</div>
+	</div>
+	
+	<div class="container-right">
+		<a id="Title">Devlogs</a>
+		<div class="tabcontent" id="Devlogs">
+			<br>
+			<!--a id="devlog_date_badge" href="#2k20january">2020 january</a>
+			<a id="devlog_date_badge" href="#2k20june">2020 june</a>
+			<a id="devlog_date_badge" href="#2k20july">2020 july</a><br><br-->
+			<!--enable this feature above if there are too many devlogs. this is just navigation "buttons" (badges)-->
+			
+			<a id="2k20january">2020 january</a><br>
+			
+			<a id="#">[#0000]</a>
+				<a id="devlog-link" onclick="openTab(this)">Initiation - Player movement</a>
+					<a id="open-devlog-btn" onclick="openTab(this)">⯈
+					<div id="panel-content">Intial game set up, basic collisions, basic player movement. air control will be enabled.</div>
+					⯇ (click to open)
+				</a><br>
+			<a id="#">[#0001]</a>
+				<a id="devlog-link" onclick="openTab(this)">Basic Gun mechanics (nailgun)</a>
+					<a id="open-devlog-btn" onclick="openTab(this)">⯈
+					<div id="panel-content">Nailguns added, and can be picked up by the player. tho it originally used a dumb way to do that, since it was rewritten. Pressing Q will pick up weapons.</div>
+					⯇
+				</a><br>
+				
+			<br><a id="2k20june">2020 june</a><br>
+			
+			<a id="#">[#0002]</a>
+				<a id="devlog-link" onclick="openTab(this)">Picking up objects</a>
+					<a id="open-devlog-btn" onclick="openTab(this)">⯈
+					<div id="panel-content">Picking up object has been implemented, with bugs tho. these bugs were eliminated since then. Pressing E while staying next to an object that can be picked up will lift it above the player's head.</div>
+					⯇
+				</a><br>
+			<a id="#">[#0003]</a>
+				<a id="devlog-link" onclick="openTab(this)">Ammo game-mechanic</a>
+					<a id="open-devlog-btn" onclick="openTab(this)">⯈
+					<div id="panel-content">Now weapons use ammo. added ammo boxes that store ammo on the ground and if you have a weapon equipped and walk into the box, the ammo will be added to current weapon and if all the ammo gets picked from the box, the box will disappear.</div>
+					⯇
+				</a><br>
+			<a id="#">[#0004]</a>
+				<a id="devlog-link" onclick="openTab(this)">Tooltip system</a>
+					<a id="open-devlog-btn" onclick="openTab(this)">⯈
+					<div id="panel-content">To know how many ammo is stored in a weapon without picking it up, just hover over it with your cursor and a tooltip will show up. same thing with ammo boxes.</div>
+					⯇ 
+					</a>
+				<br>
+				
+			<br><a id="2k20july">2020 july</a><br>
+			
+			<a id="#">[#0005]</a>
+				<a id="devlog-link">Button and Lamp game-mechanic</a>
+					<a id="open-devlog-btn" onclick="openTab(this)">⯈
+					<div id="panel-content">Button game mechanic got added, along with a lamp that detects a button if its pressed or not and turns on/of according to the button's state. the button can be pressed by the player standing on it, and objects that can be picked up by the player.</div>
+					⯇
+					</a>
+				<br>
+			<a id="#">[Technical]</a><a id="devlog-link" onclick="openTab(this)"> Engine version update (unity 2020.1.0a17 -> 2020.1)</a><br>
+			<a id="#">[#0006]</a>
+				<a id="devlog-link">Damage system</a>
+					<a id="open-devlog-btn" onclick="openTab(this)">⯈
+					<div id="panel-content">damage system, outgoing damage from the player. added test dummy.</div>
+					⯇
+					</a>
+				<br>
+			<a id="#">[#0007]</a>
+				<a id="devlog-link">Level 1 Enemy</a>
+					<a id="open-devlog-btn" onclick="openTab(this)">⯈
+					<div id="panel-content">damage system vol2, incoming damage to player, health system, death screen</div>
+					⯇
+					</a>
+				<br>
+			<a id="#">[#0008]</a>
+				<a id="devlog-link">Improved weapon mechanics</a>
+					<a id="open-devlog-btn" onclick="openTab(this)">⯈
+					<div id="panel-content">increased bulet drop of the nail shot by the nailgun. added 360 rotation ability to the guns (around the player)</div>
+					⯇
+					</a>
+				<br>
+		</div>
+	</div>
+	
+	<div class="container-left">
+		<a id="Title">Future Plans</a>
+		<div class="tabcontent" id="AnnouncedFeatures">
+			<br><br>
+			<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRFuCTmGBfiqwWBul7WZ8moZTWb15-JYBMT-loMT4OpNYq6HL1XuJhJwd8LNri94OTPmdzq7GC9chxA/pubhtml?widget=true&amp;headers=false" id="SpreadsheetIframe"></iframe>
+			<br><br>
+			<a id="link" href="https://docs.google.com/spreadsheets/d/1jogPvtlXkgNpVR4US7kSb9hrkhKAvGrj4Ek3-bimQVU/edit?usp=sharing">https://docs.google.com/spreadsheets/d/1jogPvtlXkgNpVR4US7kSb9hrkhKAvGrj4Ek3-bimQVU/edit?usp=sharing</a><br>
+		</div>
+	</div>
+	
+	<div class="container-right">
+		<a id="Title">Discord Server</a>
+		<div class="tabcontent" id="Discord">
+			<br><br>
+			<div id="discordInviteBox"></div><br><br>
+			<a id="#">Join our discord server to observ the development, or just to have fun with us! Tho it could be weird to see us talk in a weird language that most of you wont understand... #hungary</a>
+		</div>
+	</div>
+	
+	
+</body>

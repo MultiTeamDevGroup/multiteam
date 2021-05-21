@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+
+*{
+    transition: cubic-bezier(.88,.1,.23,.82);
+    transition-duration: 0.2s;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --mtWhite: #E1E1E1;
+    --mtWhiteHover: #c4c4c4;
+    --mtBg: #141414;
+    --mtPanel: #262626;
+    --accentBlue: #7F91E9;
+
+}
